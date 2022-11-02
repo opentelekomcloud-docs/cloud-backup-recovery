@@ -1,0 +1,72 @@
+:original_name: cbr_03_0046.html
+
+.. _cbr_03_0046:
+
+Change History
+==============
+
++-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Released On                       | Description                                                                                                                                                                      |
++===================================+==================================================================================================================================================================================+
+| 2022-06-23                        | This issue incorporates the following changes:                                                                                                                                   |
+|                                   |                                                                                                                                                                                  |
+|                                   | Added section "Monitoring."                                                                                                                                                      |
++-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2022-04-26                        | This issue incorporates the following changes:                                                                                                                                   |
+|                                   |                                                                                                                                                                                  |
+|                                   | Added a screenshot in section "(Optional) Migrating Resources from CSBS/VBS."                                                                                                    |
++-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2022-04-21                        | This issue incorporates the following changes:                                                                                                                                   |
+|                                   |                                                                                                                                                                                  |
+|                                   | Modified descriptions in section "(Optional) Migrating Resources from CSBS/VBS."                                                                                                 |
++-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2022-03-29                        | This issue incorporates the following changes:                                                                                                                                   |
+|                                   |                                                                                                                                                                                  |
+|                                   | Added the description of migrating resources from CSBS/VBS to CBR.                                                                                                               |
++-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2022-03-15                        | This issue incorporates the following changes:                                                                                                                                   |
+|                                   |                                                                                                                                                                                  |
+|                                   | -  Added the description about automatic association by tag in section "Creating a Server Backup Vault."                                                                         |
+|                                   | -  Added the description about automatic association by tag in section "Creating a Disk Backup Vault."                                                                           |
+|                                   | -  Added the description about automatic association by tag in section "Associate a Resource with a Vault."                                                                      |
++-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2021-12-07                        | This issue incorporates the following changes:                                                                                                                                   |
+|                                   |                                                                                                                                                                                  |
+|                                   | Added descriptions of enhanced backup in section "Basic Concepts."                                                                                                               |
++-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2020-06-05                        | This issue incorporates the following changes:                                                                                                                                   |
+|                                   |                                                                                                                                                                                  |
+|                                   | -  Deleted section "Managing the Enterprise Projects of Vaults" and other content related to enterprise projects.                                                                |
+|                                   | -  Deleted content about BMS backup support.                                                                                                                                     |
+|                                   | -  Deleted the description about automatic association from section "Associate a Resource with the Vault."                                                                       |
++-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2020-02-14                        | This issue incorporates the following changes:                                                                                                                                   |
+|                                   |                                                                                                                                                                                  |
+|                                   | -  Added screenshots in section "Creating a Server Backup Vault."                                                                                                                |
+|                                   | -  Added screenshots in section "Creating a Disk Backup Vault."                                                                                                                  |
+|                                   | -  Added screenshots in section "Querying a Vault."                                                                                                                              |
+|                                   | -  Added screenshots in section "Managing Vault Tags."                                                                                                                           |
+|                                   | -  Deleted section "Managing the Enterprise Projects of Vaults."                                                                                                                 |
+|                                   | -  Added screenshots in section "Querying a Backup."                                                                                                                             |
+|                                   | -  Added screenshots in section "Sharing a Backup."                                                                                                                              |
+|                                   | -  Added the description of parameters for and screenshots of daily, weekly, and yearly backup in section "Creating a Backup Policy."                                            |
+|                                   | -  Added screenshots in section "Managing Tasks."                                                                                                                                |
+|                                   | -  Added screenshots in section "Auditing."                                                                                                                                      |
++-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2019-09-11                        | This issue incorporates the following changes:                                                                                                                                   |
+|                                   |                                                                                                                                                                                  |
+|                                   | Accepted for RM-530.                                                                                                                                                             |
++-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2019-09-04                        | This issue incorporates the following changes:                                                                                                                                   |
+|                                   |                                                                                                                                                                                  |
+|                                   | -  Modified descriptions in sections "What Is CBR", "Related Services", "Basic Concepts", "Constraints", "Creating a Server Backup Vault", and "Deleting a Vault."               |
+|                                   | -  Modified description in sections "Using a Backup to Create an Image", "Restoring Data Using a Cloud Disk Backup", and FAQ "Can I Use a System Disk Backup to Recover an ECS?" |
+|                                   | -  Modified the architecture of CBR in section "What Is CBR?"                                                                                                                    |
++-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2019-08-08                        | This issue incorporates the following changes:                                                                                                                                   |
+|                                   |                                                                                                                                                                                  |
+|                                   | -  Deleted description about cross-region replication and application-consistent backup.                                                                                         |
+|                                   | -  Added screenshots.                                                                                                                                                            |
++-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| 2019-07-30                        | This issue is the first official release.                                                                                                                                        |
++-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
