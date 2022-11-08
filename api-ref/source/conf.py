@@ -93,7 +93,7 @@ html_static_path = ['_static']
 
 # -- Options for PDF output --------------------------------------------------
 latex_documents = [
-('index',
+    ('index',
      'cbr-api-ref.tex',
      u'Cloud Backup and Recovery - API Reference',
      u'OpenTelekomCloud', 'manual'),
