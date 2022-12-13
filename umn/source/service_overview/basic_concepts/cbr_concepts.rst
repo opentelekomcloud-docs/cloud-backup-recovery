@@ -2,8 +2,8 @@
 
 .. _cbr_01_0012:
 
-CBR Basic Concepts
-==================
+CBR Concepts
+============
 
 Vault
 -----
@@ -12,6 +12,7 @@ CBR uses vaults to store backups of resources. Backup vaults are classified into
 
 -  **Server backup vaults**: store backups of only common servers. You can associate servers with a server backup vault and apply a backup policy to the vault.
 -  **Disk backup vaults**: store only disk backups. You can associate disks with a disk backup vault and apply a backup policy to the vault.
+-  **SFS Turbo backup vaults**: store only backups of SFS Turbo file systems. You can associate file systems with an SFS Turbo backup vault and apply a backup policy to the vault.
 
 Backup
 ------
@@ -33,7 +34,7 @@ Instant Restore
 
 Instant Restore is a function for restoring data and creating images from backups. Instant Restore is much faster than a normal restoration process.
 
-Common backups do not support Instant Restore, whereas, enhanced backups do. By default, all CBR backups are enhanced backups. Compared with common backups, enhanced backups use less time to restore server data or create images.
+Common backups do not support Instant Restore, whereas enhanced backups do. By default, all CBR backups are enhanced backups. Compared with common backups, enhanced backups use less time to restore server data or create images.
 
 Enhanced Backup
 ---------------

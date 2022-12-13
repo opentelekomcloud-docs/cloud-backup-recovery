@@ -26,7 +26,7 @@ Procedure
    b. Click |image1| in the upper left corner and select your region and project.
    c. Choose **Storage** > **Cloud Backup and Recovery**. Select a backup tab from the left navigation pane.
 
-#. On the **Cloud Server Backup** page, click the **Vaults** tab and find the vault to which the server is associated.
+#. On the **Cloud Server Backups** page, click the **Vaults** tab and find the vault to which the server is associated.
 
 #. Choose **More** > **Perform Backup** in the **Operation** column. In the server list, select the server you want to back up. After a server is selected, it is added to the list of selected servers. See :ref:`Figure 1 <cbr_02_0006__fig2557455115213>`.
 
@@ -78,13 +78,13 @@ Procedure
 
 #. Click **Yes**. The system automatically creates a backup for the server.
 
-   On the **Backups** tab page of the **Cloud Server Backup** page, if the status of the backup is **Available**, the backup task is successful.
+   On the **Backups** tab page, if the status of the backup is **Available**, the backup task is successful.
 
    .. note::
 
       You can restart a server if necessary after the backup progress exceeds 10%. However, to ensure data integrity, you are advised to restart it after the backup is complete.
 
-   After the backup is complete, you can use the backup to restore server data or create an image on the **Cloud Server Backup** homepage. For details, see :ref:`Restoring Data Using a Cloud Server Backup <cbr_03_0032>` and :ref:`Using a Backup to Create an Image <cbr_03_0016>`.
+   After the backup is complete, you can use the backup to restore server data or create an image. For details, see :ref:`Restoring Data Using a Cloud Server Backup <cbr_03_0032>` and :ref:`Using a Backup to Create an Image <cbr_03_0016>`.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0251464113.png

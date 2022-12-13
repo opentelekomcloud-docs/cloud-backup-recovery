@@ -14,8 +14,8 @@ Procedure
 
 #. Log in to the management console.
 #. In the upper left corner of the page, click |image1| and select your desired region and project.
-#. Under **Management & Deployment**, select **Cloud Eye**. In the navigation pane on the left, choose **Cloud Service Monitoring** > **Cloud Backup and Recovery**.
-#. Click **Create Alarm Rule** in the **Operation** column of the target vault.
+#. Under **Management & Deployment**, select **Cloud Eye**. In the navigation pane on the left, choose **Alarm Management** > **Alarm Rules**.
+#. On the displayed page, click **Create Alarm Rule** in the upper right corner.
 #. In the **Create Alarm Rule** dialog box, set the parameters.
 
    a. Set **Name** and **Description**.
@@ -94,26 +94,30 @@ Procedure
             +--------------+------------------------------------------------+----------------+------------------------------------------------+-------------------------------------------------------------------------+---------------------------+
             | Event Source | Event Name                                     | Alarm Severity | Description                                    | Solution                                                                | Impact                    |
             +==============+================================================+================+================================================+=========================================================================+===========================+
-            | CBR          | Failed to create the backup.                   | Critical       | Backup creation failed.                        | Manually create a backup or contact the administrator.                  | Data loss may occur.      |
+            | CBR          | Failed to create the backup.                   | Major          | Backup creation failed.                        | Manually create a backup or contact the administrator.                  | Data may be lost.         |
             +--------------+------------------------------------------------+----------------+------------------------------------------------+-------------------------------------------------------------------------+---------------------------+
-            |              | Failed to restore the resource using a backup. | Critical       | Resource restoration using a backup failed.    | Restore the resource using another backup or contact the administrator. | Data loss may occur.      |
+            |              | Failed to restore the resource using a backup. | Major          | Resource restoration using a backup failed.    | Restore the resource using another backup or contact the administrator. | Data may be lost.         |
             +--------------+------------------------------------------------+----------------+------------------------------------------------+-------------------------------------------------------------------------+---------------------------+
-            |              | Failed to delete the backup.                   | Critical       | Backup deletion failed.                        | Try again later or contact the administrator.                           | Charging may be abnormal. |
+            |              | Failed to delete the backup.                   | Major          | Backup deletion failed.                        | Try again later or contact the administrator.                           | Charging may be abnormal. |
             +--------------+------------------------------------------------+----------------+------------------------------------------------+-------------------------------------------------------------------------+---------------------------+
-            |              | Failed to delete the vault.                    | Critical       | Vault deletion failed.                         | Try again later or contact the administrator.                           | Charging may be abnormal. |
+            |              | Failed to delete the vault.                    | Major          | Vault deletion failed.                         | Try again later or contact the administrator.                           | Charging may be abnormal. |
             +--------------+------------------------------------------------+----------------+------------------------------------------------+-------------------------------------------------------------------------+---------------------------+
-            |              | Replication failure                            | Critical       | Backup replication failed.                     | Try again later or contact the administrator.                           | Data loss may occur.      |
+            |              | Replication failure                            | Major          | Backup replication failed.                     | Try again later or contact the administrator.                           | Data may be lost.         |
             +--------------+------------------------------------------------+----------------+------------------------------------------------+-------------------------------------------------------------------------+---------------------------+
-            |              | The backup is created successfully.            | Major          | Backup creation succeeded.                     | N/A                                                                     | N/A                       |
+            |              | The backup is created successfully.            | Major          | Backup created.                                | None                                                                    | None                      |
             +--------------+------------------------------------------------+----------------+------------------------------------------------+-------------------------------------------------------------------------+---------------------------+
-            |              | Resource restoration using a backup succeeded. | Major          | Resource restoration using a backup succeeded. | Check that data is successfully restored.                               | N/A                       |
+            |              | Resource restoration using a backup succeeded. | Major          | Resource restoration using a backup succeeded. | Check that data is successfully restored.                               | None                      |
             +--------------+------------------------------------------------+----------------+------------------------------------------------+-------------------------------------------------------------------------+---------------------------+
-            |              | The backup is deleted successfully.            | Major          | Backup deletion succeeded.                     | N/A                                                                     | N/A                       |
+            |              | The backup is deleted successfully.            | Major          | Backup deleted.                                | None                                                                    | None                      |
             +--------------+------------------------------------------------+----------------+------------------------------------------------+-------------------------------------------------------------------------+---------------------------+
-            |              | The vault is deleted successfully.             | Major          | Vault deletion succeeded.                      | N/A                                                                     | N/A                       |
+            |              | The vault is deleted successfully.             | Major          | Vault deleted.                                 | None                                                                    | None                      |
             +--------------+------------------------------------------------+----------------+------------------------------------------------+-------------------------------------------------------------------------+---------------------------+
-            |              | Replication success                            | Major          | Backup replicated                              | N/A                                                                     | N/A                       |
+            |              | Replication success                            | Major          | Backup replicated.                             | None                                                                    | None                      |
             +--------------+------------------------------------------------+----------------+------------------------------------------------+-------------------------------------------------------------------------+---------------------------+
+
+         .. note::
+
+            You can change the alarm severity as needed.
 
    c. Configure the alarm notification.
 

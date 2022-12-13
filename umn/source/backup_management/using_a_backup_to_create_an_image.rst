@@ -13,7 +13,7 @@ Prerequisites
 -  Confirm that the following operations have been performed before you use an ECS backup to create an image:
 
    -  You have optimized the Linux ECS (referring to `Optimizing a Linux Private Image <https://docs.otc.t-systems.com/usermanual/ims/en-us_topic_0047501133.html>`__) and installed Cloud-Init (referring to `Installing Cloud-Init <https://docs.otc.t-systems.com/usermanual/ims/en-us_topic_0030730603.html>`__).
-   -  You have optimized the Windows ECS (referring to `Optimizing a Windows Private Image <https://docs.otc.t-systems.com/usermanual/ims/en-us_topic_0047501112.html>`__) and installed Cloudbase-Init (referring to `Installing Cloudbase-Init <https://docs.otc.t-systems.com/usermanual/ims/en-us_topic_0030730602.html>`__).
+   -  You have optimized the Windows ECS (referring to `Optimizing a Windows Private Image <https://docs.otc.t-systems.com/usermanual/ims/en-us_topic_0047501112.html>`__) and installed Cloudbase-Init (referring to `Installing and Configuring Cloudbase-Init <https://docs.otc.t-systems.com/usermanual/ims/en-us_topic_0030730602.html>`__).
 
 -  A backup can be used to create an image in either of the following scenarios: 1. The backup is in the **Available** state. 2. The backup is in the **Creating** state which is marked with **Image can be created**.
 
@@ -39,7 +39,7 @@ Procedure
    b. Click |image1| in the upper left corner and select your region and project.
    c. Choose **Storage** > **Cloud Backup and Recovery**. Select a backup tab from the left navigation pane.
 
-#. Click the **Backups** tab. Locate the desired backup. For details, see :ref:`Querying a Backup <cbr_03_0013>`.
+#. Click the **Backups** tab. Locate the desired backup. For details, see :ref:`Viewing a Backup <cbr_03_0013>`.
 
 #. In the row of the backup, choose **More** > **Create Image**. See :ref:`Figure 1 <cbr_03_0016__fig31751974142>`.
 
@@ -51,8 +51,8 @@ Procedure
 
       **Figure 1** Creating an image
 
-#. Create an image by referring to section "Creating a Full-ECS Image Using a Cloud Server Backup" in the *Image Management Service User Guide*.
+#. Create an image by referring to section "Creating a Full-ECS Image from a CBR Backup" in the *Image Management Service User Guide*.
 
-#. If you want to use an image to provision ECSs, see section "Creating ECSs Using an Image" in the *Image Management Service User Guide*.
+#. If you want to use an image to provision ECSs, see section "Creating an ECS from an Image" in the *Image Management Service User Guide*.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png

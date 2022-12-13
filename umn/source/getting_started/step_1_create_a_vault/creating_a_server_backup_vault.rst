@@ -24,6 +24,14 @@ Procedure
 
 #. (Optional) In the server list, select the servers or disks you want to back up. After the servers or disks are selected, they are added to the list of selected servers. See :ref:`Figure 1 <cbr_02_0003__fig204531717131710>`. You may also select only some of the disks of a server and associate them with the vault.
 
+   .. important::
+
+      To ensure post-restoration data consistency, you are advised to back up the entire server.
+
+      If you want to back up only some of the disks to reduce costs, ensure that the data on the backed up disks does not depend on the disks that are not backed up. Or, data inconsistency may occur.
+
+      For example, the data of an Oracle database is scattered across different disks. If only some of the disks are backed up, restoration restores only the data of the disks that have been backed up, with the rest of the data unchanged. As a result, the data may be inconsistent and applications may fail to start.
+
    .. _cbr_02_0003__fig204531717131710:
 
    **Figure 1** Selecting servers
@@ -37,7 +45,7 @@ Procedure
 
 #. Specify the vault capacity, which ranges from 10 GB to 10,485,760 GB. You need to properly plan the vault capacity, which must be at least the same as the size of the servers you want to back up. Also, if a backup policy is applied to the vault, more capacity is required.
 
-   As the vault's used space grows, you can expand the vault capacity when it is not enough. See :ref:`Figure 2 <cbr_02_0003__fig179361847142520>`.
+   As the vault's used space grows, you can expand the vault capacity if it becomes insufficient. See :ref:`Figure 2 <cbr_02_0003__fig179361847142520>`.
 
    .. _cbr_02_0003__fig179361847142520:
 
@@ -47,10 +55,10 @@ Procedure
 
       **Figure 2** Setting the vault capacity
 
-#. Configure automatic backup. See :ref:`Figure 3 <cbr_02_0003__fig4582143195315>`.
+#. Determine whether to configure auto backup. See :ref:`Figure 3 <cbr_02_0003__fig4582143195315>`.
 
-   -  If you select **Configure**, you must then select an existing backup policy or create a new one. After the vault is created, the system associates the vault with this backup policy, and all servers associated with this vault will be automatically backed up based on this policy.
-   -  If you select **Skip**, servers associated with this vault will not be automatically backed up until you apply a backup policy to the vault.
+   -  If you select **Configure**, you must then select an existing backup policy or create a new policy. After the vault is created, the system will apply the policy to this vault, and all servers associated with this vault will be automatically backed up based on this policy.
+   -  If you select **Skip**, servers associated with this vault will not be automatically backed up until you apply a backup policy to it.
 
    .. _cbr_02_0003__fig4582143195315:
 
@@ -90,17 +98,17 @@ Procedure
       +=======================+===========================================================================================================+=======================+
       | Key                   | Each tag has a unique key. You can customize the key or select the key of an existing tag created in TMS. | Key_0001              |
       |                       |                                                                                                           |                       |
-      |                       | The naming rules for a tag key are as follows:                                                            |                       |
+      |                       | A tag key:                                                                                                |                       |
       |                       |                                                                                                           |                       |
-      |                       | -  It contains 1 to 36 Unicode characters.                                                                |                       |
-      |                       | -  It can contain only letters, digits, hyphens (-), and underscores (_).                                 |                       |
+      |                       | -  Can contain 1 to 36 Unicode characters.                                                                |                       |
+      |                       | -  Can contain only letters, digits, hyphens (-), and underscores (_).                                    |                       |
       +-----------------------+-----------------------------------------------------------------------------------------------------------+-----------------------+
       | Value                 | A tag value can be repetitive or left blank.                                                              | Value_0001            |
       |                       |                                                                                                           |                       |
-      |                       | The naming rules for a tag value are as follows:                                                          |                       |
+      |                       | A tag value:                                                                                              |                       |
       |                       |                                                                                                           |                       |
-      |                       | -  It contains 0 to 43 Unicode characters.                                                                |                       |
-      |                       | -  It can contain only letters, digits, hyphens (-), and underscores (_).                                 |                       |
+      |                       | -  Can contain 0 to 43 Unicode characters.                                                                |                       |
+      |                       | -  Can contain only letters, digits, hyphens (-), and underscores (_).                                    |                       |
       +-----------------------+-----------------------------------------------------------------------------------------------------------+-----------------------+
 
 #. Specify a name for the vault.
@@ -113,7 +121,7 @@ Procedure
 
 #. Complete the creation as prompted.
 
-#. Go back to the **Cloud Server Backup** page. You can see the created vault in the vault list.
+#. Go back to the **Cloud Server Backups** page. You can see the created vault in the vault list.
 
    You can associate servers with the vault and perform backup for the servers. For details, see :ref:`Querying a Vault <cbr_03_0002>`.
 
