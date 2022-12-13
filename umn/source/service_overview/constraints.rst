@@ -28,7 +28,12 @@ Cloud Server Backup
 
 -  Shared disks on a server can be backed up, but there can be no more than 10 shared disks.
 -  Only backups in a vault whose status is **Available** or **Locked** can be used to create images.
-
--  You can choose to back up only specified disks on a server but such a backup of disks must be restored as a whole. File- or directory-level restoration is not supported.
+-  You can choose to back up only specified disks on a server, but such a backup of disks must be restored as a whole. File- or directory-level restoration is not supported.
 -  When SDRS is used to set up disaster recovery for cloud servers, restorations can be performed at the disaster recovery site only after protection is disabled.
 -  You are advised not to back up a server whose disk size exceeds 4 TB.
+
+SFS Turbo Backup
+----------------
+
+-  Only file systems in the **Available** state can be backed up.
+-  An SFS Turbo file system backup cannot be used to restore data to the original file system.

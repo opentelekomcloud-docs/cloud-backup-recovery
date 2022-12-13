@@ -70,7 +70,7 @@ FAQ
 
 #. How Do I Delete Backups from VBS Console?
 
-   After you have migrated data from CSBS and VBS to CBR, backups displayed in VBS Console cannot be deleted alone. Find these backups in CBR and delete them. Then, the backups will be also deleted from VBS Console.
+   After you have migrated data from CSBS and VBS to CBR, backups displayed in VBS Console cannot be deleted alone. Find these backups in CBR and delete them. Then, the backups will also be deleted from VBS Console.
 
 #. What Are the Differences Between CBR, CSBS, and VBS?
 

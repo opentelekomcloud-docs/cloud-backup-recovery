@@ -35,7 +35,7 @@ Procedure
 
 #. Click **OK**.
 
-   After the policy is modified, the retention rule takes effect only for new backups. For details, see :ref:`Why Does the Retention Rule Not Take Effect After Being Changed? <cbr_06_0044>`
+   If the policy retention rule is modified, the new rule takes effect depending on how you have changed it. For details, see :ref:`Why Does the Retention Rule Not Take Effect After Being Changed? <cbr_06_0044>`
 
 #. Alternatively, you can select **Policies** from the navigation tree on the left and edit the desired policy.
 

@@ -8,7 +8,7 @@ What Is CBR?
 Overview
 --------
 
-Cloud Backup and Recovery (CBR) enables you to back up Elastic Cloud Servers (ECSs) and Elastic Volume Service (EVS) disks with ease. In case of a virus attack, accidental deletion, or software or hardware fault, you can restore data to any point in the past when the data was backed up.
+Cloud Backup and Recovery (CBR) enables you to back up Elastic Cloud Servers (ECSs), Elastic Volume Service (EVS) disks, and SFS Turbo file systems with ease. In case of a virus attack, accidental deletion, or software or hardware fault, you can restore data to any point in the past when the data was backed up.
 
 CBR protects your services by ensuring the security and consistency of your data.
 
@@ -23,6 +23,7 @@ A backup is a copy of a particular chunk of data and is usually stored elsewhere
 
 -  Cloud disk backup. This type of backup provides snapshot-based data protection for EVS disks.
 -  Cloud server backup. This type of backup uses the consistency snapshot technology for disks to protect data of ECSs.
+-  SFS Turbo backup. This type of backup protects data of SFS Turbo file systems.
 
 **Vault**
 
@@ -44,15 +45,15 @@ Differences Among the Backup Types
 
 .. table:: **Table 1** Differences among the backup types
 
-   +---------------------------+----------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
-   | Item                      | Cloud Server Backup                                                              | Cloud Disk Backup                                                                                       |
-   +===========================+==================================================================================+=========================================================================================================+
-   | Backup and restore object | All disks (system and data disks) on a server                                    | One or more specific disks (system or data disks)                                                       |
-   +---------------------------+----------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
-   | Recommended scenario      | An entire cloud server needs to be protected.                                    | Only data disks need to be backed up, because the system disk does not contain users' application data. |
-   +---------------------------+----------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
-   | Advantages                | All disks on a server are backed up at the same time, ensuring data consistency. | Backup cost is reduced without compromising data security.                                              |
-   +---------------------------+----------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
+   +---------------------------+----------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+   | Item                      | Cloud Server Backup                                                              | Cloud Disk Backup                                                                                       | SFS Turbo Backup                                                                                                      |
+   +===========================+==================================================================================+=========================================================================================================+=======================================================================================================================+
+   | Backup and restore object | All disks (system and data disks) on a server                                    | One or more specific disks (system or data disks)                                                       | SFS Turbo file systems                                                                                                |
+   +---------------------------+----------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+   | Recommended scenario      | An entire cloud server needs to be protected.                                    | Only data disks need to be backed up, because the system disk does not contain users' application data. | Data in the SFS Turbo file systems needs to be protected.                                                             |
+   +---------------------------+----------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
+   | Advantages                | All disks on a server are backed up at the same time, ensuring data consistency. | Backup cost is reduced without compromising data security.                                              | Backup data and original file systems are stored separately. You can use the backup data to create a new file system. |
+   +---------------------------+----------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
 
 Backup Mechanism
 ----------------
@@ -95,7 +96,6 @@ You can also use the two backup options together if needed. For example, you can
 .. figure:: /_static/images/en-us_image_0285742235.png
    :alt: **Figure 2** Intermixed use of the two backup options
 
-
    **Figure 2** Intermixed use of the two backup options
 
 Method of Access
@@ -111,4 +111,4 @@ You can access the CBR service through the console or by calling HTTPS-based API
 
    Use APIs if you need to integrate CBR into a third-party system for secondary development. For details, see the *Cloud Backup and Recovery API Reference*.
 
-.. |image1| image:: /_static/images/en-us_image_0242743738.png
+.. |image1| image:: /_static/images/en-us_image_0277693887.png

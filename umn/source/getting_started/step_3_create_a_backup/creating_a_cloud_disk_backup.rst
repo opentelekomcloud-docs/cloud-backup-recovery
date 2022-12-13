@@ -23,7 +23,7 @@ Procedure
    b. Click |image1| in the upper left corner and select your region and project.
    c. Choose **Storage** > **Cloud Backup and Recovery**. Select a backup tab from the left navigation pane.
 
-#. On the **Cloud Disk Backup** page, click the **Vaults** tab and find the vault to which the disk is associated.
+#. On the **Cloud Disk Backups** page, click the **Vaults** tab and find the vault to which the disk is associated.
 
 #. Choose **More** > **Perform Backup** in the **Operation** column. In the disk list, select the disk you want to back up. After a disk is selected, it is added to the list of selected disks. See :ref:`Figure 1 <cbr_02_0007__fig2557455115213>`.
 
@@ -79,13 +79,13 @@ Procedure
 
 #. Click **Yes**. The system automatically creates a backup for the disk.
 
-   On the **Backups** tab page of the **Cloud Disk Backup** page, if the status of the backup is **Available**, the backup task is successful.
+   On the **Backups** tab page, if the status of the backup is **Available**, the backup task is successful.
 
    .. note::
 
-      If you delete files on the disk during the backup, the deleted files may fail to be backed up. Therefore, to ensure data integrity, you are advised to delete the target data after the current backup is complete and then perform a backup again.
+      If you delete files from the disk during the backup, the deleted files may fail to be backed up. To ensure data integrity, you are advised to wait until the backup task is complete and then delete data and perform a backup again.
 
-   After the backup is complete, you can use the backup to restore disk data on the **Cloud Disk Backup** page. For details, see :ref:`Restoring Data Using a Cloud Disk Backup <cbr_03_0033>`.
+   After the backup is complete, you can use the backup to restore disk data. For details, see :ref:`Restoring Data Using a Cloud Disk Backup <cbr_03_0033>`.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0251464955.png
