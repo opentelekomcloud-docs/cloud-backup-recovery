@@ -28,7 +28,6 @@ Procedure
    .. figure:: /_static/images/en-us_image_0224256775.png
       :alt: **Figure 1** Viewing tasks
 
-
       **Figure 1** Viewing tasks
 
 #. You can filter tasks by task type, task status, task ID, resource ID, resource name, vault ID, vault name, and time.

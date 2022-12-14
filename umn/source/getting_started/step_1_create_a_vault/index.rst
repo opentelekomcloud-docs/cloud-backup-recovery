@@ -7,6 +7,7 @@ Step 1: Create a Vault
 
 -  :ref:`Creating a Server Backup Vault <cbr_02_0003>`
 -  :ref:`Creating a Disk Backup Vault <cbr_02_0004>`
+-  :ref:`Creating an SFS Turbo Backup Vault <cbr_02_0010>`
 
 .. toctree::
    :maxdepth: 1
@@ -14,3 +15,4 @@ Step 1: Create a Vault
 
    creating_a_server_backup_vault
    creating_a_disk_backup_vault
+   creating_an_sfs_turbo_backup_vault

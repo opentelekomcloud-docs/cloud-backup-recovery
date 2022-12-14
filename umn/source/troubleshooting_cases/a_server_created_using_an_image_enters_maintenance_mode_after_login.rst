@@ -28,7 +28,6 @@ The following uses CentOS as an example.
    .. figure:: /_static/images/en-us_image_0160524684.jpg
       :alt: **Figure 1** Maintenance mode of the system
 
-
       **Figure 1** Maintenance mode of the system
 
 #. Run the **cat /etc/fstab** command to check the disk attachment information.
@@ -36,7 +35,6 @@ The following uses CentOS as an example.
 
    .. figure:: /_static/images/en-us_image_0160524685.jpg
       :alt: **Figure 2** Data disk UUIDs
-
 
       **Figure 2** Data disk UUIDs
 
@@ -46,7 +44,6 @@ The following uses CentOS as an example.
    .. figure:: /_static/images/en-us_image_0160524686.jpg
       :alt: **Figure 3** **/etc/fstab** after being updated
 
-
       **Figure 3** **/etc/fstab** after being updated
 
 #. Run the **reboot** command to restart the system.
@@ -54,7 +51,6 @@ The following uses CentOS as an example.
 
    .. figure:: /_static/images/en-us_image_0160524687.jpg
       :alt: **Figure 4** Normal bootup page
-
 
       **Figure 4** Normal bootup page
 
@@ -64,7 +60,6 @@ The following uses CentOS as an example.
    .. figure:: /_static/images/en-us_image_0160524688.jpg
       :alt: **Figure 5** Attaching the data disks manually
 
-
       **Figure 5** Attaching the data disks manually
 
 #. Run the **blkid** command to obtain the UUID information of the data disks.
@@ -73,7 +68,6 @@ The following uses CentOS as an example.
    .. figure:: /_static/images/en-us_image_0160524689.jpg
       :alt: **Figure 6** Obtaining UUIDs of data disks
 
-
       **Figure 6** Obtaining UUIDs of data disks
 
 #. Run the **vi /etc/fstab** command to open the file, press **i** to enter the editing mode, and add the attachment information of all data disks. Then, press **Esc** to exit the editing mode and run **:wq!** to save the change and exit.
@@ -81,7 +75,6 @@ The following uses CentOS as an example.
 
    .. figure:: /_static/images/en-us_image_0160524690.jpg
       :alt: **Figure 7** Adding attachment information of data disks
-
 
       **Figure 7** Adding attachment information of data disks
 
