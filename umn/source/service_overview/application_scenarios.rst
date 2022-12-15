@@ -10,7 +10,7 @@ CBR backs up resources to maximize user data security and consistency and ensure
 Data Backup and Restoration
 ---------------------------
 
-CBR can be used to quickly restore data in the following scenarios to ensure service security and reliability.
+CBR can be used to quickly restore data in the following scenarios:
 
 -  Hacker or virus attacks
 

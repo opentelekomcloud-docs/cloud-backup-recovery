@@ -5,15 +5,16 @@
 Step 2: Associate a Resource with the Vault
 ===========================================
 
-If you have already associated servers or disks when creating a vault, skip this step.
+If you have already associated servers, file systems, or disks when creating a vault, skip this step.
 
-After a server backup vault or disk backup vault is created, you can associate servers or disks with the vault to back up these resources.
+After a server backup vault or disk backup vault is created, you can associate servers, file systems, or disks with the vault to back up these resources.
 
 Prerequisites
 -------------
 
 -  The servers you plan to associate with a vault must be in the **Running** or **Stopped** state.
 -  The disks you plan to associate with a vault must be in the **Available** or **In-use** state.
+-  The SFS Turbo file systems you plan to associate with a vault must be in the **Available** state.
 -  The servers you plan to associate with a vault must have at least one disk attached.
 -  The vault and the resources to be associated must be in the same region.
 -  The total capacity of the resources to be associated cannot be greater than the capacity of the vault.
@@ -27,7 +28,7 @@ Procedure
    b. Click |image1| in the upper left corner and select your region and project.
    c. Choose **Storage** > **Cloud Backup and Recovery**. Select a backup tab from the left navigation pane.
 
-#. On a backup page, locate the target vault and click **Associate Server** or **Associate Disk**.
+#. On a backup page, locate the target vault and click **Associate Server**, **Associate File System**, or **Associate Disk**.
 
 #. In the resource list, select the resources you want to associate with the vault. After resources are selected, they are added to the list of selected resources. See :ref:`Figure 1 <cbr_02_0009__fig20466879539>`.
 
@@ -48,7 +49,7 @@ Automatic Association
 
 Backup vaults support automatic association with resources that are not backed up. After successful association, resources will be backed up according to the backup policy applied to the vault.
 
--  You can enable automatic association only when the vault's remaining capacity is greater than 40 GB. Remaining capacity of a vault = Total capacity of the vault - Capacity of resources associated with the vault. You can obtain the vault capacity and associated capacity in the **Basic Information** area on the details page of the vault. Specifically, if the capacity of a server backup vault is 800 GB and it has been associated with two 100 GB servers, the remaining capacity is 600 GB (800 GB – 200 GB). In this case, you can enable automatic association.
+-  You can enable automatic association only when the vault's remaining capacity is greater than 40 GB. Remaining capacity of a vault = Total capacity of the vault - Capacity of resources associated with the vault. You can obtain the vault capacity and associated capacity in the **Basic Information** area on the details page of the vault. Specifically, if the capacity of a server backup vault is 800 GB and it has been associated with two 100 GB servers, the remaining capacity is 600 GB (800 GB - 200 GB). In this case, you can enable automatic association.
 -  If multiple vaults are enabled with automatic association, the system scans their backup policies and associates resources with the vault whose next scheduled backup time is the earliest.
 -  When the capacity of the vault selected by the system is used up, resources will be associated with the vault whose next scheduled backup time is the second earliest.
 -  If a backup policy with the earliest scheduled backup time is applied to more than one vault, the system randomly associates the resources with one of these vaults.
