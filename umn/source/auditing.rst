@@ -59,7 +59,6 @@ The following procedure illustrates how to disable an existing tracker on the CT
    .. figure:: /_static/images/en-us_image_0224256701.png
       :alt: **Figure 1** Viewing trackers
 
-
       **Figure 1** Viewing trackers
 
 #. In the tracker list, click **Disable** in the **Operation** column.

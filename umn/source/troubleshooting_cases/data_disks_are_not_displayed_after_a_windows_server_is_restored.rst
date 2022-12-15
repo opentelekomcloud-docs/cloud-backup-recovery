@@ -31,7 +31,6 @@ Solution
    .. figure:: /_static/images/en-us_image_0160524657.png
       :alt: **Figure 1** Data disks in the offline state
 
-
       **Figure 1** Data disks in the offline state
 
 #. Right-click a data disk in the offline state and choose **Online**, as shown in :ref:`Figure 2 <cbr_05_0002__fig179301858016>`.
@@ -40,7 +39,6 @@ Solution
 
    .. figure:: /_static/images/en-us_image_0160524658.png
       :alt: **Figure 2** Setting a data disk to be online
-
 
       **Figure 2** Setting a data disk to be online
 
@@ -52,6 +50,5 @@ Solution
 
    .. figure:: /_static/images/en-us_image_0160524659.png
       :alt: **Figure 3** Viewing online data disks
-
 
       **Figure 3** Viewing online data disks
