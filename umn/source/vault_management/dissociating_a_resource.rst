@@ -22,7 +22,7 @@ Procedure
 
 #. On any backup page, locate the target vault and click the vault name.
 
-#. In this example, we will be using the **Cloud Server Backup** page to illustrate the process. Click the **Associated Servers** tab. Find the target server and click **Dissociate** in the **Operation** column. See :ref:`Figure 1 <cbr_03_0005__fig1376320199159>`.
+#. In this example, we will be using the **Cloud Server Backups** page to illustrate the process. Click the **Associated Servers** tab. Find the target server and click **Dissociate** in the **Operation** column. See :ref:`Figure 1 <cbr_03_0005__fig1376320199159>`.
 
    After a resource is dissociated, the backup policy of the vault no longer has any effect on the resource. In addition, all manual and automatic backups of this resource will be deleted. Deleted backups cannot be used for data restoration. Exercise caution when performing this operation.
 

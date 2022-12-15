@@ -31,10 +31,9 @@ Procedure
          .. figure:: /_static/images/en-us_image_0251474017.png
             :alt: **Figure 1** Adding a tag
 
-
             **Figure 1** Adding a tag
 
-         :ref:`Table 1 <cbr_03_0010__table103661428132915>` describes parameters of a tag.
+         :ref:`Table 1 <cbr_03_0010__table103661428132915>` describes the parameters of a tag.
 
          .. _cbr_03_0010__table103661428132915:
 
@@ -45,17 +44,17 @@ Procedure
             +=======================+===============================================================================================================================+=======================+
             | Key                   | Tag key. Each tag of a vault has a unique key. You can customize the key or select the key of an existing tag created in TMS. | Key_0001              |
             |                       |                                                                                                                               |                       |
-            |                       | The naming rules for a tag key are as follows:                                                                                |                       |
+            |                       | A tag key:                                                                                                                    |                       |
             |                       |                                                                                                                               |                       |
-            |                       | -  It contains 1 to 36 Unicode characters.                                                                                    |                       |
-            |                       | -  It can contain only letters, digits, hyphens (-), and underscores (_).                                                     |                       |
+            |                       | -  Can contain 1 to 36 Unicode characters.                                                                                    |                       |
+            |                       | -  Can contain only letters, digits, hyphens (-), and underscores (_).                                                        |                       |
             +-----------------------+-------------------------------------------------------------------------------------------------------------------------------+-----------------------+
             | Value                 | A tag value can be repetitive or left blank.                                                                                  | Value_0001            |
             |                       |                                                                                                                               |                       |
-            |                       | The naming rules for a tag value are as follows:                                                                              |                       |
+            |                       | A tag value:                                                                                                                  |                       |
             |                       |                                                                                                                               |                       |
-            |                       | -  It contains 0 to 43 Unicode characters.                                                                                    |                       |
-            |                       | -  It can contain only letters, digits, hyphens (-), and underscores (_).                                                     |                       |
+            |                       | -  Can contain 0 to 43 Unicode characters.                                                                                    |                       |
+            |                       | -  Can contain only letters, digits, hyphens (-), and underscores (_).                                                        |                       |
             +-----------------------+-------------------------------------------------------------------------------------------------------------------------------+-----------------------+
 
       c. Click **OK**.

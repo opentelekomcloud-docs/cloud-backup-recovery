@@ -24,7 +24,7 @@ Procedure
 
    |image2|
 
-#. You can select an existing backup policy from the drop-down list or create a new one. For details about how to create a policy, see :ref:`Creating a Backup Policy <cbr_03_0025>`.
+#. You can select an existing backup policy from the drop-down list or create a new one. For how to create a policy, see :ref:`Creating a Backup Policy <cbr_03_0025>`.
 
 #. After the policy is successfully applied, you can view the details in the **Policies** area on the vault details page.
 

@@ -5,7 +5,7 @@
 Restoring Data Using a Cloud Server Backup
 ==========================================
 
-When disks on a server are faulty or server data is lost due to misoperations, you can use a backup to restore the server.
+When disks on a server are faulty, or server data is lost due to misoperations, you can use a backup to restore the server.
 
 Context
 -------
@@ -28,7 +28,7 @@ Procedure
    b. Click |image1| in the upper left corner and select your region and project.
    c. Choose **Storage** > **Cloud Backup and Recovery**. Select a backup tab from the left navigation pane.
 
-#. Click the **Backups** tab. Locate the desired backup. For details, see :ref:`Querying a Backup <cbr_03_0013>`.
+#. Click the **Backups** tab. Locate the desired backup. For details, see :ref:`Viewing a Backup <cbr_03_0013>`.
 
 #. In the row of the backup, click **Restore Server**. See :ref:`Figure 1 <cbr_03_0032__fig533382242914>`.
 
@@ -55,7 +55,7 @@ Procedure
    .. note::
 
       -  If the server has only one disk, the backup is restored to the disk by default.
-      -  If the server has multiple disks, the backup is respectively restored to the original disks by default. You can also restore the backup to another disk on the backup server by selecting the disk from the drop-down list. However, the capacity of the specified disk must not be smaller than that of the backup source disk.
+      -  If the server has multiple disks, the backup is respectively restored to the original disks by default. You can also restore the backup to another disk on the backup server by selecting the disk from the drop-down list. However, the specified destination disk must be at least as large as the backup source disk.
       -  Data on data disks cannot be restored to system disks.
 
    .. important::

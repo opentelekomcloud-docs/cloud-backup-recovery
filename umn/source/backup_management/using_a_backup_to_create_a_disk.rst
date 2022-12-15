@@ -18,7 +18,7 @@ Procedure
    b. Click |image1| in the upper left corner and select your region and project.
    c. Choose **Storage** > **Cloud Backup and Recovery**. Select a backup tab from the left navigation pane.
 
-#. Click the **Backups** tab. Locate the desired backup. For details, see :ref:`Querying a Backup <cbr_03_0013>`.
+#. Click the **Backups** tab. Locate the desired backup. For details, see :ref:`Viewing a Backup <cbr_03_0013>`.
 
 #. If the status of the target backup is **Available**, click **Create Disk** in the **Operation** column of the backup.
 
@@ -26,7 +26,7 @@ Procedure
 
    .. note::
 
-      For details about these parameters, see the parameter description table in section "Creating an EVS Disk" of the *Elastic Volume Service User Guide*.
+      For details about these parameters, see the parameter description table in section "Create an EVS Disk" of the *Elastic Volume Service User Guide*.
 
       Note the following items when setting disk parameters:
 
@@ -42,6 +42,6 @@ Procedure
 
 #. Go back to the disk list. Check whether the disk is successfully created.
 
-   You will see the disk status change as follows: **Creating**, **Available**, **Restoring**, **Available**. If Instant Restore is supported, you may not notice the **Restoring** status because the restoration speed is very fast. After the disk status has changed from **Creating** to **Available**, the disk is successfully created. After the status has changed from **Restoring** to **Available**, backup data has been successfully restored to the created disk.
+   You will see the disk status change as follows: **Creating**, **Available**, **Restoring**, **Available**. You may not notice the **Restoring** status because Instant Restore is supported and the restoration speed is very fast. After the disk status has changed from **Creating** to **Available**, the disk is successfully created. After the status has changed from **Restoring** to **Available**, backup data has been successfully restored to the created disk.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
