@@ -56,7 +56,7 @@ Procedure
 
       -  If the server has only one disk, the backup is restored to the disk by default.
       -  If the server has multiple disks, the backup is respectively restored to the original disks by default. You can also restore the backup to another disk on the backup server by selecting the disk from the drop-down list. However, the specified destination disk must be at least as large as the backup source disk.
-      -  Data on data disks cannot be restored to system disks.
+      -  Backup data of data disks cannot be restored to system disks.
 
    .. important::
 
