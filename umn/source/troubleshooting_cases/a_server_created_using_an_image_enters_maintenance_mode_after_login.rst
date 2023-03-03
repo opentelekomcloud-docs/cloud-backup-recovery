@@ -25,7 +25,7 @@ The following uses CentOS as an example.
 #. On the maintenance mode page that is displayed, access the system as prompted.
 
 
-   .. figure:: /_static/images/en-us_image_0160524684.jpg
+   .. figure:: /_static/images/en-us_image_0000001463274188.png
       :alt: **Figure 1** Maintenance mode of the system
 
       **Figure 1** Maintenance mode of the system
@@ -33,7 +33,7 @@ The following uses CentOS as an example.
 #. Run the **cat /etc/fstab** command to check the disk attachment information.
 
 
-   .. figure:: /_static/images/en-us_image_0160524685.jpg
+   .. figure:: /_static/images/en-us_image_0000001513434281.png
       :alt: **Figure 2** Data disk UUIDs
 
       **Figure 2** Data disk UUIDs
@@ -41,7 +41,7 @@ The following uses CentOS as an example.
 #. Run the **vi /etc/fstab** command to open the file, press **i** to enter the editing mode, and delete the attachment information of all data disks. Then, press **Esc** to exit the editing mode and run **:wq!** to save the change and exit.
 
 
-   .. figure:: /_static/images/en-us_image_0160524686.jpg
+   .. figure:: /_static/images/en-us_image_0000001462955128.png
       :alt: **Figure 3** **/etc/fstab** after being updated
 
       **Figure 3** **/etc/fstab** after being updated
@@ -49,7 +49,7 @@ The following uses CentOS as an example.
 #. Run the **reboot** command to restart the system.
 
 
-   .. figure:: /_static/images/en-us_image_0160524687.jpg
+   .. figure:: /_static/images/en-us_image_0000001513556381.png
       :alt: **Figure 4** Normal bootup page
 
       **Figure 4** Normal bootup page
@@ -57,7 +57,7 @@ The following uses CentOS as an example.
 #. After entering the system, attach the data disks manually.
 
 
-   .. figure:: /_static/images/en-us_image_0160524688.jpg
+   .. figure:: /_static/images/en-us_image_0000001513555957.png
       :alt: **Figure 5** Attaching the data disks manually
 
       **Figure 5** Attaching the data disks manually
@@ -65,7 +65,7 @@ The following uses CentOS as an example.
 #. Run the **blkid** command to obtain the UUID information of the data disks.
 
 
-   .. figure:: /_static/images/en-us_image_0160524689.jpg
+   .. figure:: /_static/images/en-us_image_0000001513691041.png
       :alt: **Figure 6** Obtaining UUIDs of data disks
 
       **Figure 6** Obtaining UUIDs of data disks
@@ -73,7 +73,7 @@ The following uses CentOS as an example.
 #. Run the **vi /etc/fstab** command to open the file, press **i** to enter the editing mode, and add the attachment information of all data disks. Then, press **Esc** to exit the editing mode and run **:wq!** to save the change and exit.
 
 
-   .. figure:: /_static/images/en-us_image_0160524690.jpg
+   .. figure:: /_static/images/en-us_image_0000001513435141.png
       :alt: **Figure 7** Adding attachment information of data disks
 
       **Figure 7** Adding attachment information of data disks

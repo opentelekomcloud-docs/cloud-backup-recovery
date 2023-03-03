@@ -7,7 +7,7 @@ Creating an SFS Turbo Backup
 
 This section describes how to quickly create an SFS Turbo file system backup.
 
-During the SFS Turbo file system backup, the performance of the file system is not affected. To ensure data integrity, back up the file system during off-peak hours when no write operation is performed on the file system.
+Backing up an SFS Turbo file system does not impact the file system performance. To ensure data integrity, you are advised to back up the file system during off-peak hours when no data is written to the file system.
 
 Prerequisites
 -------------
@@ -33,7 +33,7 @@ Procedure
 
    |image2|
 
-#. Set the **Name** and **Description** for the backup. :ref:`Table 1 <cbr_02_0012__table4829135361311>` describes the parameters.
+#. Set **Name** and **Description** for the backup. :ref:`Table 1 <cbr_02_0012__table4829135361311>` describes the parameters.
 
    .. _cbr_02_0012__table4829135361311:
 
@@ -48,7 +48,7 @@ Procedure
       |                       |                                                                                                                                                                  |                       |
       |                       | .. note::                                                                                                                                                        |                       |
       |                       |                                                                                                                                                                  |                       |
-      |                       |    You can use the default name, which is in the format of **manualbk\_**\ *xxxx*.                                                                               |                       |
+      |                       |    You can also use the default name **manualbk\_**\ *xxxx*.                                                                                                     |                       |
       |                       |                                                                                                                                                                  |                       |
       |                       |    If multiple file systems are to be backed up, the system automatically adds suffixes to their backup names, for example, **backup-0001** and **backup-0002**. |                       |
       +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
@@ -57,7 +57,7 @@ Procedure
       |                       | It cannot exceed 255 characters.                                                                                                                                 |                       |
       +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
 
-#. (Optional) You can also click the vault name to open the detailed page of the vault. On the **Associated File Systems** tab page, locate the target file system. Click **Perform Backup** in the **Operation** column of the file system. See :ref:`Figure 2 <cbr_02_0012__fig7287161212118>`.
+#. (Optional) Click the vault name to go to the vault details page. On the **Associated File Systems** tab page, locate the target file system. Click **Perform Backup** in the **Operation** column of the file system. See :ref:`Figure 2 <cbr_02_0012__fig7287161212118>`.
 
    .. _cbr_02_0012__fig7287161212118:
 
@@ -65,13 +65,13 @@ Procedure
 
    |image3|
 
-#. Click **Yes**. The system automatically creates a backup for the file system.
+#. Click **Yes**. CBR automatically creates a backup for the file system.
 
    On the **Backups** tab page, if the status of the backup is **Available**, the backup task is successful.
 
    .. note::
 
-      If you delete files from the file system during the backup, the deleted files may fail to be backed up. To ensure data integrity, you are advised to wait until the backup task is complete and then delete data and perform a backup again.
+      If you delete data from the file system during the backup, the deleted data may fail to be backed up. To ensure data integrity, you are advised to wait until the backup task is complete and then make the change and perform a backup again.
 
    After the backup is complete, you can create a new SFS Turbo file system using the backup. For details, see :ref:`Using a Backup to Create a File System <cbr_03_0107>`.
 

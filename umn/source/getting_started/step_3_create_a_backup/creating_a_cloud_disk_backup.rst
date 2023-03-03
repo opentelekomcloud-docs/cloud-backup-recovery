@@ -7,7 +7,7 @@ Creating a Cloud Disk Backup
 
 This section describes how to quickly create a cloud disk backup.
 
-During the cloud disk backup, the performance of the disk is not affected. To ensure data integrity, back up the disk during off-peak hours when no write operation is performed on the disk.
+Backing up a disk does not impact the disk performance. To ensure data integrity, you are advised to back up the disk during off-peak hours when no data is written to the disk.
 
 Prerequisites
 -------------
@@ -21,7 +21,7 @@ Procedure
 
    a. Log in to the management console.
    b. Click |image1| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery**. Select a backup tab from the left navigation pane.
+   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose a backup tab from the left navigation pane.
 
 #. On the **Cloud Disk Backups** page, click the **Vaults** tab and find the vault to which the disk is associated.
 
@@ -35,9 +35,9 @@ Procedure
 
    .. note::
 
-      The system will identify whether the selected disk is encrypted. If it is encrypted, its backup data will be stored in encrypted mode.
+      CBR will identify whether the selected disk is encrypted. If it is encrypted, the backups will be automatically encrypted.
 
-#. Set the **Name** and **Description** for the backup. :ref:`Table 1 <cbr_02_0007__table4829135361311>` describes the parameters.
+#. Set **Name** and **Description** for the backup. :ref:`Table 1 <cbr_02_0007__table4829135361311>` describes the parameters.
 
    .. _cbr_02_0007__table4829135361311:
 
@@ -52,7 +52,7 @@ Procedure
       |                       |                                                                                                                                                           |                       |
       |                       | .. note::                                                                                                                                                 |                       |
       |                       |                                                                                                                                                           |                       |
-      |                       |    You can use the default name, which is in the format of **manualbk\_**\ *xxxx*.                                                                        |                       |
+      |                       |    You can also use the default name **manualbk\_**\ *xxxx*.                                                                                              |                       |
       |                       |                                                                                                                                                           |                       |
       |                       |    If multiple disks are to be backed up, the system automatically adds suffixes to their backup names, for example, **backup-0001** and **backup-0002**. |                       |
       +-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
@@ -61,7 +61,7 @@ Procedure
       |                       | It cannot exceed 255 characters.                                                                                                                          |                       |
       +-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
 
-#. Choose whether to enable full backup. If full backup is enabled, the system performs a full backup on every associated disk, which requires a larger capacity compared to an incremental backup. See :ref:`Figure 2 <cbr_02_0007__fig789511544815>`.
+#. Choose whether to enable full backup. If full backup is enabled, CBR performs a full backup on every associated disk, which requires a larger capacity compared to an incremental backup. See :ref:`Figure 2 <cbr_02_0007__fig789511544815>`.
 
    .. _cbr_02_0007__fig789511544815:
 
@@ -69,7 +69,7 @@ Procedure
 
    |image3|
 
-#. (Optional) You can also click the vault name to open the detailed page of the vault. On the **Associated Disks** tab page, locate the target disk. Click **Perform Backup** in the **Operation** column of the disk. See :ref:`Figure 3 <cbr_02_0007__fig7287161212118>`.
+#. (Optional) Click the vault name to go to the vault details page. On the **Associated Disks** tab page, locate the target disk. Click **Perform Backup** in the **Operation** column of the disk. See :ref:`Figure 3 <cbr_02_0007__fig7287161212118>`.
 
    .. _cbr_02_0007__fig7287161212118:
 
@@ -77,13 +77,13 @@ Procedure
 
    |image4|
 
-#. Click **Yes**. The system automatically creates a backup for the disk.
+#. Click **Yes**. CBR automatically creates a backup for the disk.
 
    On the **Backups** tab page, if the status of the backup is **Available**, the backup task is successful.
 
    .. note::
 
-      If you delete files from the disk during the backup, the deleted files may fail to be backed up. To ensure data integrity, you are advised to wait until the backup task is complete and then delete data and perform a backup again.
+      If you delete data from the disk during the backup, the deleted data may fail to be backed up. To ensure data integrity, you are advised to wait until the backup task is complete and then make the change and perform a backup again.
 
    After the backup is complete, you can use the backup to restore disk data. For details, see :ref:`Restoring Data Using a Cloud Disk Backup <cbr_03_0033>`.
 

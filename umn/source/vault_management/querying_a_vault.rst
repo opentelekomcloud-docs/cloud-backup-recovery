@@ -19,7 +19,7 @@ Viewing Vault Details
 
    a. Log in to the management console.
    b. Click |image1| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery**. Select a backup tab from the left navigation pane.
+   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose a backup tab from the left navigation pane.
 
 #. View the basic information about vaults. Related parameters are described in the following table. See :ref:`Figure 1 <cbr_03_0002__fig10889142793018>`.
 
