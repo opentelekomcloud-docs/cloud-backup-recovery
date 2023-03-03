@@ -49,7 +49,7 @@ Procedure
 
    a. Log in to the management console.
    b. Click |image1| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery**. Select a backup tab from the left navigation pane.
+   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose a backup tab from the left navigation pane.
 
 #. Click **Migrate to CBR** in the upper right corner. Read the content in the displayed dialog box and click **OK**. See :ref:`Figure 1 <cbr_03_0104__fig1730015415381>`.
 

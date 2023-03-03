@@ -27,7 +27,7 @@ Procedure
 
    a. Log in to the management console.
    b. Click |image1| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery**. Select a backup tab from the left navigation pane.
+   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose a backup tab from the left navigation pane.
 
 #. Choose **Policies** and click the **Backup Policies** tab. In the upper right corner, click **Create Policy**. See :ref:`Figure 1 <cbr_03_0025__fig83663164139>`.
 

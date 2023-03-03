@@ -16,8 +16,8 @@ Prerequisites
 -  The disks you plan to associate with a vault must be in the **Available** or **In-use** state.
 -  The SFS Turbo file systems you plan to associate with a vault must be in the **Available** state.
 -  The servers you plan to associate with a vault must have at least one disk attached.
--  The vault and the resources to be associated must be in the same region.
--  The total capacity of the resources to be associated cannot be greater than the capacity of the vault.
+-  The vault and the resources you plan to associate with it must be in the same region.
+-  The total size of the resources to be associated cannot be greater than the vault capacity.
 
 Procedure
 ---------
@@ -26,7 +26,7 @@ Procedure
 
    a. Log in to the management console.
    b. Click |image1| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery**. Select a backup tab from the left navigation pane.
+   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose a backup tab from the left navigation pane.
 
 #. On a backup page, locate the target vault and click **Associate Server**, **Associate File System**, or **Associate Disk**.
 
@@ -42,19 +42,19 @@ Procedure
 
    .. note::
 
-      If a new disk is attached to an associated server, the system automatically identifies the new disk and includes the new disk in subsequent backup tasks.
+      If a new disk is attached to an associated server, CBR automatically identifies the new disk and includes the new disk in subsequent backup tasks.
 
 Automatic Association
 ---------------------
 
-Backup vaults support automatic association with resources that are not backed up. After successful association, resources will be backed up according to the backup policy applied to the vault.
+If you enable automatic association for a backup vault, the vault will automatically associate the unprotected resources and back them up according to the backup policy applied to the vault.
 
--  You can enable automatic association only when the vault's remaining capacity is greater than 40 GB. Remaining capacity of a vault = Total capacity of the vault - Capacity of resources associated with the vault. You can obtain the vault capacity and associated capacity in the **Basic Information** area on the details page of the vault. Specifically, if the capacity of a server backup vault is 800 GB and it has been associated with two 100 GB servers, the remaining capacity is 600 GB (800 GB - 200 GB). In this case, you can enable automatic association.
--  If multiple vaults are enabled with automatic association, the system scans their backup policies and associates resources with the vault whose next scheduled backup time is the earliest.
--  When the capacity of the vault selected by the system is used up, resources will be associated with the vault whose next scheduled backup time is the second earliest.
--  If a backup policy with the earliest scheduled backup time is applied to more than one vault, the system randomly associates the resources with one of these vaults.
--  If a vault is enabled with automatic association but no backup policy has been applied to it, no resources will be automatically associated with this vault. You can manually associate resources that have not been backed up with the vault.
--  After the automatic association function is disabled for a vault, the vault stops automatically scanning for resources that have not been backed up. The associated resources are not affected.
+-  You can enable automatic association only when the vault's remaining capacity (Vault's total capacity - Vault's associated capacity) is greater than 40 GB. You can obtain the vault's total capacity and associated capacity in the **Basic Information** area on the details page of the vault. For example, if you have an 800-GB server backup vault and it has been associated with two 100 GB servers, its remaining capacity is 600 GB (800 GB - 200 GB). In this case, you can enable automatic association.
+-  If multiple vaults are enabled with automatic association, CBR scans their backup policies and associates resources with the vault whose next scheduled backup time is the earliest.
+-  If the capacity of the first selected vault is used up, resources will be associated with the vault whose next scheduled backup time is the second earliest.
+-  If a backup policy with the earliest scheduled backup time is applied to more than one vault, CBR randomly associates the resources with one of these vaults.
+-  If a vault has automatic association enabled but has no backup policy applied, no resources will be automatically associated with this vault. You can manually associate unprotected resources.
+-  After automatic association is disabled for a vault, the vault stops automatically scanning for unprotected resources. Associated resources are not affected.
 
 #. Log in to CBR Console.
 
@@ -66,9 +66,9 @@ Backup vaults support automatic association with resources that are not backed u
 
 #. Choose **More** > **Enable Automatic Association** in the **Operation** column of the vault. See :ref:`Figure 2 <cbr_02_0009__fig197911334183117>`.
 
-   You can filter unprotected resources by tag. If a tag is selected, only unprotected resources having the specified tag will be associated with the vault. Or, all unprotected resources will be associated.
+   You can filter unprotected resources by tag. If a tag is selected, only unprotected resources with the specified tag will be associated with the vault. Or, all unprotected resources will be associated.
 
-   Only existing tags can be selected. If no tag is available, create tags on the corresponding resource page. You can select a maximum of 5 tags to search for vaults. If you select more than one tag, the vaults containing any of the specified tags will be returned.
+   If no tag is available, you can create tags on the corresponding resource page. You can search for vaults by specifying a maximum of 5 tags at a time. If you select more than one tag, the vaults with any of the specified tags will be returned.
 
    .. _cbr_02_0009__fig197911334183117:
 
@@ -76,9 +76,9 @@ Backup vaults support automatic association with resources that are not backed u
 
    |image4|
 
-#. After the function is enabled, you can see **Automatic association** in the **Associated Servers** column of the vault list.
+#. Check that **Automatic association** is displayed in the **Associated Servers** column of the vault list.
 
-#. (Optional) If the automatic association function is not required, choose **More** > **Disable Automatic Association** in the **Operation** column of the vault. See :ref:`Figure 3 <cbr_02_0009__fig10546636185>`.
+#. (Optional) If automatic association is not required, choose **More** > **Disable Automatic Association** in the **Operation** column of the vault. See :ref:`Figure 3 <cbr_02_0009__fig10546636185>`.
 
    .. _cbr_02_0009__fig10546636185:
 
