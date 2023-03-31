@@ -95,45 +95,27 @@ Request Parameters
 
 .. table:: **Table 6** VaultBindRules
 
-   +-----------+-----------+--------------------------------------------------------+----------------------------------------------------+
-   | Parameter | Mandatory | Type                                                   | Description                                        |
-   +===========+===========+========================================================+====================================================+
-   | tags      | No        | Array of :ref:`Tag <updatevault__request_tag>` objects | Filters automatically associated resources by tag. |
-   +-----------+-----------+--------------------------------------------------------+----------------------------------------------------+
+   +-----------+-----------+----------------------------------------------------------------------------+----------------------------------------------------+
+   | Parameter | Mandatory | Type                                                                       | Description                                        |
+   +===========+===========+============================================================================+====================================================+
+   | tags      | No        | Array of :ref:`BindRulesTags <updatevault__request_bindrulestags>` objects | Filters automatically associated resources by tag. |
+   +-----------+-----------+----------------------------------------------------------------------------+----------------------------------------------------+
 
-.. _updatevault__request_tag:
+.. _updatevault__request_bindrulestags:
 
-.. table:: **Table 7** Tag
+.. table:: **Table 7** BindRulesTags
 
-   +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type            | Description                                                                                                                                                                                                     |
-   +=================+=================+=================+=================================================================================================================================================================================================================+
-   | key             | Yes             | String          | Key                                                                                                                                                                                                             |
-   |                 |                 |                 |                                                                                                                                                                                                                 |
-   |                 |                 |                 | It can contain a maximum of 36 characters.                                                                                                                                                                      |
-   |                 |                 |                 |                                                                                                                                                                                                                 |
-   |                 |                 |                 | It cannot be an empty string.                                                                                                                                                                                   |
-   |                 |                 |                 |                                                                                                                                                                                                                 |
-   |                 |                 |                 | Spaces before and after a key will be discarded.                                                                                                                                                                |
-   |                 |                 |                 |                                                                                                                                                                                                                 |
-   |                 |                 |                 | It cannot contain the following characters: ASCII (0-31), equal signs (=), asterisks (``*``), left angle brackets (<), right angle brackets (>), backslashes (), commas (,), vertical bars (|), and slashes (/) |
-   |                 |                 |                 |                                                                                                                                                                                                                 |
-   |                 |                 |                 | It can contain only letters, digits, hyphens (-), and underscores (_).                                                                                                                                          |
-   +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | value           | No              | String          | Value                                                                                                                                                                                                           |
-   |                 |                 |                 |                                                                                                                                                                                                                 |
-   |                 |                 |                 | It is mandatory when a tag is added and optional when a tag is deleted.                                                                                                                                         |
-   |                 |                 |                 |                                                                                                                                                                                                                 |
-   |                 |                 |                 | It can contain a maximum of 43 characters.                                                                                                                                                                      |
-   |                 |                 |                 |                                                                                                                                                                                                                 |
-   |                 |                 |                 | It can be an empty string.                                                                                                                                                                                      |
-   |                 |                 |                 |                                                                                                                                                                                                                 |
-   |                 |                 |                 | Spaces before and after a value will be discarded.                                                                                                                                                              |
-   |                 |                 |                 |                                                                                                                                                                                                                 |
-   |                 |                 |                 | It cannot contain the following characters: ASCII (0-31), equal signs (=), asterisks (``*``), left angle brackets (<), right angle brackets (>), backslashes (), commas (,), vertical bars (|), and slashes (/) |
-   |                 |                 |                 |                                                                                                                                                                                                                 |
-   |                 |                 |                 | It can contain only letters, digits, hyphens (-), and underscores (_).                                                                                                                                          |
-   +-----------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type            | Description                                                                                             |
+   +=================+=================+=================+=========================================================================================================+
+   | key             | Yes             | String          | The key cannot contain non-printable ASCII characters (0-31) and the following characters: ``=*<>\,|/`` |
+   |                 |                 |                 |                                                                                                         |
+   |                 |                 |                 | The key can contain only letters, digits, underscores (_), and hyphens (-).                             |
+   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------+
+   | value           | No              | String          | The value cannot contain non-printable ASCII characters (0-31) and the following characters: =*<>,|/    |
+   |                 |                 |                 |                                                                                                         |
+   |                 |                 |                 | The value can contain only letters, digits, underscores (_), and hyphens (-).                           |
+   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------+
 
 Response Parameters
 -------------------
@@ -292,19 +274,9 @@ Response Parameters
    | exclude_volumes | Array of strings | IDs of the disks that will not be backed up. This parameter is used when servers are added to a vault, which include all server disks. But some disks do not need to be backed up. Or in case that a server was previously added and some disks on this server do not need to be backed up. |
    +-----------------+------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _updatevault__response_vaultbindrules:
-
-.. table:: **Table 13** VaultBindRules
-
-   +-----------+---------------------------------------------------------+----------------------------------------------------+
-   | Parameter | Type                                                    | Description                                        |
-   +===========+=========================================================+====================================================+
-   | tags      | Array of :ref:`Tag <updatevault__response_tag>` objects | Filters automatically associated resources by tag. |
-   +-----------+---------------------------------------------------------+----------------------------------------------------+
-
 .. _updatevault__response_tag:
 
-.. table:: **Table 14** Tag
+.. table:: **Table 13** Tag
 
    +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter             | Type                  | Description                                                                                                                                                                                                     |
@@ -335,6 +307,32 @@ Response Parameters
    |                       |                       |                                                                                                                                                                                                                 |
    |                       |                       | It can contain only letters, digits, hyphens (-), and underscores (_).                                                                                                                                          |
    +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. _updatevault__response_vaultbindrules:
+
+.. table:: **Table 14** VaultBindRules
+
+   +-----------+-----------------------------------------------------------------------------+----------------------------------------------------+
+   | Parameter | Type                                                                        | Description                                        |
+   +===========+=============================================================================+====================================================+
+   | tags      | Array of :ref:`BindRulesTags <updatevault__response_bindrulestags>` objects | Filters automatically associated resources by tag. |
+   +-----------+-----------------------------------------------------------------------------+----------------------------------------------------+
+
+.. _updatevault__response_bindrulestags:
+
+.. table:: **Table 15** BindRulesTags
+
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                                                             |
+   +=======================+=======================+=========================================================================================================+
+   | key                   | String                | The key cannot contain non-printable ASCII characters (0-31) and the following characters: ``=*<>\,|/`` |
+   |                       |                       |                                                                                                         |
+   |                       |                       | The key can contain only letters, digits, underscores (_), and hyphens (-).                             |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------+
+   | value                 | String                | The value cannot contain non-printable ASCII characters (0-31) and the following characters: =*<>,|/    |
+   |                       |                       |                                                                                                         |
+   |                       |                       | The value can contain only letters, digits, underscores (_), and hyphens (-).                           |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------+
 
 Example Requests
 ----------------
