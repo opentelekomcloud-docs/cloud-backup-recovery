@@ -237,19 +237,9 @@ Response Parameters
    | exclude_volumes | Array of strings | IDs of the disks that will not be backed up. This parameter is used when servers are added to a vault, which include all server disks. But some disks do not need to be backed up. Or in case that a server was previously added and some disks on this server do not need to be backed up. |
    +-----------------+------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. _listvault__response_vaultbindrules:
-
-.. table:: **Table 9** VaultBindRules
-
-   +-----------+-------------------------------------------------------+----------------------------------------------------+
-   | Parameter | Type                                                  | Description                                        |
-   +===========+=======================================================+====================================================+
-   | tags      | Array of :ref:`Tag <listvault__response_tag>` objects | Filters automatically associated resources by tag. |
-   +-----------+-------------------------------------------------------+----------------------------------------------------+
-
 .. _listvault__response_tag:
 
-.. table:: **Table 10** Tag
+.. table:: **Table 9** Tag
 
    +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Parameter             | Type                  | Description                                                                                                                                                                                                     |
@@ -280,6 +270,32 @@ Response Parameters
    |                       |                       |                                                                                                                                                                                                                 |
    |                       |                       | It can contain only letters, digits, hyphens (-), and underscores (_).                                                                                                                                          |
    +-----------------------+-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+.. _listvault__response_vaultbindrules:
+
+.. table:: **Table 10** VaultBindRules
+
+   +-----------+---------------------------------------------------------------------------+----------------------------------------------------+
+   | Parameter | Type                                                                      | Description                                        |
+   +===========+===========================================================================+====================================================+
+   | tags      | Array of :ref:`BindRulesTags <listvault__response_bindrulestags>` objects | Filters automatically associated resources by tag. |
+   +-----------+---------------------------------------------------------------------------+----------------------------------------------------+
+
+.. _listvault__response_bindrulestags:
+
+.. table:: **Table 11** BindRulesTags
+
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                                                             |
+   +=======================+=======================+=========================================================================================================+
+   | key                   | String                | The key cannot contain non-printable ASCII characters (0-31) and the following characters: ``=*<>\,|/`` |
+   |                       |                       |                                                                                                         |
+   |                       |                       | The key can contain only letters, digits, underscores (_), and hyphens (-).                             |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------+
+   | value                 | String                | The value cannot contain non-printable ASCII characters (0-31) and the following characters: =*<>,|/    |
+   |                       |                       |                                                                                                         |
+   |                       |                       | The value can contain only letters, digits, underscores (_), and hyphens (-).                           |
+   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------+
 
 Example Requests
 ----------------
