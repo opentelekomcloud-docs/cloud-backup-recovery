@@ -5,7 +5,7 @@
 What Are Full Backup and Incremental Backup?
 ============================================
 
-By default, the initial backup performed for a resource is a full backup, and all subsequent backups are incremental backups. If a resource has been backed up for many times, and then all of its generated backups are deleted, and the resource is backed up again, the system will also perform a full backup for the resource.
+CBR by default performs a full backup for a resource in the initial backup and incremental backups in all subsequent backups. If a resource has been backed up for many times, and then all of its generated backups are deleted, and the resource is backed up again, the system will also perform a full backup for the resource.
 
 -  The initial full backup covers only the used capacity of a disk. If a 100 GB disk contains 40 GB data, the initial backup consumes 40 GB backup space.
 -  Subsequent incremental backup backs up data changed since the last backup. If 5 GB data changed since the last backup, only the 5 GB changed data will be backed up.

@@ -13,12 +13,12 @@ This section describes how to use IAM to implement fine-grained permissions cont
 
 If your cloud account does not require individual IAM users, skip this section. If your account cannot meet your requirements, create IAM users by referring to `Identity and Access Management User Guide <https://docs.otc.t-systems.com/en-us/usermanual/iam/iam_01_0026.html>`__.
 
-This section describes the procedure for granting permissions (see :ref:`Figure 1 <cbr_03_0048__fig194521431175317>`).
+Figure :ref:`Figure 1 <cbr_03_0048__fig194521431175317>` illustrates the procedure for granting permissions.
 
 Prerequisites
 -------------
 
-You have learnt about the permissions (see :ref:`Permissions Management <cbr_01_0011>`) supported by CBR and chosen the policies or roles according to your requirements. For the system policies of other services, see "System Permissions".
+You have learnt about :ref:`Permissions Management <cbr_01_0011>` and chosen the policies or roles according to your requirements. For the system policies of other services, see "System Permissions".
 
 Process Flow
 ------------
@@ -42,7 +42,7 @@ Process Flow
 
 #. Log in and verify permissions.
 
-   Log in to CBR Console using the created user, and verify that the user has read-only permissions for CBR.
+   Log in to CBR Console as the created user and verify that the user has read-only permissions for CBR.
 
-   -  Choose **Service List** > **Cloud Backup and Recovery**. Then click **Create Server Backup Vault** on CBR Console. If a message appears indicating that you have insufficient permissions to perform the operation, the **CBR ReadOnlyAccess** policy has already taken effect.
-   -  Choose any other service in **Service List**. If a message appears indicating that you have insufficient permissions to access the service, the **CBR ReadOnlyAccess** policy has already taken effect.
+   -  Choose **Service List** > **Cloud Backup and Recovery**. Then click **Create Server Backup Vault** on CBR Console. If a message appears indicating that you do not have the permissions to perform the operation, the **CBR ReadOnlyAccess** policy has already taken effect.
+   -  Choose any other service in **Service List**. If a message appears indicating that you do not have the permissions to access the service, the **CBR ReadOnlyAccess** policy has already taken effect.

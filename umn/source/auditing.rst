@@ -17,24 +17,67 @@ Key Operations Recorded by CTS
 
 .. table:: **Table 1** CBR operations that can be recorded by CTS
 
-   ============================== ============= =================
-   Operation                      Resource Type Trace Name
-   ============================== ============= =================
-   Creating a policy              policy        createPolicy
-   Updating a policy              policy        updatePolicy
-   Deleting a policy              policy        deletePolicy
-   Setting a vault policy         vault         associatePolicy
-   Removing a policy from a vault vault         dissociatePolicy
-   Creating a vault               vault         createVault
-   Modifying a vault              vault         updateVault
-   Deleting a vault               vault         deleteVault
-   Removing resources             vault         removeResources
-   Adding resources               vault         addResources
-   Performing a backup            vault         createVaultBackup
-   Creating a backup              backup        createBackup
-   Deleting a backup              backup        deleteBackup
-   Restoring a backup             backup        restoreBackup
-   ============================== ============= =================
+   +---------------------------------------+---------------+--------------------------+
+   | Operation                             | Resource Type | Trace Name               |
+   +=======================================+===============+==========================+
+   | Creating a policy                     | policy        | createPolicy             |
+   +---------------------------------------+---------------+--------------------------+
+   | Updating a policy                     | policy        | updatePolicy             |
+   +---------------------------------------+---------------+--------------------------+
+   | Deleting a policy                     | policy        | deletePolicy             |
+   +---------------------------------------+---------------+--------------------------+
+   | Setting a vault policy                | vault         | associatePolicy          |
+   +---------------------------------------+---------------+--------------------------+
+   | Removing a policy from a vault        | vault         | dissociatePolicy         |
+   +---------------------------------------+---------------+--------------------------+
+   | Creating a vault                      | vault         | createVault              |
+   +---------------------------------------+---------------+--------------------------+
+   | Modifying a vault                     | vault         | updateVault              |
+   +---------------------------------------+---------------+--------------------------+
+   | Deleting a vault                      | vault         | deleteVault              |
+   +---------------------------------------+---------------+--------------------------+
+   | Removing resources                    | vault         | removeResources          |
+   +---------------------------------------+---------------+--------------------------+
+   | Adding resources                      | vault         | addResources             |
+   +---------------------------------------+---------------+--------------------------+
+   | Performing a replication              | vault         | replicateVaultBackup     |
+   +---------------------------------------+---------------+--------------------------+
+   | Performing a backup                   | vault         | createVaultBackup        |
+   +---------------------------------------+---------------+--------------------------+
+   | Creating a backup                     | backup        | createBackup             |
+   +---------------------------------------+---------------+--------------------------+
+   | Deleting a backup                     | backup        | deleteBackup             |
+   +---------------------------------------+---------------+--------------------------+
+   | Synchronizing a backup                | backup        | syncBackup               |
+   +---------------------------------------+---------------+--------------------------+
+   | Restoring a backup                    | backup        | restoreBackup            |
+   +---------------------------------------+---------------+--------------------------+
+   | Replicating a backup                  | backup        | replicateBackup          |
+   +---------------------------------------+---------------+--------------------------+
+   | Setting resources                     | vault         | setResources             |
+   +---------------------------------------+---------------+--------------------------+
+   | Migrating resources                   | vault         | migrateResources         |
+   +---------------------------------------+---------------+--------------------------+
+   | Disabling protection                  | vault         | disableProtect           |
+   +---------------------------------------+---------------+--------------------------+
+   | Deleting backups from a vault         | vault         | deleteVaultBackup        |
+   +---------------------------------------+---------------+--------------------------+
+   | Synchronizing vault backups           | vault         | syncVaultBackup          |
+   +---------------------------------------+---------------+--------------------------+
+   | Batch creating or deleting vault tags | vault         | bulkCreateDeleteVaultTag |
+   +---------------------------------------+---------------+--------------------------+
+   | Creating a vault tag                  | vault         | createVaultTag           |
+   +---------------------------------------+---------------+--------------------------+
+   | Deleting a vault tag                  | vault         | deleteVaultTag           |
+   +---------------------------------------+---------------+--------------------------+
+   | Creating a share member               | backup        | createBackupMember       |
+   +---------------------------------------+---------------+--------------------------+
+   | Updating a share member               | backup        | updateBackupMember       |
+   +---------------------------------------+---------------+--------------------------+
+   | Deleting a share member               | backup        | deleteBackupMember       |
+   +---------------------------------------+---------------+--------------------------+
+   | Updating a backup                     | backup        | updateBackup             |
+   +---------------------------------------+---------------+--------------------------+
 
 Viewing Audit Logs
 ------------------

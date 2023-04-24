@@ -5,7 +5,7 @@
 Using a Backup to Create a File System
 ======================================
 
-In case of a virus attack, accidental deletion, or software or hardware fault, you can use an SFS Turbo file system backup to create a new file system. After it is created, data on the new file system is the same as that in the backup.
+In case of a virus attack, accidental deletion, or software or hardware fault, you can use an SFS Turbo file system backup to create a new file system. Once created, data on the new file system is the same as that in the backup.
 
 Procedure
 ---------
@@ -14,13 +14,13 @@ Procedure
 
    a. Log in to the management console.
    b. Click |image1| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose a backup tab from the left navigation pane.
+   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose your desired type of backup from the left navigation pane.
 
 #. Click the **Backups** tab. Locate the desired backup. For details, see :ref:`Viewing a Backup <cbr_03_0013>`.
 
 #. If the status of the target backup is **Available**, click **Create File System** in the **Operation** column of the backup.
 
-#. Set the file system parameters. See :ref:`Figure 1 <cbr_03_0107__fig126043518315>`.
+#. Configure the file system parameters. See :ref:`Figure 1 <cbr_03_0107__fig126043518315>`.
 
    .. _cbr_03_0107__fig126043518315:
 
@@ -31,7 +31,7 @@ Procedure
 
    .. note::
 
-      -  For detailed parameter descriptions, see table "Parameter description" under "Creating an SFS Turbo File System" in the *Scalable File Service User Guide*.
+      -  You can learn about the parameter descriptions in table "Parameter description" under "Creating an SFS Turbo File System" in the *Scalable File Service User Guide*.
 
 #. Click **Next**.
 

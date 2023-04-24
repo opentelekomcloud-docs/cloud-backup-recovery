@@ -5,14 +5,14 @@
 Creating a Custom Policy
 ========================
 
-Custom policies can be created to supplement the system-defined policies of CBR. For the actions supported for custom policies, see section "Permissions Policies and Supported Actions" in *Cloud Backup and Recovery API Reference*.
+You can create custom policies to supplement the system-defined policies of CBR. For the actions supported for custom policies, see section "Permissions Policies and Supported Actions" in *Cloud Backup and Recovery API Reference*.
 
 You can create custom policies in either of the following ways:
 
 -  Visual editor: Select cloud services, actions, resources, and request conditions. This does not require knowledge of policy syntax.
 -  JSON: Edit JSON policies from scratch or based on an existing policy.
 
-This section provides examples of common user-defined CBR policies.
+This section provides examples of common custom CBR policies.
 
 Example Custom Policies
 -----------------------
@@ -41,7 +41,7 @@ Example Custom Policies
 
    A policy with only "Deny" permissions must be used in conjunction with other policies to take effect. If the permissions assigned to a user contain both "Allow" and "Deny", the "Deny" permissions take precedence over the "Allow" permissions.
 
-   The following method can be used if you need to assign permissions of the **CBR FullAccess** policy to a user but you want to prevent the user from deleting vaults and backups. Create a custom policy for denying vault and backup deletion, and attach both policies to the group to which the user belongs. Then, the user can perform all operations on CBR except deleting vaults or backups. The following is an example of a deny policy:
+   If you need to assign permissions of the **CBR FullAccess** policy to a user but want to prevent the user from deleting vaults and backups, create a custom policy for denying vault and backup deletion, and attach both policies to the group to which the user belongs. In this way, the user can perform all operations on CBR except deleting vaults or backups. The following is an example deny policy:
 
    .. code-block::
 

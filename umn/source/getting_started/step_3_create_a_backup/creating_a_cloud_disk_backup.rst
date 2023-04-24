@@ -21,7 +21,7 @@ Procedure
 
    a. Log in to the management console.
    b. Click |image1| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose a backup tab from the left navigation pane.
+   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose your desired type of backup from the left navigation pane.
 
 #. On the **Cloud Disk Backups** page, click the **Vaults** tab and find the vault to which the disk is associated.
 
@@ -85,7 +85,7 @@ Procedure
 
       If you delete data from the disk during the backup, the deleted data may fail to be backed up. To ensure data integrity, you are advised to wait until the backup task is complete and then make the change and perform a backup again.
 
-   After the backup is complete, you can use the backup to restore disk data. For details, see :ref:`Restoring Data Using a Cloud Disk Backup <cbr_03_0033>`.
+   After the backup is complete, you can use the backup to restore disk data. For details, see :ref:`Restoring from a Cloud Disk Backup <cbr_03_0033>`.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0251464955.png
