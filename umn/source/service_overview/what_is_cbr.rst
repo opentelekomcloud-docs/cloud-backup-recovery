@@ -10,8 +10,6 @@ Overview
 
 Cloud Backup and Recovery (CBR) enables you to easily back up Elastic Cloud Servers (ECSs), Elastic Volume Service (EVS) disks, and SFS Turbo file systems. In case of a virus attack, accidental deletion, or software or hardware fault, you can use the backup to restore data to any point when the data was backed up.
 
-CBR protects your services by ensuring the security and consistency of your data.
-
 CBR Architecture
 ----------------
 
@@ -69,7 +67,7 @@ CBR stores backups in OBS to ensure data security.
 Backup Options
 --------------
 
-CBR supports one-off backup and periodic backup. A one-off backup is manually created and is executed only once. Periodic backup tasks are automatically executed based on a user-defined backup policy.
+CBR supports one-off backup and periodic backup. A one-off backup task is manually created and is executed only once. Periodic backup tasks are automatically executed based on a user-defined backup policy.
 
 :ref:`Table 2 <cbr_01_0002__table31963779194543>` compares the two backup options.
 

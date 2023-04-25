@@ -2,21 +2,21 @@
 
 .. _cbr_03_0033:
 
-Restoring Data Using a Cloud Disk Backup
-========================================
+Restoring from a Cloud Disk Backup
+==================================
 
-You can use a disk backup to restore a disk to the time when the backup was created.
+You can use a disk backup to restore the disk to its state when the backup was created.
 
 Prerequisites
 -------------
 
--  The status of the disk to be restored must be **Available**.
+-  The disk to be restored is **Available**.
 -  Before restoring the disk data, stop the server to which the disk is attached and detach the disk from the server. After the disk data is restored, attach the disk to the server and start the server.
 
 Constraints
 -----------
 
--  Backups can only be restored to original disks. If you want to restore a backup to a disk other than the original one, directly use the backup to create a new disk.
+-  Backups can only be restored to original disks. If you want to restore a backup to a different disk, use the backup to create a new disk.
 
 Procedure
 ---------
@@ -25,7 +25,7 @@ Procedure
 
    a. Log in to the management console.
    b. Click |image1| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose a backup tab from the left navigation pane.
+   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose your desired type of backup from the left navigation pane.
 
 #. Click the **Backups** tab. Locate the desired backup. For details, see :ref:`Viewing a Backup <cbr_03_0013>`.
 
@@ -34,7 +34,7 @@ Procedure
    .. important::
 
       -  The backup data will overwrite the current disk data, and the restoration cannot be undone.
-      -  If the restore button is grayed out, stop the server, detach the disk to be restored, and then restore data. After the disk data is restored, attach the disk to the server and start the server.
+      -  If the restore button is grayed out, stop the server, detach the disk, and then try again. After the disk data is restored, attach the disk to the server and start the server.
 
    .. _cbr_03_0033__fig122481021113018:
 
@@ -42,9 +42,9 @@ Procedure
 
    |image2|
 
-#. Click **Yes**. You can check whether the data is successfully restored on the **Backups** tab page of **Disk Backups** or on the EVS console.
+#. Click **Yes**. You can check whether data is successfully restored on the **Backups** tab page of **Disk Backups** or on the EVS console.
 
-   When the status of the backup changes to **Available**, the restoration is successful. The resource is restored to the state at the time you took that backup.
+   When the status of the backup changes to **Available**, the restoration is successful. The resource is restored to the state when that backup was created.
 
 #. After the restoration is complete, re-attach the disk to the server. For details, see section "Attaching an Existing Non-Shared Disk" in the *Elastic Volume Service User Guide*.
 

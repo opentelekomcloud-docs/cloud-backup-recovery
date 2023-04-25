@@ -24,7 +24,7 @@ Procedure
 
    a. Log in to the management console.
    b. Click |image1| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose a backup tab from the left navigation pane.
+   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose your desired type of backup from the left navigation pane.
 
 #. On the **Cloud Server Backups** page, click the **Vaults** tab and find the vault to which the server is associated.
 
@@ -84,7 +84,7 @@ Procedure
 
       You can restart a server if necessary after the backup progress exceeds 10%. However, to ensure data integrity, you are advised to restart it after the backup is complete.
 
-   After the backup is complete, you can use the backup to restore server data or create an image. For details, see :ref:`Restoring Data Using a Cloud Server Backup <cbr_03_0032>` and :ref:`Using a Backup to Create an Image <cbr_03_0016>`.
+   After the backup is complete, you can use the backup to restore server data or create an image. For details, see :ref:`Restoring from a Cloud Server Backup <cbr_03_0032>` and :ref:`Using a Backup to Create an Image <cbr_03_0016>`.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0251464113.png

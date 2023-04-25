@@ -29,7 +29,7 @@ Procedure for the Sharer
 
    a. Log in to the management console.
    b. Click |image1| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose a backup tab from the left navigation pane.
+   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose your desired type of backup from the left navigation pane.
 
 #. Click the **Backups** tab and set filter criteria to view the backups.
 
@@ -40,7 +40,7 @@ Procedure for the Sharer
    -  Sharing a backup
 
 
-      **Figure 1** Sharing a backup
+      **Figure 1** Share Backup
 
       |image2|
 
@@ -52,7 +52,10 @@ Procedure for the Sharer
    -  Canceling sharing
 
    a. Locate the target backup and choose **More** > **Share Backup** in the **Operation** column.
+
    b. On the displayed page, click the **Cancel Sharing** tab and select the backup that no longer needs to be shared. Then, click **OK**.
+
+   c.
 
 Procedure for the Recipient
 ---------------------------
@@ -61,7 +64,7 @@ Procedure for the Recipient
 
    a. Log in to the management console.
    b. Click |image3| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose a backup tab from the left navigation pane.
+   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose your desired type of backup from the left navigation pane.
 
 #. On the selected backup page, click the **Backups** tab and then click **Backups Shared with Me**.
 

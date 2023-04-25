@@ -10,7 +10,7 @@ On the backup list, you can set search criteria to filter backups and view backu
 Prerequisites
 -------------
 
-A backup task has been created.
+At least one backup task has been created.
 
 Viewing Backup Details
 ----------------------
@@ -19,9 +19,9 @@ Viewing Backup Details
 
    a. Log in to the management console.
    b. Click |image1| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose a backup tab from the left navigation pane.
+   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose your desired type of backup from the left navigation pane.
 
-#. On any backup page, click the **Backups** tab and set filter criteria to view the backups. See :ref:`Figure 1 <cbr_03_0013__fig5673922177>`.
+#. Click the **Backups** tab and set filter criteria to view the backups. See :ref:`Figure 1 <cbr_03_0013__fig5673922177>`.
 
    .. _cbr_03_0013__fig5673922177:
 
@@ -41,7 +41,7 @@ Viewing Backup Details
          +=======================+=======================+============================================================================================================================================================================================================+
          | All statuses          | --                    | All backups are displayed if this value is selected.                                                                                                                                                       |
          +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-         | Available             | A stable state        | A stable state of a backup after the backup is created, indicating that the backup is available and currently not being used.                                                                              |
+         | Available             | A stable state        | A stable state of a backup after the backup is created, indicating that the backup is currently not being used.                                                                                            |
          |                       |                       |                                                                                                                                                                                                            |
          |                       |                       | This state allows most of the operations.                                                                                                                                                                  |
          +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

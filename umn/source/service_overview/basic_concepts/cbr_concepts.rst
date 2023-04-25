@@ -41,6 +41,6 @@ Enhanced Backup
 
 Enhanced backups are backups generated after Instant Restore is provided. Enhanced backups make it faster to restore server data or create images.
 
-Before providing Instant Restore, CBR generates common backups. After providing Instant Restore, CBR generates enhanced backups. CBR only generates enhanced backups currently.
+Before providing Instant Restore, CBR generates common backups. After providing Instant Restore, CBR first performs a full backup for each associated resource and then generates enhanced backups. CBR only generates enhanced backups currently.
 
-The only difference between common backups and enhanced backups is that enhanced backup make it faster to restore server data or create images.
+For the same resource, an enhanced backup and a common backup have the same backup content and size. They only differ in the restoration speed.

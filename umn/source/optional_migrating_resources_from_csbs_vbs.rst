@@ -8,28 +8,40 @@
 Context
 -------
 
-The cloud platform has launched the next-generation backup service, CBR. If you have backup resources in CSBS or VBS but want to switch to CBR for the management of these historical backup resources, you can migrate them to CBR in a few clicks.
+The cloud platform has launched the next-generation backup service, CBR. If you have backups in CSBS or VBS but want to switch to CBR to manage these historical backups, you can migrate them to CBR in a few clicks.
 
 If you have never used CSBS or VBS, or do not need the historical backups anymore, skip this section.
 
 Migration Rules
 ---------------
 
-During migration, the system will automatically create vaults based on your historical resources.
+During migration, CBR will automatically create vaults based on the types of your historical resources.
 
-#. If servers or disks have been associated with a backup policy and have been backed up, during the migration, the system will create a vault with the same name (up to 64 characters) as the policy name, regardless of whether the policy is enabled. After the vault is created, the policy will be applied to the vault.
-#. If servers or disks have been associated with a backup policy but no backup has been generated, during the migration, the system will create a vault only when the policy is enabled. After the vault is created, the policy will be applied to the vault. The rule for naming the vault is the same as that in the preceding rule.
-#. If servers or disks have been applied with a backup or replication policy but no backup or replica has been generated, and the policy is not enabled, then only the policy will be migrated.
-#. The system will migrate backup and replication policies regardless of whether they are associated with servers or disks.
-#. Generated backup replicas will be stored in a replication vault named **default**.
-#. Other backups, such as manual backups, will be stored in a server backup vault named **default**. Different vaults will be automatically created based on different types of resources. For example, the system will create a disk backup vault during the migration of disk backups.
-#. After resources are migrated, backups created using CBR will also be displayed in VBS Console, but you will be billed only once.
+.. table:: **Table 1** Migration rules
 
-   .. note::
+   +----------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Before Migration                                                     | After Migration                                                                                                                                                                                                                 |
+   +======================================================================+=================================================================================================================================================================================================================================+
+   | Servers or disks are associated with a backup policy.                | If backups have been generated, CBR will create a vault with the same name (up to 64 characters) as the policy name (regardless of whether the policy is enabled) and apply the policy to the vault after the vault is created. |
+   +----------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   |                                                                      | If no backup is generated, CBR will create a vault only when the policy is enabled. The policy applying rule and vault naming rule are the same as above.                                                                       |
+   +----------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Servers or disks are associated with a backup or replication policy. | If no backup is generated and the policy is disabled, only the policy will be migrated.                                                                                                                                         |
+   +----------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Backup or replication policies are not associated with any resource. | The policies will be migrated.                                                                                                                                                                                                  |
+   +----------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Backup replicas are generated.                                       | CBR will create a replication vault named **default** to store generated backup replicas.                                                                                                                                       |
+   +----------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | An image is created using a backup and a tag is added to the image.  | The backup will fail to be migrated. Go to the IMS console, delete the tag and then migrate the backup again. After the backup is migrated, add the tag if needed.                                                              |
+   +----------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-      To delete backups from VBS Console, find these backups in CBR and delete them. Then, the backups will also be automatically deleted from VBS Console.
+Other backups, including manual backups, will be stored in a server backup vault named **default**. Different vaults will be created based on different types of resources. For example, CBR will create a disk backup vault to store the migrated disk backups.
 
-#. If an image has been created using a backup before the migration and a tag has been added to the image, the backup migration may fail. In this case, go to IMS Console, delete the tag of the image, and then perform the migration again. After the migration is complete, re-add the tag if needed.
+After the migration, backups created using CBR will also be displayed on the VBS console, but you will be billed only once.
+
+.. note::
+
+   To delete backups from the VBS console, find these backups in CBR and delete them. Then, the backups will also be deleted from the VBS console.
 
 Base on the preceding rules, the capacity of each vault created by the system is predefined as 1.2 times of the total backup size.
 
@@ -49,7 +61,7 @@ Procedure
 
    a. Log in to the management console.
    b. Click |image1| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose a backup tab from the left navigation pane.
+   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose your desired type of backup from the left navigation pane.
 
 #. Click **Migrate to CBR** in the upper right corner. Read the content in the displayed dialog box and click **OK**. See :ref:`Figure 1 <cbr_03_0104__fig1730015415381>`.
 

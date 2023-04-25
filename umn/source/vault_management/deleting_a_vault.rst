@@ -7,12 +7,12 @@ Deleting a Vault
 
 You can delete unwanted vaults to reduce storage space usage and costs.
 
-All backups stored in the vault will be deleted once you delete a vault.
+Once you delete a vault, all backups stored in the vault will be deleted.
 
 Prerequisites
 -------------
 
--  At least one vault exists.
+-  There is at least one vault.
 -  The vault is in the **Available** or **Error** state.
 
 Procedure
@@ -22,9 +22,9 @@ Procedure
 
    a. Log in to the management console.
    b. Click |image1| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose a backup tab from the left navigation pane.
+   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose your desired type of backup from the left navigation pane.
 
-#. On any backup page, locate the vault to be deleted and choose **More** > **Delete** in the **Operation** column. See :ref:`Figure 1 <cbr_03_0003__fig67842014205811>`. All backups stored in the vault will be deleted once you delete a vault. Exercise caution when performing this operation.
+#. Find the target vault and choose **More** > **Delete** in the **Operation** column. See :ref:`Figure 1 <cbr_03_0003__fig67842014205811>`. All backups stored in the vault will be deleted once you delete a vault.
 
    .. _cbr_03_0003__fig67842014205811:
 

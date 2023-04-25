@@ -7,7 +7,7 @@ Permissions Management
 
 If you need to assign different permissions to employees in your enterprise to control their access to your CBR resources on the cloud, Identity and Access Management (IAM) is a good choice for fine-grained permissions management. IAM provides identity authentication, permissions management, and access control, helping you secure access to your cloud resources.
 
-With IAM, you can use your cloud account to create IAM users for your employees, and assign permissions to them to control their access to specific resource types. For example, you can create IAM users for software developers and grant them only the permissions required for using CBR resources to allow them to use CBR resources but prevent them from performing any other operations.
+With IAM, you can use your cloud account to create IAM users for your employees, and assign permissions to them to control their access to specific types of resources. For example, you can create IAM users for software developers and grant them only the permissions required for using CBR resources to allow them to use CBR resources but prevent them from performing any other operations.
 
 If your cloud account does not require individual IAM users for permissions management, skip this section.
 

@@ -10,12 +10,12 @@ You can delete unwanted backups to reduce space usage and costs.
 Context
 -------
 
-CBR supports manual deletion of backups and automatic deletion of expired backups. The latter is implemented based on the backup retention rule in the backup policy. For details, see :ref:`Creating a Backup Policy <cbr_03_0025>`.
+CBR supports manual deletion of backups and automatic deletion of expired backups. The latter is executed based on the backup retention rule in the backup policy. For details, see :ref:`Creating a Backup Policy <cbr_03_0025>`.
 
 Prerequisites
 -------------
 
--  At least one backup exists.
+-  There is at least one backup.
 -  The backup to be deleted is in the **Available** or **Error** state.
 
 Procedure
@@ -25,11 +25,11 @@ Procedure
 
    a. Log in to the management console.
    b. Click |image1| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose a backup tab from the left navigation pane.
+   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose your desired type of backup from the left navigation pane.
 
-#. On any backup page, click the **Backups** tab and locate the desired backup. For details, see :ref:`Viewing a Backup <cbr_03_0013>`.
+#. Click the **Backups** tab and locate the desired backup. For details, see :ref:`Viewing a Backup <cbr_03_0013>`.
 
-#. In the row of the backup, choose **More** > **Delete**. See :ref:`Figure 1 <cbr_03_0015__fig1233612574363>`. Alternatively, select the backups you want to delete and click **Delete** in the upper left corner to delete them in a batch.
+#. In the row of the backup, choose **More** > **Delete** from the **Operation** column. See :ref:`Figure 1 <cbr_03_0015__fig1233612574363>`. Alternatively, select the backups you want to delete in a batch and click **Delete** in the upper left corner to delete them.
 
    .. _cbr_03_0015__fig1233612574363:
 
