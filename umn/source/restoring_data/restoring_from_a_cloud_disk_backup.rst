@@ -24,12 +24,12 @@ Procedure
 #. Log in to CBR Console.
 
    a. Log in to the management console.
-   b. Click |image1| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose your desired type of backup from the left navigation pane.
+   b. Click |image1| in the upper left corner and select a region.
+   c. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**. Select a backup type from the left navigation pane.
 
 #. Click the **Backups** tab. Locate the desired backup. For details, see :ref:`Viewing a Backup <cbr_03_0013>`.
 
-#. In the row of the backup, click **Restore Disk**. The **Restore Disk** page is displayed. See :ref:`Figure 1 <cbr_03_0033__fig122481021113018>`.
+#. In the row of the backup, click **Restore Disk**. The **Restore Disk** dialog box is displayed. See :ref:`Figure 1 <cbr_03_0033__fig122481021113018>`.
 
    .. important::
 
@@ -40,13 +40,14 @@ Procedure
 
    **Figure 1** Restore Disk
 
-   |image2|
+   |image3|
 
-#. Click **Yes**. You can check whether data is successfully restored on the **Backups** tab page of **Disk Backups** or on the EVS console.
+#. Click **Yes**. You can check whether data is successfully restored on the **Backups** tab page of **Cloud Disk Backups** or on the EVS console.
 
    When the status of the backup changes to **Available**, the restoration is successful. The resource is restored to the state when that backup was created.
 
 #. After the restoration is complete, re-attach the disk to the server. For details, see section "Attaching an Existing Non-Shared Disk" in the *Elastic Volume Service User Guide*.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
-.. |image2| image:: /_static/images/en-us_image_0251486822.png
+.. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
+.. |image3| image:: /_static/images/en-us_image_0251486822.png

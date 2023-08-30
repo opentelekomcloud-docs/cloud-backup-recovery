@@ -15,12 +15,12 @@ Procedure
 #. Log in to CBR Console.
 
    a. Log in to the management console.
-   b. Click |image1| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose your desired type of backup from the left navigation pane.
+   b. Click |image1| in the upper left corner and select a region.
+   c. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**. Select a backup type from the left navigation pane.
 
 #. Click the **Backups** tab. Locate the desired backup. For details, see :ref:`Viewing a Backup <cbr_03_0013>`.
 
-#. If the status of the target backup is **Available**, click **Create Disk** in the **Operation** column of the backup.
+#. Click **Create Disk** in the **Operation** column of the backup. The button is available only when the backup status is **Available**.
 
 #. Configure the disk parameters.
 
@@ -36,7 +36,7 @@ Procedure
 
          If the capacity of the new disk is greater than that of the backup's source disk, format the additional space by following the steps provided in section "Extending Disk Partitions and File Systems" of the *Elastic Volume Service User Guide*.
 
-      -  You can create a disk of any type regardless of the backup's disk type.
+      -  You can create a disk of any type regardless of the backup's source disk type.
 
 #. Click **Next**.
 
@@ -45,3 +45,4 @@ Procedure
    You will see the disk status change as follows: **Creating**, **Available**, **Restoring**, **Available**. You may not notice the **Restoring** status because Instant Restore is supported and the restoration speed is very fast. After the disk status has changed from **Creating** to **Available**, the disk is successfully created. After the status has changed from **Restoring** to **Available**, backup data has been successfully restored to the created disk.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
+.. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg

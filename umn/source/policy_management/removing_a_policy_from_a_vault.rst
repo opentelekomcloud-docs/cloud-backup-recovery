@@ -18,8 +18,8 @@ Procedure
 #. Log in to CBR Console.
 
    a. Log in to the management console.
-   b. Click |image1| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose your desired type of backup from the left navigation pane.
+   b. Click |image1| in the upper left corner and select a region.
+   c. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**. Select a backup type from the left navigation pane.
 
 #. Find the target vault and click the vault name to view its details.
 
@@ -29,14 +29,17 @@ Procedure
 
    **Figure 1** Removing a policy
 
-   |image2|
+   |image3|
 
    .. note::
 
-      -  If a backup task is being executed for a resource in the vault, the policy can be removed. However, the backup task will continue and backups will be generated.
+      -  If a policy is removed when a backup task is being executed for a resource in the vault, the backup task will continue and backups will be generated.
       -  After a policy is removed, backups retained by **Time period** will expire based on the retention rule, but backups retained by **Backup quantity** will not. You need manually delete unwanted backups.
 
-#. Click **Yes**. Backup or replication tasks will no longer be executed for the vault.
+#. Click **Yes**.
+
+   Tasks will no longer be executed based on this policy for the vault.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
-.. |image2| image:: /_static/images/en-us_image_0184119988.png
+.. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
+.. |image3| image:: /_static/images/en-us_image_0184119988.png

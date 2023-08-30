@@ -60,8 +60,8 @@ Procedure
 #. Log in to CBR Console.
 
    a. Log in to the management console.
-   b. Click |image1| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose your desired type of backup from the left navigation pane.
+   b. Click |image1| in the upper left corner and select a region.
+   c. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**. Select a backup type from the left navigation pane.
 
 #. Click **Migrate to CBR** in the upper right corner. Read the content in the displayed dialog box and click **OK**. See :ref:`Figure 1 <cbr_03_0104__fig1730015415381>`.
 
@@ -69,7 +69,7 @@ Procedure
 
    **Figure 1** Migrating resources to CBR
 
-   |image2|
+   |image3|
 
 #. The system will automatically migrate resources. After the migration, a vault named **default** will be created and a message will be displayed in the upper part of the page indicating that the migration is successful.
 
@@ -93,4 +93,5 @@ FAQ
    Choose **Cloud Server Backup Service** or **Volume Backup Service** from the service list. On the corresponding service console, check whether there are resources bound with policies on the **Policies** tab. If so, unbind the resources from the policy and go to CBR Console to associate the resources with a vault.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
-.. |image2| image:: /_static/images/en-us_image_0000001293014297.png
+.. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
+.. |image3| image:: /_static/images/en-us_image_0000001293014297.png

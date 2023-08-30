@@ -15,7 +15,7 @@ Prerequisites
    -  You have optimized the Linux ECS (referring to `Optimizing a Linux Private Image <https://docs.otc.t-systems.com/usermanual/ims/en-us_topic_0047501133.html>`__) and installed Cloud-Init (referring to `Installing Cloud-Init <https://docs.otc.t-systems.com/usermanual/ims/en-us_topic_0030730603.html>`__).
    -  You have optimized the Windows ECS (referring to `Optimizing a Windows Private Image <https://docs.otc.t-systems.com/usermanual/ims/en-us_topic_0047501112.html>`__) and installed Cloudbase-Init (referring to `Installing and Configuring Cloudbase-Init <https://docs.otc.t-systems.com/usermanual/ims/en-us_topic_0030730602.html>`__).
 
--  The backup is in the **Available** state or in the **Creating** state which is marked with **Image can be created**.
+-  The backup is in the **Available** state or in the **Creating** state which is marked with "Image can be created."
 
    .. note::
 
@@ -36,8 +36,8 @@ Procedure
 #. Log in to CBR Console.
 
    a. Log in to the management console.
-   b. Click |image1| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose your desired type of backup from the left navigation pane.
+   b. Click |image1| in the upper left corner and select a region.
+   c. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**. Select a backup type from the left navigation pane.
 
 #. Click the **Backups** tab. Locate the desired backup. For details, see :ref:`Viewing a Backup <cbr_03_0013>`.
 
@@ -50,8 +50,9 @@ Procedure
 
       **Figure 1** Creating an image
 
-#. Create an image by referring to section "Creating a Full-ECS Image from a CBR Backup" in the *Image Management Service User Guide*.
+#. Create an image by referring to section "Creating a Full-ECS Image Using a Cloud Server Backup" in the *Image Management Service User Guide*.
 
 #. Use the image to provision ECSs when needed. For details, see section "Creating an ECS from an Image" in the *Image Management Service User Guide*.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
+.. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg

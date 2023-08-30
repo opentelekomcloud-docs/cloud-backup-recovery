@@ -13,8 +13,8 @@ Procedure
 #. Log in to CBR Console.
 
    a. Log in to the management console.
-   b. Click |image1| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose your desired type of backup from the left navigation pane.
+   b. Click |image1| in the upper left corner and select a region.
+   c. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**. Select a backup type from the left navigation pane.
 
 #. On the **Vaults** tab, click the name of the target vault and then select the **Tags** tab.
 
@@ -24,7 +24,7 @@ Procedure
 
       b. In the displayed dialog box, enter the key and value of the new tag.
 
-         Tags are key-value pairs, which are used to identify, classify, and search for vaults. You can add a maximum of 10 tags for a vault, and vault tags are only used for vault search and management. See :ref:`Figure 1 <cbr_03_0010__fig1898914563297>`.
+         Tags are key-value pairs, which are used to identify, classify, and search for vaults. You can add a maximum of 20 tags for a vault, and vault tags are only used for vault search and management. See :ref:`Figure 1 <cbr_03_0010__fig1898914563297>`.
 
          .. _cbr_03_0010__fig1898914563297:
 
@@ -69,6 +69,7 @@ Procedure
 
       a. In the **Operation** column of the tag that you want to delete, click **Delete**.
       b. In the displayed dialog box, confirm the deletion information.
-      c. Click **OK**.
+      c. Click **Yes**.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
+.. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
