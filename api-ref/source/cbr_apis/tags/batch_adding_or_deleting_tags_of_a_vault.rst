@@ -8,7 +8,7 @@ Batch Adding or Deleting Tags of a Vault
 Function
 --------
 
-This API is used to batch add or delete tags for a specified instance. TMS uses this API to manage service resource tags. A resource can have a maximum of 10 tags. This API is idempotent. If there are duplicate keys in the request body when you add tags, an error is reported. If a to-be-added tag has the same key as an existing tag, the tag will be added and overwrite the existing tag. When deleting tags, you can upload duplicate keys. When deleting tags, if some tags do not exist, the deletion is considered to be successful by default. The character set of the tags will not be verified. A key and a value can individually consist of up to 127 and 255 characters. When you delete tags, the tags structure cannot be missing, and the key cannot be left blank or be an empty string.
+This API is used to batch add or delete tags for a specified instance. TMS uses this API to manage service resource tags. A resource can have a maximum of 20 tags. This API is idempotent. If there are duplicate keys in the request body when you add tags, an error is reported. If a to-be-added tag has the same key as an existing tag, the tag will be added and will overwrite the existing tag. When deleting tags, duplicate keys are allowed. When deleting tags, if some tags do not exist, the deletion is considered to be successful by default. The character set of the tags will not be verified. A key and a value can each consist of up to 127 and 255 characters. When you delete tags, the tags structure cannot be missing, and the key cannot be left blank or be an empty string.
 
 URI
 ---
@@ -36,7 +36,7 @@ Request Parameters
    |                 |                 |                                                                          |                                                                                   |
    |                 |                 |                                                                          | This list cannot be an empty list.                                                |
    |                 |                 |                                                                          |                                                                                   |
-   |                 |                 |                                                                          | The list can contain up to 10 keys.                                               |
+   |                 |                 |                                                                          | The list can contain up to 20 keys.                                               |
    |                 |                 |                                                                          |                                                                                   |
    |                 |                 |                                                                          | Keys in this list must be unique.                                                 |
    +-----------------+-----------------+--------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
