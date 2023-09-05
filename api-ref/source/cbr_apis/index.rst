@@ -12,7 +12,7 @@ CBR APIs
 -  :ref:`Vaults <topic_300000004>`
 -  :ref:`Backups <topic_300000005>`
 -  :ref:`Policies <topic_300000006>`
--  :ref:`Tags <topic_300000007>`
+-  :ref:`Tags <topic_300000008>`
 
 .. toctree::
    :maxdepth: 1
