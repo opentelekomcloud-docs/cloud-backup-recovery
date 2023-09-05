@@ -20,18 +20,28 @@ Procedure
 #. Log in to CBR Console.
 
    a. Log in to the management console.
-   b. Click |image1| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose your desired type of backup from the left navigation pane.
+   b. Click |image1| in the upper left corner and select a region.
+   c. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**. Select a backup type from the left navigation pane.
 
 #. On the **Cloud Disk Backups** page, click the **Vaults** tab and find the vault to which the disk is associated.
 
-#. Choose **More** > **Perform Backup** in the **Operation** column. In the disk list, select the disk you want to back up. After a disk is selected, it is added to the list of selected disks. See :ref:`Figure 1 <cbr_02_0007__fig2557455115213>`.
+#. Perform backup in either of the following ways:
 
-   .. _cbr_02_0007__fig2557455115213:
+   -  Click **Perform Backup** in the **Operation** column. In the disk list, select the disk you want to back up. After a disk is selected, it is added to the list of selected disks. See :ref:`Figure 1 <cbr_02_0007__fig2557455115213>`.
 
-   **Figure 1** Selecting the disk to be backed up
+      .. _cbr_02_0007__fig2557455115213:
 
-   |image2|
+      **Figure 1** Selecting the disk to be backed up
+
+   |image3|
+
+   -  Click the vault name to go to the vault details page. On the **Associated Disks** tab page, locate the target disk and click **Perform Backup** in the **Operation** column. See :ref:`Figure 2 <cbr_02_0007__fig19972192464112>`.
+
+      .. _cbr_02_0007__fig19972192464112:
+
+      **Figure 2** Perform Backup
+
+      |image4|
 
    .. note::
 
@@ -61,33 +71,26 @@ Procedure
       |                       | It cannot exceed 255 characters.                                                                                                                          |                       |
       +-----------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
 
-#. Choose whether to enable full backup. If full backup is enabled, CBR performs a full backup on every associated disk, which requires a larger capacity compared to an incremental backup. See :ref:`Figure 2 <cbr_02_0007__fig789511544815>`.
+#. Choose whether to enable full backup. If full backup is enabled, CBR performs a full backup on every associated disk, which requires a larger capacity compared to an incremental backup. See :ref:`Figure 3 <cbr_02_0007__fig789511544815>`.
 
    .. _cbr_02_0007__fig789511544815:
 
-   **Figure 2** Selecting full backup
+   **Figure 3** Full Backup
 
-   |image3|
+   |image5|
 
-#. (Optional) Click the vault name to go to the vault details page. On the **Associated Disks** tab page, locate the target disk. Click **Perform Backup** in the **Operation** column of the disk. See :ref:`Figure 3 <cbr_02_0007__fig7287161212118>`.
-
-   .. _cbr_02_0007__fig7287161212118:
-
-   **Figure 3** Perform Backup
-
-   |image4|
-
-#. Click **Yes**. CBR automatically creates a backup for the disk.
+#. Click **OK**. CBR automatically creates a backup for the disk.
 
    On the **Backups** tab page, if the status of the backup is **Available**, the backup task is successful.
 
    .. note::
 
-      If you delete data from the disk during the backup, the deleted data may fail to be backed up. To ensure data integrity, you are advised to wait until the backup task is complete and then make the change and perform a backup again.
+      If you delete data from the disk during the backup, the deleted data may fail to be backed up. Therefore, to ensure data integrity, delete the target data after the backup is complete, and then perform the backup.
 
    After the backup is complete, you can use the backup to restore disk data. For details, see :ref:`Restoring from a Cloud Disk Backup <cbr_03_0033>`.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
-.. |image2| image:: /_static/images/en-us_image_0251464955.png
-.. |image3| image:: /_static/images/en-us_image_0184062862.png
-.. |image4| image:: /_static/images/en-us_image_0251459546.png
+.. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
+.. |image3| image:: /_static/images/en-us_image_0251464955.png
+.. |image4| image:: /_static/images/en-us_image_0000001533473474.png
+.. |image5| image:: /_static/images/en-us_image_0184062862.png

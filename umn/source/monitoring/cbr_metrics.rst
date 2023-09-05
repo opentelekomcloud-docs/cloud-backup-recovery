@@ -49,6 +49,6 @@ Viewing Monitoring Statistics
    -  Method 1: Choose **Storage** > **Cloud Backup and Recovery**. In the vault list, locate the vault whose monitoring data you want to view and choose **More** > **View Monitoring Data** in the **Operation** column.
    -  Method 2: Choose **Management & Deployment** > **Cloud Eye** > **Cloud Service Monitoring** > **Cloud Backup and Recovery**. In the vault list, click **View Metric** in the **Operation** column of the vault whose monitoring data you want to view.
 
-#. You can view the vault monitoring data by metric or monitored duration.
+#. View the vault monitoring data by metric or monitored duration.
 
    For more information, see the *Cloud Eye User Guide*.

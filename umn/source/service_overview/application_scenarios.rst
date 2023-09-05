@@ -16,3 +16,9 @@ You can use CBR to quickly restore data to the latest backup point if any of the
 -  Accidental deletion
 -  Application update errors
 -  System breakdown
+
+
+.. figure:: /_static/images/en-us_image_0000001605829672.png
+   :alt: **Figure 1** Data backup and restoration
+
+   **Figure 1** Data backup and restoration

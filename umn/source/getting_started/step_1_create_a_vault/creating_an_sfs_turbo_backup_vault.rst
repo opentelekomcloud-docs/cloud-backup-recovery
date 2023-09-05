@@ -13,8 +13,8 @@ Procedure
 #. Log in to CBR Console.
 
    a. Log in to the management console.
-   b. Click |image1| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery** > **SFS Turbo Backups**.
+   b. Click |image1| in the upper left corner and select a region.
+   c. Click |image2| and choose **Storage** > **Cloud Backup and Recovery** > **SFS Turbo Backups**.
 
 #. In the upper right corner of the page, click **Create SFS Turbo Backup Vault**.
 
@@ -28,7 +28,7 @@ Procedure
 
    **Figure 1** Selecting file systems
 
-   |image2|
+   |image3|
 
    .. note::
 
@@ -44,7 +44,7 @@ Procedure
 
 #. (Optional) Add tags to the vault.
 
-   Tags are key-value pairs, which are used to identify, classify, and search for vaults. You can add a maximum of 10 tags for a vault, and vault tags are only used for vault search and management.
+   Tags are key-value pairs, which are used to identify, classify, and search for vaults. You can add a maximum of 20 tags for a vault, and vault tags are only used for vault search and management.
 
    :ref:`Table 1 <cbr_02_0010__table191162312815>` describes the parameters of a tag.
 
@@ -84,5 +84,6 @@ Procedure
 
    You can associate file systems to the new vault or perform backup for the file systems. For details, see :ref:`Vault Management <cbr_03_0002>`.
 
-.. |image1| image:: /_static/images/en-us_image_0219596602.png
-.. |image2| image:: /_static/images/en-us_image_0000001088492789.png
+.. |image1| image:: /_static/images/en-us_image_0000001587692708.png
+.. |image2| image:: /_static/images/en-us_image_0000001599596653.jpg
+.. |image3| image:: /_static/images/en-us_image_0000001088492789.png

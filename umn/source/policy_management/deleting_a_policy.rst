@@ -5,7 +5,7 @@
 Deleting a Policy
 =================
 
-You can delete backup and replication policies if they are no longer needed.
+You can delete policies if they are no longer needed.
 
 Prerequisites
 -------------
@@ -18,8 +18,8 @@ Procedure
 #. Log in to CBR Console.
 
    a. Log in to the management console.
-   b. Click |image1| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose your desired type of backup from the left navigation pane.
+   b. Click |image1| in the upper left corner and select a region.
+   c. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**.
 
 #. Click the **Backup Policies** tab, locate the row that contains the policy you want to delete, and click **Delete**.
 
@@ -29,4 +29,5 @@ Procedure
 
 #. Confirm the information and click **Yes**.
 
-.. |image1| image:: /_static/images/en-us_image_0159365094.png
+.. |image1| image:: /_static/images/en-us_image_0000001580471224.png
+.. |image2| image:: /_static/images/en-us_image_0000001580631040.jpg

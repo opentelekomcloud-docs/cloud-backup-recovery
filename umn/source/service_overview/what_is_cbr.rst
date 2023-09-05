@@ -34,9 +34,10 @@ Different types of resources must be backed up to different types of vaults. For
 -  A backup policy defines when you want to take a backup and for how long you would retain each backup.
 
 
-**Figure 1** CBR architecture
+.. figure:: /_static/images/en-us_image_0277693887.png
+   :alt: **Figure 1** CBR architecture
 
-|image1|
+   **Figure 1** CBR architecture
 
 Differences Among the Backup Types
 ----------------------------------
@@ -109,6 +110,4 @@ You can access the CBR service through the console or by calling HTTPS-based API
 
 -  APIs
 
-   Use APIs if you need to integrate CBR into a third-party system for secondary development. For details, see the *Cloud Backup and Recovery API Reference*.
-
-.. |image1| image:: /_static/images/en-us_image_0277693887.png
+   Use APIs if you need to integrate CBR into a third-party system for secondary development. For details, see `Cloud Backup and Recovery API Reference <https://docs.otc.t-systems.com/cloud-backup-recovery/api-ref/api_usage_guidelines.html>`__.

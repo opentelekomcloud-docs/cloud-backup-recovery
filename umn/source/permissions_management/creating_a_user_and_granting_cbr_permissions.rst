@@ -18,21 +18,21 @@ Figure :ref:`Figure 1 <cbr_03_0048__fig194521431175317>` illustrates the procedu
 Prerequisites
 -------------
 
-You have learnt about :ref:`Permissions Management <cbr_01_0011>` and chosen the policies or roles according to your requirements. For the system policies of other services, see "System Permissions".
+Learn about the permissions (see :ref:`Permissions <cbr_01_0011>`) supported by CBR and choose policies or roles according to your requirements. For the system policies of other services, see section "Permissions".
 
 Process Flow
 ------------
 
 .. _cbr_03_0048__fig194521431175317:
 
-.. figure:: /_static/images/en-us_image_0220982950.png
+.. figure:: /_static/images/en-us_image_0000001562229993.png
    :alt: **Figure 1** Process for granting CBR permissions
 
    **Figure 1** Process for granting CBR permissions
 
 #. .. _cbr_03_0048__li3656183032711:
 
-   Create a user group and assign permissions to it.
+   Create a user group and assign permissions.
 
    Create a user group on the IAM console, and assign the **CBR ReadOnlyAccess** policy to the group.
 

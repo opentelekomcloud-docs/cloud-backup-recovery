@@ -20,18 +20,28 @@ Procedure
 #. Log in to CBR Console.
 
    a. Log in to the management console.
-   b. Click |image1| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery** > **SFS Turbo Backups**.
+   b. Click |image1| in the upper left corner and select a region.
+   c. Click |image2| and choose **Storage** > **Cloud Backup and Recovery** > **SFS Turbo Backups**.
 
 #. On the **SFS Turbo Backups** page, click the **Vaults** tab and find the vault to which the file system is associated.
 
-#. Choose **More** > **Perform Backup** in the **Operation** column. In the file system list, select the file system to be backed up. After a file system is selected, it is added to the list of selected file systems. See :ref:`Figure 1 <cbr_02_0012__fig2557455115213>`.
+#. Perform backup in either of the following ways:
 
-   .. _cbr_02_0012__fig2557455115213:
+   -  Choose **More** > **Perform Backup** in the **Operation** column. In the file system list, select the file system to be backed up. After a file system is selected, it is added to the list of selected file systems. See :ref:`Figure 1 <cbr_02_0012__fig2557455115213>`.
 
-   **Figure 1** Selecting the file system to be backed up
+      .. _cbr_02_0012__fig2557455115213:
 
-   |image2|
+      **Figure 1** Selecting the file system to be backed up
+
+   |image3|
+
+   -  Click the vault name to go to the vault details page. On the **Associated File Systems** tab page, locate the target file system and click **Perform Backup** in the **Operation** column. See :ref:`Figure 2 <cbr_02_0012__fig91761818493>`.
+
+      .. _cbr_02_0012__fig91761818493:
+
+      **Figure 2** Perform Backup
+
+      |image4|
 
 #. Set **Name** and **Description** for the backup. :ref:`Table 1 <cbr_02_0012__table4829135361311>` describes the parameters.
 
@@ -57,24 +67,17 @@ Procedure
       |                       | It cannot exceed 255 characters.                                                                                                                                 |                       |
       +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
 
-#. (Optional) Click the vault name to go to the vault details page. On the **Associated File Systems** tab page, locate the target file system. Click **Perform Backup** in the **Operation** column of the file system. See :ref:`Figure 2 <cbr_02_0012__fig7287161212118>`.
-
-   .. _cbr_02_0012__fig7287161212118:
-
-   **Figure 2** Perform Backup
-
-   |image3|
-
-#. Click **Yes**. CBR automatically creates a backup for the file system.
+#. Click **OK**. CBR automatically creates a backup for the file system.
 
    On the **Backups** tab page, if the status of the backup is **Available**, the backup task is successful.
 
    .. note::
 
-      If you delete data from the file system during the backup, the deleted data may fail to be backed up. To ensure data integrity, you are advised to wait until the backup task is complete and then make the change and perform a backup again.
+      If you delete data from the file system during the backup, the deleted data may fail to be backed up. Therefore, to ensure data integrity, delete the target data after the backup is complete, and then perform the backup.
 
    After the backup is complete, you can create a new SFS Turbo file system using the backup. For details, see :ref:`Using a Backup to Create a File System <cbr_03_0107>`.
 
 .. |image1| image:: /_static/images/en-us_image_0219685945.png
-.. |image2| image:: /_static/images/en-us_image_0000001091176765.png
-.. |image3| image:: /_static/images/en-us_image_0000001091021893.png
+.. |image2| image:: /_static/images/en-us_image_0000001599563993.jpg
+.. |image3| image:: /_static/images/en-us_image_0000001091176765.png
+.. |image4| image:: /_static/images/en-us_image_0000001584073409.png

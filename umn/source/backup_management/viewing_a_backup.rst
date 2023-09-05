@@ -5,7 +5,7 @@
 Viewing a Backup
 ================
 
-On the backup list, you can set search criteria to filter backups and view backup details. The results contain backup tasks that are running or have completed.
+In the backup list, you can set search criteria to filter backups and view their details. The results contain backup tasks that are running or have completed.
 
 Prerequisites
 -------------
@@ -18,8 +18,8 @@ Viewing Backup Details
 #. Log in to CBR Console.
 
    a. Log in to the management console.
-   b. Click |image1| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose your desired type of backup from the left navigation pane.
+   b. Click |image1| in the upper left corner and select a region.
+   c. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**. Select a backup type from the left navigation pane.
 
 #. Click the **Backups** tab and set filter criteria to view the backups. See :ref:`Figure 1 <cbr_03_0013__fig5673922177>`.
 
@@ -76,3 +76,4 @@ Viewing Backup Details
 #. Click the backup name to view details about the backup.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
+.. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg

@@ -13,8 +13,8 @@ Procedure
 #. Log in to CBR Console.
 
    a. Log in to the management console.
-   b. Click |image1| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose your desired type of backup from the left navigation pane.
+   b. Click |image1| in the upper left corner and select a region.
+   c. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**. Select a backup type from the left navigation pane.
 
 #. In the upper right corner of the page, click **Create Server Backup Vault**.
 
@@ -36,7 +36,7 @@ Procedure
 
    **Figure 1** Selecting servers
 
-   |image2|
+   |image3|
 
    .. note::
 
@@ -77,13 +77,13 @@ Procedure
 
 #. (Optional) Add tags to the vault.
 
-   Tags are key-value pairs, which are used to identify, classify, and search for vaults. You can add a maximum of 10 tags for a vault, and vault tags are only used for vault search and management. See :ref:`Figure 4 <cbr_02_0003__fig138791734631>`.
+   Tags are key-value pairs, which are used to identify, classify, and search for vaults. You can add a maximum of 20 tags for a vault, and vault tags are only used for vault search and management. See :ref:`Figure 4 <cbr_02_0003__fig138791734631>`.
 
    .. _cbr_02_0003__fig138791734631:
 
    **Figure 4** Adding a tag
 
-   |image3|
+   |image4|
 
    :ref:`Table 1 <cbr_02_0003__table191162312815>` describes the parameters of a tag.
 
@@ -124,5 +124,6 @@ Procedure
    You can associate servers with the vault and perform backup for the servers. For details, see :ref:`Querying a Vault <cbr_03_0002>`.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
-.. |image2| image:: /_static/images/en-us_image_0252971476.png
-.. |image3| image:: /_static/images/en-us_image_0251430145.png
+.. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
+.. |image3| image:: /_static/images/en-us_image_0252971476.png
+.. |image4| image:: /_static/images/en-us_image_0251430145.png

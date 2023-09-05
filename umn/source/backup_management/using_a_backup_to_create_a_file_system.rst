@@ -13,12 +13,12 @@ Procedure
 #. Log in to CBR Console.
 
    a. Log in to the management console.
-   b. Click |image1| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose your desired type of backup from the left navigation pane.
+   b. Click |image1| in the upper left corner and select a region.
+   c. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**. Select a backup type from the left navigation pane.
 
-#. Click the **Backups** tab. Locate the desired backup. For details, see :ref:`Viewing a Backup <cbr_03_0013>`.
+#. Click the **Backups** tab and locate the desired backup. For details, see :ref:`Viewing a Backup <cbr_03_0013>`.
 
-#. If the status of the target backup is **Available**, click **Create File System** in the **Operation** column of the backup.
+#. Click **Create File System** in the **Operation** column of the backup. The button is available only when the backup status is **Available**.
 
 #. Configure the file system parameters. See :ref:`Figure 1 <cbr_03_0107__fig126043518315>`.
 
@@ -31,12 +31,13 @@ Procedure
 
    .. note::
 
-      -  You can learn about the parameter descriptions in table "Parameter description" under "Creating an SFS Turbo File System" in the *Scalable File Service User Guide*.
+      -  You can learn about the parameter descriptions in table "Parameter description" under "Creating an SFS Turbo File System" in "Create a File System" of the *Scalable File Service User Guide*.
 
-#. Click **Next**.
+#. Click **Create Now**.
 
 #. Go back to the file system list and check whether the file system is successfully created.
 
    You will see the file system status change as follows: **Creating**, **Available**, **Restoring**, **Available**. You may not notice the **Restoring** status because Instant Restore is supported and the restoration speed is very fast. After the file system status has changed from **Creating** to **Available**, the file system is successfully created. After the status has changed from **Restoring** to **Available**, backup data has been successfully restored to the created file system.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
+.. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg

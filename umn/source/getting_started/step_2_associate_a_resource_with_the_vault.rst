@@ -25,8 +25,8 @@ Procedure
 #. Log in to CBR Console.
 
    a. Log in to the management console.
-   b. Click |image1| in the upper left corner and select your region and project.
-   c. Choose **Storage** > **Cloud Backup and Recovery**. Choose your desired type of backup from the left navigation pane.
+   b. Click |image1| in the upper left corner and select a region.
+   c. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**. Select a backup type from the left navigation pane.
 
 #. On a backup page, locate the target vault and click **Associate Server**, **Associate File System**, or **Associate Disk**.
 
@@ -36,9 +36,9 @@ Procedure
 
    **Figure 1** Associate Server
 
-   |image2|
+   |image3|
 
-#. Click **OK**. Then in the **Associated Servers** column in the vault list, you can view the number of resources that have been successfully associated.
+#. Click **OK**. Then on the **Associated Servers** tab page, you can view the number of resources that have been associated.
 
    .. note::
 
@@ -49,7 +49,7 @@ Automatic Association
 
 If you enable automatic association for a backup vault, the vault will automatically associate the unprotected resources and back them up according to the backup policy applied to the vault.
 
--  You can enable automatic association only when the vault's remaining capacity (Vault's total capacity - Vault's associated capacity) is greater than 40 GB. You can obtain the vault's total capacity and associated capacity in the **Basic Information** area on the details page of the vault. For example, if you have an 800-GB server backup vault and it has been associated with two 100 GB servers, its remaining capacity is 600 GB (800 GB - 200 GB). In this case, you can enable automatic association.
+-  You can enable automatic association only when the vault's remaining capacity (Vault's total capacity - Vault's associated capacity) is greater than both 40 GB and the associated capacity. You can obtain the vault's total capacity and associated capacity in the **Basic Information** area on the details page of the vault. For example, if you have an 800-GB server backup vault and it has been associated with two 100 GB servers, its remaining capacity is 600 GB (800 GB - 200 GB). In this case, you can enable automatic association.
 -  If multiple vaults are enabled with automatic association, CBR scans their backup policies and associates resources with the vault whose next scheduled backup time is the earliest.
 -  If the capacity of the first selected vault is used up, resources will be associated with the vault whose next scheduled backup time is the second earliest.
 -  If a backup policy with the earliest scheduled backup time is applied to more than one vault, CBR randomly associates the resources with one of these vaults.
@@ -59,7 +59,7 @@ If you enable automatic association for a backup vault, the vault will automatic
 #. Log in to CBR Console.
 
    a. Log in to the management console.
-   b. Click |image3| in the upper left corner and select your region and project.
+   b. Click |image4| in the upper left corner and select a region.
    c. Choose **Storage** > **Cloud Backup and Recovery**.
 
 #. On any backup page, locate the target vault.
@@ -74,7 +74,7 @@ If you enable automatic association for a backup vault, the vault will automatic
 
    **Figure 2** Enabling automatic association
 
-   |image4|
+   |image5|
 
 #. Check that **Automatic association** is displayed in the **Associated Servers** column of the vault list.
 
@@ -84,10 +84,11 @@ If you enable automatic association for a backup vault, the vault will automatic
 
    **Figure 3** Disabling automatic association
 
-   |image5|
+   |image6|
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
-.. |image2| image:: /_static/images/en-us_image_0252972053.png
-.. |image3| image:: /_static/images/en-us_image_0160754270.png
-.. |image4| image:: /_static/images/en-us_image_0000001116431701.png
-.. |image5| image:: /_static/images/en-us_image_0000001116214783.png
+.. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
+.. |image3| image:: /_static/images/en-us_image_0252972053.png
+.. |image4| image:: /_static/images/en-us_image_0166222311.png
+.. |image5| image:: /_static/images/en-us_image_0000001116431701.png
+.. |image6| image:: /_static/images/en-us_image_0000001116214783.png
