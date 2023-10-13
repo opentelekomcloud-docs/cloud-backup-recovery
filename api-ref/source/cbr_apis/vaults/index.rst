@@ -14,6 +14,7 @@ Vaults
 -  :ref:`Associating Resources <addvaultresource>`
 -  :ref:`Applying a Policy to a Vault <associatevaultpolicy>`
 -  :ref:`Removing a Policy from a Vault <disassociatevaultpolicy>`
+-  :ref:`Migrating Resources <migratevaultresource>`
 
 .. toctree::
    :maxdepth: 1
@@ -28,3 +29,4 @@ Vaults
    associating_resources
    applying_a_policy_to_a_vault
    removing_a_policy_from_a_vault
+   migrating_resources
