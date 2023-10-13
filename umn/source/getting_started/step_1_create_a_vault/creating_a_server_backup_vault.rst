@@ -71,8 +71,6 @@ Procedure
    -  If you select **Configure**, in the next backup period, CBR will automatically scan all unprotected resources, associate them with the vault, and then perform backups.
    -  If you select **Skip**, CBR will not scan and associate unprotected resources with the vault you are creating.
 
-   You can filter unprotected resources by tag. If a tag is selected, only unprotected resources with the specified tag will be associated with the vault. Or, all unprotected resources will be associated.
-
    If no tag is available, you can create tags on the corresponding resource page. You can search for vaults by specifying a maximum of 5 tags at a time. If you select more than one tag, the vaults with any of the specified tags will be returned.
 
 #. (Optional) Add tags to the vault.

@@ -63,18 +63,17 @@ Procedure
 
 #. (Optional) Add tags to the vault.
 
-   Tags are key-value pairs, which are used to identify, classify, and search for vaults. You can add a maximum of 20 tags for a vault, and vault tags are only used for vault search and management. See :ref:`Figure 4 <cbr_02_0004__fig138791734631>`.
+   Tags are key-value pairs, which are used to identify, classify, and search for vaults. You can add a maximum of 20 tags for a vault, and vault tags are only used for vault search and management. See :ref:`Figure 4 <cbr_02_0004__cbr_02_0003_fig138791734631>`.
 
-   .. _cbr_02_0004__fig138791734631:
+   .. _cbr_02_0004__cbr_02_0003_fig138791734631:
 
-   .. figure:: /_static/images/en-us_image_0251456065.png
-      :alt: **Figure 4** Adding a tag
+   **Figure 4** Adding a tag
 
-      **Figure 4** Adding a tag
+   |image4|
 
-   :ref:`Table 1 <cbr_02_0004__table191162312815>` describes the parameters of a tag.
+   :ref:`Table 1 <cbr_02_0004__cbr_02_0003_table191162312815>` describes the parameters of a tag.
 
-   .. _cbr_02_0004__table191162312815:
+   .. _cbr_02_0004__cbr_02_0003_table191162312815:
 
    .. table:: **Table 1** Tag parameter description
 
@@ -120,3 +119,4 @@ Procedure
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
 .. |image3| image:: /_static/images/en-us_image_0251464008.png
+.. |image4| image:: /_static/images/en-us_image_0251430145.png

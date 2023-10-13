@@ -64,7 +64,7 @@ Procedure for the Recipient
 
 #. Click the **Backups** tab and then click **Backups Shared with Me**.
 
-#. Ensure that the recipient has at least one backup vault before accepting the shared backup. For how to purchase a backup vault, see :ref:`Step 1: Create a Vault <en-us_topic_0170938140>`.
+#. Ensure that the recipient has at least one backup vault before accepting the shared backup. For how to purchase a backup vault, see :ref:`Step 1: Create a Vault <cbr_07_0065>`.
 
 #. Click **Accept**. On the displayed page, select the vault used to store the shared backup. Ensure that the vault's remaining capacity is greater than the backup size.
 
