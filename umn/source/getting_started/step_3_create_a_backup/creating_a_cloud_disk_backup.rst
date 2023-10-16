@@ -7,7 +7,9 @@ Creating a Cloud Disk Backup
 
 This section describes how to quickly create a cloud disk backup.
 
-Backing up a disk does not impact the disk performance. To ensure data integrity, you are advised to back up the disk during off-peak hours when no data is written to the disk.
+Backing up a server does not impact the disk performance.
+
+Peak hours of the backup service are from 00:00 to 06:00, during which backup schedules may be delayed. So you are advised to evaluate your service types and schedule backups outside of the backup peak hours.
 
 Prerequisites
 -------------

@@ -12,12 +12,21 @@ After a server backup vault or disk backup vault is created, you can associate s
 Prerequisites
 -------------
 
--  The servers you plan to associate with a vault must be in the **Running** or **Stopped** state.
--  The disks you plan to associate with a vault must be in the **Available** or **In-use** state.
--  The SFS Turbo file systems you plan to associate with a vault must be in the **Available** state.
+-  A vault can be associated with a maximum of 256 resources.
 -  The servers you plan to associate with a vault must have at least one disk attached.
 -  The vault and the resources you plan to associate with it must be in the same region.
 -  The total size of the resources to be associated cannot be greater than the vault capacity.
+-  Resources can be associated only when they are in the statuses in the table below.
+
+   .. table:: **Table 1** Resource statuses available for association
+
+      ===================== ===================
+      Resource Type         Status
+      ===================== ===================
+      Cloud server          Running or Stopped
+      Cloud disk            Available or In-use
+      SFS Turbo file system Available
+      ===================== ===================
 
 Procedure
 ---------

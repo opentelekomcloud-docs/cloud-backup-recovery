@@ -44,11 +44,17 @@ Procedure
 
 #. (Optional) Add tags to the vault.
 
-   Tags are key-value pairs, which are used to identify, classify, and search for vaults. You can add a maximum of 20 tags for a vault, and vault tags are only used for vault search and management.
+   Tags are key-value pairs, which are used to identify, classify, and search for vaults. You can add a maximum of 20 tags for a vault, and vault tags are only used for vault search and management. See :ref:`Figure 2 <cbr_02_0010__cbr_02_0003_fig138791734631>`.
 
-   :ref:`Table 1 <cbr_02_0010__table191162312815>` describes the parameters of a tag.
+   .. _cbr_02_0010__cbr_02_0003_fig138791734631:
 
-   .. _cbr_02_0010__table191162312815:
+   **Figure 2** Adding a tag
+
+   |image4|
+
+   :ref:`Table 1 <cbr_02_0010__cbr_02_0003_table191162312815>` describes the parameters of a tag.
+
+   .. _cbr_02_0010__cbr_02_0003_table191162312815:
 
    .. table:: **Table 1** Tag parameter description
 
@@ -87,3 +93,4 @@ Procedure
 .. |image1| image:: /_static/images/en-us_image_0000001587692708.png
 .. |image2| image:: /_static/images/en-us_image_0000001599596653.jpg
 .. |image3| image:: /_static/images/en-us_image_0000001088492789.png
+.. |image4| image:: /_static/images/en-us_image_0251430145.png
