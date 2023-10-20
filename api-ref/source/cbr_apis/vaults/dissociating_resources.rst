@@ -61,7 +61,7 @@ Example Requests
 
 .. code-block:: text
 
-   POST https://{endpoint}/v3/f841e01fd2b14e7fa41b6ae7aa6b0594/vaults/79bd9daa-884f-4f84-b8fe-235d58cd927d/associatepolicy
+   POST https://{endpoint}/v3/f841e01fd2b14e7fa41b6ae7aa6b0594/vaults/79bd9daa-884f-4f84-b8fe-235d58cd927d/removeresources
 
    {
      "resource_ids" : [ "97595625-198e-4e4d-879b-9d53f68ba551" ]
