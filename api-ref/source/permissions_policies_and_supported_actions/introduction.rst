@@ -5,7 +5,7 @@
 Introduction
 ============
 
-You can use Identity and Access Management (IAM) for fine-grained permissions management of your CBR resources. If your account does not need individual IAM users, you can skip this section.
+You can use Identity and Access Management (IAM) for fine-grained permissions management of your CBR resources. If your cloud account does not need individual IAM users, you can skip this section.
 
 New IAM users do not have any permissions assigned by default. You need to first add them to one or more groups and attach policies or roles to these groups. The users then inherit permissions from the groups and can perform specified operations on cloud services based on the permissions they have been assigned.
 
