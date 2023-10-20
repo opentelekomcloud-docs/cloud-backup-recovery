@@ -22,6 +22,7 @@ Prerequisites
       Once a backup creation starts, the backup enters the **Creating** state. After a period of time, a message stating "Image can be created" is displayed under **Creating**. In this case, the backup can be used for creating an image, even though it is still being created and cannot be used for restoration.
 
 -  The backup contains the system disk data.
+-  Only ECS backups can be used to create images.
 
 Notes
 -----

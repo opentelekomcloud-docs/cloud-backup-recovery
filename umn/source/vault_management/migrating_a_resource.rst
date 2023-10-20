@@ -35,7 +35,7 @@ Procedure
 
       **Figure 1** Migrating a resource
 
-#. Select the destination vault and click **Yes**.
+#. Select the destination vault and click **OK**.
 
 #. View the migration progress on the **Tasks** page. If **Status** changes to **Successful**, the resource has been migrated.
 
