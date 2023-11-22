@@ -284,7 +284,7 @@ OK
      "backups" : [ {
        "provider_id" : "0daac4c5-6707-4851-97ba-169e36266b66",
        "checkpoint_id" : "1fced58b-2a31-4851-bcbb-96216f83ce99",
-       "updated_at" : "2020-02-21T07:07:25.113761",
+       "updated_at" : "2020-02-21T07:07:25.114+00:00",
        "vault_id" : "cca85ea5-00a4-418d-9222-bd83985bc515",
        "id" : "b1c4afd9-e7a6-4888-9010-c2bac3aa7910",
        "resource_az" : "br-iaas-odin1a",
@@ -303,14 +303,14 @@ OK
        "status" : "available",
        "resource_name" : "test001-02",
        "description" : "",
-       "expired_at" : "2020-05-21T07:00:54.060493",
+       "expired_at" : "2020-05-21T07:00:54.060+00:00",
        "name" : "autobk_b629",
-       "created_at" : "2020-02-21T07:00:54.065135",
+       "created_at" : "2020-02-21T07:00:54.065+00:00",
        "resource_type" : "OS::Nova::Server"
      }, {
        "provider_id" : "d1603440-187d-4516-af25-121250c7cc97",
        "checkpoint_id" : "f64c351f-769f-4c04-8806-fd90a59e9b12",
-       "updated_at" : "2020-02-21T07:09:37.767084",
+       "updated_at" : "2020-02-21T07:09:37.767+00:00",
        "vault_id" : "79bd9daa-884f-4f84-b8fe-235d58cd927d",
        "id" : "5606aab5-2dc2-4498-8144-dc848d099af5",
        "resource_az" : "br-iaas-odin1a",
@@ -330,9 +330,9 @@ OK
        "status" : "available",
        "resource_name" : "qsy_000",
        "description" : "",
-       "expired_at" : "2020-03-22T07:00:34.877896",
+       "expired_at" : "2020-03-22T07:00:34.878+00:00",
        "name" : "autobk_6809",
-       "created_at" : "2020-02-21T07:00:34.882174",
+       "created_at" : "2020-02-21T07:00:34.882+00:00",
        "resource_type" : "OS::Cinder::Volume"
      } ]
    }
