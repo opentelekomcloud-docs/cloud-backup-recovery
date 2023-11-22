@@ -193,7 +193,7 @@ Response Parameters
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | product_id            | String                | Product ID                                                                                                                                                                         |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | protect_type          | String                | Protection type, which is **backup**                                                                                                                                               |
+   | protect_type          | String                | Protection type, which can be **backup** or **replication**                                                                                                                        |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | size                  | Integer               | Capacity, in GB                                                                                                                                                                    |
    |                       |                       |                                                                                                                                                                                    |
@@ -366,24 +366,21 @@ OK
          "status" : "available",
          "used" : 0,
          "protect_type" : "backup",
-         "order_id" : null,
          "object_type" : "server",
          "allocated" : 40,
          "spec_code" : "vault.backup.server.normal",
          "size" : 200,
          "cloud_type" : "public",
-         "product_id" : null,
          "consistent_level" : "crash_consistent",
-         "storage_unit" : null,
          "charging_mode" : "post_paid"
        },
        "tags" : [ {
          "value" : "value01",
          "key" : "key01"
        } ],
-       "created_at" : "2019-05-08T09:31:21.840431",
+       "created_at" : "2019-05-08T09:31:21.840+00:00",
        "project_id" : "4229d7a45436489f8c3dc2b1d35d4987",
-       "enterprise_project_id" : "0",
+       "enterprise_project_id" : 0,
        "id" : "2402058d-8373-4b0a-b848-d3c0dfdc71a8",
        "resources" : [ {
          "name" : "ecs-1f0f-0003",

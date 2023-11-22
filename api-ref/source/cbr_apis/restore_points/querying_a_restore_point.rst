@@ -185,22 +185,20 @@ OK
    {
      "checkpoint" : {
        "status" : "available",
-       "created_at" : "2019-05-10T07:59:12.036982",
+       "created_at" : "2019-05-10T07:59:12.037+00:00",
        "vault" : {
          "id" : "3b5816b5-f29c-4172-9d9a-76c719a659ce",
          "resources" : [ {
            "name" : "ecs-1f0f-0002",
-           "resource_size" : "40",
+           "resource_size" : 40,
            "protect_status" : "available",
            "type" : "OS::Nova::Server",
-           "id" : "94eba8b2-acc9-4d82-badc-127144cc5526",
-           "extra_info" : null
+           "id" : "94eba8b2-acc9-4d82-badc-127144cc5526"
          } ],
          "name" : "vault-be94"
        },
        "project_id" : "4229d7a45436489f8c3dc2b1d35d4987",
-       "id" : "8b0851a8-adf3-4f4c-a914-dead08bf9664",
-       "extra_info" : null
+       "id" : "8b0851a8-adf3-4f4c-a914-dead08bf9664"
      }
    }
 

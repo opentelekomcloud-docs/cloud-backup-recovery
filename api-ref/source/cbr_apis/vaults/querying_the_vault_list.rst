@@ -156,7 +156,7 @@ Response Parameters
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | product_id            | String                | Product ID                                                                                                                                                                         |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | protect_type          | String                | Protection type, which is **backup**                                                                                                                                               |
+   | protect_type          | String                | Protection type, which can be **backup** or **replication**                                                                                                                        |
    +-----------------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | size                  | Integer               | Capacity, in GB                                                                                                                                                                    |
    |                       |                       |                                                                                                                                                                                    |
@@ -317,12 +317,11 @@ OK
      "vaults" : [ {
        "id" : "a335f9e1-1628-4c64-a7be-38656e5ec19c",
        "name" : "vault-8538",
-       "description" : null,
        "resources" : [ ],
        "provider_id" : "0daac4c5-6707-4851-97ba-169e36266b66",
-       "created_at" : "2020-09-04T06:57:37.343535",
+       "created_at" : "2020-09-04T06:57:37.344+00:00",
        "project_id" : "0605767b5780d5762fc5c0118072a564",
-       "enterprise_project_id" : "0",
+       "enterprise_project_id" : 0,
        "auto_bind" : false,
        "bind_rules" : { },
        "auto_expand" : false,
@@ -331,15 +330,11 @@ OK
          "allocated" : 0,
          "cloud_type" : "public",
          "consistent_level" : "crash_consistent",
-         "frozen_scene" : null,
          "charging_mode" : "post_paid",
-         "order_id" : null,
-         "product_id" : null,
          "protect_type" : "backup",
          "object_type" : "server",
          "spec_code" : "vault.backup.server.normal",
          "used" : 0,
-         "storage_unit" : null,
          "status" : "available",
          "size" : 100
        },

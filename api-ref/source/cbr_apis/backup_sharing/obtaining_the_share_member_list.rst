@@ -123,12 +123,9 @@ OK
    {
      "members" : [ {
        "status" : "pending",
-       "image_id" : null,
        "backup_id" : "0b07081e-3ec7-4e77-8571-54e2947da422",
-       "vault_id" : null,
        "dest_project_id" : "075e6035d300d48c2fd0c00b78b71ebf",
-       "created_at" : "2020-02-05T10:38:34.209782",
-       "updated_at" : null,
+       "created_at" : "2020-02-05T10:38:34.210+00:00",
        "id" : "3c5a3015-c3a0-4dc6-a1e2-917b90f62319"
      } ],
      "count" : 50
