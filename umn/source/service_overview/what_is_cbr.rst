@@ -27,11 +27,16 @@ A backup is a copy of a particular chunk of data and is usually stored elsewhere
 
 CBR stores backups in vaults. Before creating a backup, you need to create at least one vault and associate the resources you want to back up with the vaults. Then the resources can be backed up to the associated vaults.
 
+Vaults can be either backup vaults or replication vaults. Backup vaults store resource backups, and replication vaults store backup replicas.
+
 Different types of resources must be backed up to different types of vaults. For example, cloud servers must be backed up to server backup vaults, not disk backup vaults or any other types of vaults.
 
 **Policy**
 
+There are backup policies and replication policies.
+
 -  A backup policy defines when you want to take a backup and for how long you would retain each backup.
+-  A replication policy defines when you want to replicate from backup vaults and for how long you would retain each replica. Backup replicas are stored in replication vaults.
 
 
 .. figure:: /_static/images/en-us_image_0277693887.png
