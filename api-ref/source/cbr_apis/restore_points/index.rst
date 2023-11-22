@@ -1,16 +1,18 @@
-:original_name: topic_300000003.html
+:original_name: topic_300000008.html
 
-.. _topic_300000003:
+.. _topic_300000008:
 
 Restore Points
 ==============
 
--  :ref:`Querying a Restore Point <showcheckpoint>`
 -  :ref:`Creating a Restore Point <createcheckpoint>`
+-  :ref:`Replicating a Restore Point <copycheckpoint>`
+-  :ref:`Querying a Restore Point <showcheckpoint>`
 
 .. toctree::
    :maxdepth: 1
    :hidden: 
 
-   querying_a_restore_point
    creating_a_restore_point
+   replicating_a_restore_point
+   querying_a_restore_point
