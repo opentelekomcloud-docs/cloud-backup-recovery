@@ -42,7 +42,7 @@ Process Flow
 
 #. Log in and verify permissions.
 
-   Log in to CBR Console as the created user and verify that the user has read-only permissions for CBR.
+   Log in to the CBR console as the created user and verify that the user has read-only permissions for CBR.
 
-   -  Choose **Service List** > **Cloud Backup and Recovery**. Then click **Create Server Backup Vault** on CBR Console. If a message appears indicating that you do not have the permissions to perform the operation, the **CBR ReadOnlyAccess** policy has already taken effect.
+   -  Choose **Service List** > **Cloud Backup and Recovery**. Then click **Create Server Backup Vault** on the CBR console. If a message appears indicating that you do not have the permissions to perform the operation, the **CBR ReadOnlyAccess** policy has already taken effect.
    -  Choose any other service in **Service List**. If a message appears indicating that you do not have the permissions to access the service, the **CBR ReadOnlyAccess** policy has already taken effect.

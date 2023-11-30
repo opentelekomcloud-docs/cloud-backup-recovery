@@ -25,7 +25,7 @@ Context
 Procedure for the Sharer
 ------------------------
 
-#. Log in to CBR Console.
+#. Log in to the CBR console.
 
    a. Log in to the management console.
    b. Click |image1| in the upper left corner and select a region.
@@ -56,7 +56,7 @@ Procedure for the Sharer
 Procedure for the Recipient
 ---------------------------
 
-#. Log in to CBR Console.
+#. Log in to the CBR console.
 
    a. Log in to the management console.
    b. Click |image4| in the upper left corner and select a region.

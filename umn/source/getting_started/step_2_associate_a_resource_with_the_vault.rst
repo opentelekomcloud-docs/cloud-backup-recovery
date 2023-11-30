@@ -31,7 +31,7 @@ Prerequisites
 Procedure
 ---------
 
-#. Log in to CBR Console.
+#. Log in to the CBR console.
 
    a. Log in to the management console.
    b. Click |image1| in the upper left corner and select a region.
@@ -65,7 +65,7 @@ If you enable automatic association for a backup vault, the vault will automatic
 -  If a vault has automatic association enabled but has no backup policy applied, no resources will be automatically associated with this vault. You can manually associate unprotected resources.
 -  After automatic association is disabled for a vault, the vault stops automatically scanning for unprotected resources. Associated resources are not affected.
 
-#. Log in to CBR Console.
+#. Log in to the CBR console.
 
    a. Log in to the management console.
    b. Click |image4| in the upper left corner and select a region.
