@@ -10,7 +10,7 @@ You can add, edit, or delete tags of a vault. Vault tags are used to filter and 
 Procedure
 ---------
 
-#. Log in to CBR Console.
+#. Log in to the CBR console.
 
    a. Log in to the management console.
    b. Click |image1| in the upper left corner and select a region.
