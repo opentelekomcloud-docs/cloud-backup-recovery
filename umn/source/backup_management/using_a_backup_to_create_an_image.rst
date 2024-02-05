@@ -7,6 +7,8 @@ Using a Backup to Create an Image
 
 CBR allows you to create images using ECS backups. You can use the images to provision ECSs to rapidly restore service running environments.
 
+You can also use server backups to create images and then provision servers to restore data if your servers were accidentally deleted.
+
 Prerequisites
 -------------
 
