@@ -45,7 +45,7 @@ Example Requests
 
 .. code-block:: text
 
-   DELETE  https://{endpoint}/v3/{project_id}/backups/{backup_id}
+   DELETE https://{endpoint}/v3/{project_id}/backups/{backup_id}
 
 Example Responses
 -----------------

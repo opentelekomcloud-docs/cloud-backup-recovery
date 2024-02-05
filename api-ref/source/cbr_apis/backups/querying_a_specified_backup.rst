@@ -171,7 +171,7 @@ Example Requests
 
 .. code-block:: text
 
-   GET  https://{endpoint}/v3/{project_id}/backups/{backup_id}
+   GET https://{endpoint}/v3/{project_id}/backups/{backup_id}
 
 Example Responses
 -----------------
