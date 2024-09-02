@@ -9,7 +9,7 @@ This section describes how to quickly create an SFS Turbo file system backup.
 
 To ensure data integrity, you are advised to back up the file system during off-peak hours when no data is written to the file system.
 
-Peak hours of the backup service are from 00:00 to 06:00, during which backup schedules may be delayed. So you are advised to evaluate your service types and schedule backups outside of the backup peak hours.
+Peak hours of the backup service are from 22:00 to 08:00, during which there may be delays. So you are advised to evaluate your service types and schedule backups in discrete time periods.
 
 Prerequisites
 -------------
@@ -35,7 +35,7 @@ Procedure
 
       **Figure 1** Selecting the file system to be backed up
 
-   |image3|
+      |image3|
 
    -  Click the vault name to go to the vault details page. On the **Associated File Systems** tab page, locate the target file system and click **Perform Backup** in the **Operation** column. See :ref:`Figure 2 <cbr_02_0012__fig91761818493>`.
 
@@ -77,9 +77,9 @@ Procedure
 
       If you delete data from the file system during the backup, the deleted data may fail to be backed up. Therefore, to ensure data integrity, delete the target data after the backup is complete, and then perform the backup.
 
-   After the backup is complete, you can create a new SFS Turbo file system using the backup. For details, see :ref:`Using a Backup to Create a File System <cbr_03_0107>`.
+   After the backup is complete, you can create a new SFS Turbo file system using the backup. For details, see :ref:`Creating a File System from an SFS Turbo Backup <cbr_03_0107>`.
 
 .. |image1| image:: /_static/images/en-us_image_0219685945.png
 .. |image2| image:: /_static/images/en-us_image_0000001599563993.jpg
-.. |image3| image:: /_static/images/en-us_image_0000001091176765.png
+.. |image3| image:: /_static/images/en-us_image_0000002028900293.png
 .. |image4| image:: /_static/images/en-us_image_0000001584073409.png

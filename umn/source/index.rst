@@ -14,8 +14,8 @@ Cloud Backup and Recovery - User Guide
    restoring_data/index
    optional_migrating_resources_from_csbs_vbs
    managing_tasks
-   monitoring/index
-   auditing
+   cloud_eye_monitoring/index
+   recording_cbr_operations_using_cts
    quotas
    faqs/index
    troubleshooting_cases/index

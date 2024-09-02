@@ -1,6 +1,6 @@
-:original_name: cbr_03_0046.html
+:original_name: cbr_03_0160.html
 
-.. _cbr_03_0046:
+.. _cbr_03_0160:
 
 Change History
 ==============
@@ -98,17 +98,23 @@ Change History
 |                                   | -  Added screenshots in section "Managing Tasks."                                                                                                                                |
 |                                   | -  Added screenshots in section "Auditing."                                                                                                                                      |
 +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| 2019-09-11                        | This issue is the fourth official release, which incorporates the following change:                                                                                              |
+| 2019-09-11                        | This issue is the fourth official release.                                                                                                                                       |
+|                                   |                                                                                                                                                                                  |
+|                                   | Updated the following content:                                                                                                                                                   |
 |                                   |                                                                                                                                                                                  |
 |                                   | Accepted for RM-530.                                                                                                                                                             |
 +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| 2019-09-04                        | This issue is the third official release, which incorporates the following changes:                                                                                              |
+| 2019-09-04                        | This issue is the third official release.                                                                                                                                        |
+|                                   |                                                                                                                                                                                  |
+|                                   | Updated the following content:                                                                                                                                                   |
 |                                   |                                                                                                                                                                                  |
 |                                   | -  Modified descriptions in sections "What Is CBR", "Related Services", "Basic Concepts", "Constraints", "Creating a Server Backup Vault", and "Deleting a Vault."               |
 |                                   | -  Modified description in sections "Using a Backup to Create an Image", "Restoring Data Using a Cloud Disk Backup", and FAQ "Can I Use a System Disk Backup to Recover an ECS?" |
 |                                   | -  Modified the architecture of CBR in section "What Is CBR?"                                                                                                                    |
 +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| 2019-08-08                        | This issue is the second official release, which incorporates the following changes:                                                                                             |
+| 2019-08-08                        | This issue is the second official release.                                                                                                                                       |
+|                                   |                                                                                                                                                                                  |
+|                                   | Updated the following content:                                                                                                                                                   |
 |                                   |                                                                                                                                                                                  |
 |                                   | -  Deleted description about cross-region replication and application-consistent backup.                                                                                         |
 |                                   | -  Added screenshots.                                                                                                                                                            |

@@ -35,10 +35,9 @@ Procedure
 
    .. _cbr_02_0004__fig179361847142520:
 
-   .. figure:: /_static/images/en-us_image_0251455468.png
-      :alt: **Figure 2** Setting the vault capacity
+   **Figure 2** Setting the vault capacity
 
-      **Figure 2** Setting the vault capacity
+   |image4|
 
 #. Configure auto backup. See :ref:`Figure 3 <cbr_02_0004__fig4582143195315>`.
 
@@ -69,7 +68,7 @@ Procedure
 
    **Figure 4** Adding a tag
 
-   |image4|
+   |image5|
 
    :ref:`Table 1 <cbr_02_0004__cbr_02_0003_table191162312815>` describes the parameters of a tag.
 
@@ -118,5 +117,6 @@ Procedure
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
-.. |image3| image:: /_static/images/en-us_image_0251464008.png
-.. |image4| image:: /_static/images/en-us_image_0251430145.png
+.. |image3| image:: /_static/images/en-us_image_0000001926225120.png
+.. |image4| image:: /_static/images/en-us_image_0000001953185673.png
+.. |image5| image:: /_static/images/en-us_image_0251430145.png

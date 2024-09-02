@@ -127,4 +127,4 @@ At 10:00 a.m. on Monday, a user sets a backup policy for their vault to instruct
 
 .. |image1| image:: /_static/images/en-us_image_0000001630830957.png
 .. |image2| image:: /_static/images/en-us_image_0000001630790433.jpg
-.. |image3| image:: /_static/images/en-us_image_0224255894.png
+.. |image3| image:: /_static/images/en-us_image_0000002022201825.png

@@ -9,7 +9,7 @@ This section describes how to quickly create a cloud disk backup.
 
 Backing up a server does not impact the disk performance.
 
-Peak hours of the backup service are from 00:00 to 06:00, during which backup schedules may be delayed. So you are advised to evaluate your service types and schedule backups outside of the backup peak hours.
+Peak hours of the backup service are from 22:00 to 08:00, during which there may be delays. So you are advised to evaluate your service types and schedule backups in discrete time periods.
 
 Prerequisites
 -------------
@@ -35,7 +35,7 @@ Procedure
 
       **Figure 1** Selecting the disk to be backed up
 
-   |image3|
+      |image3|
 
    -  Click the vault name to go to the vault details page. On the **Associated Disks** tab page, locate the target disk and click **Perform Backup** in the **Operation** column. See :ref:`Figure 2 <cbr_02_0007__fig19972192464112>`.
 
@@ -93,6 +93,6 @@ Procedure
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
-.. |image3| image:: /_static/images/en-us_image_0251464955.png
+.. |image3| image:: /_static/images/en-us_image_0000002028782365.png
 .. |image4| image:: /_static/images/en-us_image_0000001533473474.png
 .. |image5| image:: /_static/images/en-us_image_0184062862.png
