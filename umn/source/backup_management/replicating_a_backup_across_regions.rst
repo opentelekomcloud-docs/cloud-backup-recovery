@@ -11,7 +11,7 @@ Replicas of server backups can be used to create images and provision servers.
 
 With cross-region replication, you can quickly deploy services in a different region. Data on the new resource in the destination region is the same as that on the original resource when you took the backup.
 
-You can replicate backups in either of the following methods on CBR Console:
+You can replicate backups in either of the following methods on the CBR console:
 
 -  Select a backup from the backup list and manually perform a replication.
 -  Select a backup vault and manually replicate it. Alternatively, you can configure a replication policy to periodically replicate backups that have not been replicated or failed to be replicated to the destination region.
@@ -42,7 +42,7 @@ Constraints
 Procedure
 ---------
 
-#. Log in to CBR Console.
+#. Log in to the CBR console.
 
    a. Log in to the management console.
    b. Click |image1| in the upper left corner and select a region.
@@ -85,10 +85,6 @@ Procedure
       | Destination Vault                 | A replication vault in the destination region                                                                                                                  |
       |                                   |                                                                                                                                                                |
       |                                   | You can replicate backups to vaults in multiple destination regions. Creating replica will replicate all backups in the source vault to the destination vault. |
-      +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-      | Enable Acceleration               | Whether to accelerate replication                                                                                                                              |
-      |                                   |                                                                                                                                                                |
-      |                                   | The acceleration function is billed by traffic.                                                                                                                |
       +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
    .. note::

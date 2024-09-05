@@ -34,7 +34,7 @@ Constraints
 Procedure
 ---------
 
-#. Log in to CBR Console.
+#. Log in to the CBR console.
 
    a. Log in to the management console.
    b. Click |image1| in the upper left corner and select a region.
@@ -67,10 +67,6 @@ Procedure
       |                                   | -  If the selected region has multiple projects, the default project of the region is selected. You can select another project if needed. |
       +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
       | Destination Vault                 | A replication vault in the destination region                                                                                             |
-      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-      | Enable Acceleration               | Whether to accelerate replication                                                                                                         |
-      |                                   |                                                                                                                                           |
-      |                                   | The acceleration function is billed by traffic.                                                                                           |
       +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
 
 #. Click **OK**.
