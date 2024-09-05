@@ -18,11 +18,12 @@ Constraints
 -  When expired backups are deleted, automatic backups will be deleted, but manual backups will not.
 -  Only servers in the **Running** or **Stopped** state and disks in the **Available** or **In-use** state can be backed up.
 -  CBR by default performs a full backup for a resource in the initial backup and incremental backups in all subsequent backups.
+-  The minimum interval between two full backups is 1 day.
 
 Procedure
 ---------
 
-#. Log in to CBR Console.
+#. Log in to the CBR console.
 
    a. Log in to the management console.
    b. Click |image1| in the upper left corner and select a region.
