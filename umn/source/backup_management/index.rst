@@ -11,6 +11,7 @@ Backup Management
 -  :ref:`Using a Backup to Create an Image <cbr_03_0016>`
 -  :ref:`Using a Backup to Create a Disk <cbr_03_0017>`
 -  :ref:`Using a Backup to Create a File System <cbr_03_0107>`
+-  :ref:`Replicating a Backup Across Regions <cbr_03_0018>`
 
 .. toctree::
    :maxdepth: 1
@@ -22,3 +23,4 @@ Backup Management
    using_a_backup_to_create_an_image
    using_a_backup_to_create_a_disk
    using_a_backup_to_create_a_file_system
+   replicating_a_backup_across_regions

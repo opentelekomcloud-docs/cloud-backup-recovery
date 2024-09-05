@@ -10,6 +10,7 @@ Vault Management
 -  :ref:`Dissociating a Resource <cbr_03_0005>`
 -  :ref:`Migrating a Resource <cbr_03_0116>`
 -  :ref:`Expanding Vault Capacity <cbr_03_0006>`
+-  :ref:`Replicating a Vault <cbr_03_0009>`
 -  :ref:`Managing Vault Tags <cbr_03_0010>`
 
 .. toctree::
@@ -21,4 +22,5 @@ Vault Management
    dissociating_a_resource
    migrating_a_resource
    expanding_vault_capacity
+   replicating_a_vault
    managing_vault_tags

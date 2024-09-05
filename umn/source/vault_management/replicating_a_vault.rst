@@ -1,0 +1,82 @@
+:original_name: cbr_03_0009.html
+
+.. _cbr_03_0009:
+
+Replicating a Vault
+===================
+
+CBR allows you to replicate server backup vaults entirely to replication vaults in a different region. Replicas of server backups in the destination region can be used to create images and provision servers.
+
+There are two methods available for replicating a vault.
+
+-  Manual replication: Select a backup vault and manually replicate it.
+-  Policy-based replication: Configure a replication policy to periodically replicate backups that have not been replicated or failed to be replicated to the destination region.
+
+Constraints
+-----------
+
+-  Disk backup vaults cannot be replicated to other regions.
+-  Backup data can be replicated to vaults in different regions, and backup replicas occupy the replication vault space.
+-  A server backup vault can be replicated only when it contains at least one backup that meets all the following conditions:
+
+   #. The backup is an ECS backup.
+   #. The backup contains system disk data.
+   #. The backup is in the **Available** state.
+
+-  Only backup vaults can be replicated. Replicated vaults cannot be replicated again but their replicas can be used to create images.
+-  A backup vault can be replicated to different destination regions. The replication rule varies with the replication method:
+
+   -  Manual replication: A backup can be manually replicated to the destination region as long as it has no replica in that region. A backup can be manually replicated again if its replica in the destination region has been deleted.
+   -  Policy-based replication: A backup can only be automatically replicated to a destination region once. It cannot be automatically replicated to that region again, even if its replica has been deleted.
+
+-  Only replication-supported regions can be selected as destination regions.
+
+Procedure
+---------
+
+#. Log in to CBR Console.
+
+   a. Log in to the management console.
+   b. Click |image1| in the upper left corner and select a region.
+   c. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**. Select a backup type from the left navigation pane.
+
+#. On the **Vaults** tab, find the target backup vault.
+
+#. Choose **More** > **Create Replica** in the **Operation** column of the vault. See :ref:`Figure 1 <cbr_03_0009__fig6867058144918>`.
+
+   .. _cbr_03_0009__fig6867058144918:
+
+   **Figure 1** Creating a replica
+
+   |image3|
+
+#. In the displayed dialog box, configure the parameters as described in :ref:`Table 1 <cbr_03_0009__table4829135361311>`.
+
+   .. _cbr_03_0009__table4829135361311:
+
+   .. table:: **Table 1** Parameter description
+
+      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
+      | Parameter                         | Description                                                                                                                               |
+      +===================================+===========================================================================================================================================+
+      | Destination Region                | Region to which the vault is replicated                                                                                                   |
+      |                                   |                                                                                                                                           |
+      |                                   | Only the regions that support replication will be displayed.                                                                              |
+      |                                   |                                                                                                                                           |
+      |                                   | -  If the selected region contains only one project, you can directly select the region name.                                             |
+      |                                   | -  If the selected region has multiple projects, the default project of the region is selected. You can select another project if needed. |
+      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
+      | Destination Vault                 | A replication vault in the destination region                                                                                             |
+      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
+      | Enable Acceleration               | Whether to accelerate replication                                                                                                         |
+      |                                   |                                                                                                                                           |
+      |                                   | The acceleration function is billed by traffic.                                                                                           |
+      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
+
+#. Click **OK**.
+
+#. After the replication is complete, you can switch to the destination region to view generated replicas. For details, see :ref:`Querying a Vault <cbr_03_0002>`. You can then use replicas to create images.
+
+.. |image1| image:: /_static/images/en-us_image_0159365094.png
+.. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
+.. |image3| image:: /_static/images/en-us_image_0000001754810509.png

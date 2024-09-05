@@ -21,6 +21,9 @@ Procedure
 #. Select a protection type.
 
    -  **Backup**: A server backup vault stores server backups.
+   -  **Replication**: A server replication vault stores replicas of server backups. If you select **Replication**, you do not need to select a server.
+
+   For example, if you want to back up a server, select **Backup** for the vault protection type. If you want to replicate backups of a server from one region to another, select **Replication** for the vault in this other region.
 
 #. (Optional) In the server list, select the servers or disks you want to back up. After the servers or disks are selected, they are added to the list of selected servers. See :ref:`Figure 1 <cbr_02_0003__fig204531717131710>`. You can also select specific disks on a server and associate them with the vault.
 
