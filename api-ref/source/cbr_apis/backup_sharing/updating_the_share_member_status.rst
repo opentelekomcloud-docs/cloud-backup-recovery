@@ -125,12 +125,10 @@ OK
    {
      "member" : {
        "status" : "accepted",
-       "image_id" : null,
        "backup_id" : "17c9acd8-3af3-4401-bab9-ff1cfac15561",
        "vault_id" : "4b27c05b-8ad7-48c6-a886-526666c035f0",
        "dest_project_id" : "0761021b8900d2622f38c0115db0b331",
-       "created_at" : "2020-02-24T09:36:00.479033",
-       "updated_at" : null,
+       "created_at" : "2020-02-24T09:36:00.479+00:00",
        "id" : "824a90b3-c562-448b-ab04-60ea4a97cf60"
      }
    }

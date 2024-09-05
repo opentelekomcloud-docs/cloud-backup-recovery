@@ -281,17 +281,16 @@ OK
    {
      "checkpoint" : {
        "status" : "protecting",
-       "created_at" : "2019-05-10T07:59:12.733403",
+       "created_at" : "2019-05-10T07:59:12.733+00:00",
        "vault" : {
          "skipped_resources" : [ ],
          "id" : "3b5816b5-f29c-4172-9d9a-76c719a659ce",
          "resources" : [ {
            "name" : "ecs-1f0f-0002",
-           "resource_size" : "40",
+           "resource_size" : 40,
            "protect_status" : "available",
            "type" : "OS::Nova::Server",
-           "id" : "94eba8b2-acc9-4d82-badc-127144cc5526",
-           "extra_info" : null
+           "id" : "94eba8b2-acc9-4d82-badc-127144cc5526"
          } ],
          "name" : "vault-be94"
        },
