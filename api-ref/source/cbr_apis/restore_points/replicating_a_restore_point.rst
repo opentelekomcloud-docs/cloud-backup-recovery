@@ -61,8 +61,6 @@ Request Parameters
    +------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
    | destination_vault_id   | Yes             | String          | ID of the vault in the replication destination region                                                                                              |
    +------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-   | enable_acceleration    | No              | Boolean         | Whether to enable the acceleration function to shorten the time spent on cross-region replication.                                                 |
-   +------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
    | vault_id               | Yes             | String          | Vault ID (UUID)                                                                                                                                    |
    +------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 
@@ -76,7 +74,7 @@ Response Parameters
    +-------------+--------------------------------------------------------------------------------------------------+-------------+
    | Parameter   | Type                                                                                             | Description |
    +=============+==================================================================================================+=============+
-   | replication | :ref:`CheckpointReplicateRespBody <copycheckpoint__response_checkpointreplicaterespbody>` object |             |
+   | replication | :ref:`CheckpointReplicateRespBody <copycheckpoint__response_checkpointreplicaterespbody>` object |             |
    +-------------+--------------------------------------------------------------------------------------------------+-------------+
 
 .. _copycheckpoint__response_checkpointreplicaterespbody:
@@ -130,7 +128,6 @@ Replicating backups
        "destination_project_id" : "68589cac08274b82b4e254268a3862d8",
        "destination_region" : "region2",
        "destination_vault_id" : "0ca3eb86-8800-46da-9c37-9d657a825274",
-       "enable_acceleration" : false,
        "vault_id" : "3b5816b5-f29c-4172-9d9a-76c719a659ce"
      }
    }

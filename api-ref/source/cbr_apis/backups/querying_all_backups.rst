@@ -268,7 +268,7 @@ Example Requests
 
 .. code-block:: text
 
-   GET  https://{endpoint}/v3/{project_id}/backups
+   GET https://{endpoint}/v3/{project_id}/backups
 
 Example Responses
 -----------------
