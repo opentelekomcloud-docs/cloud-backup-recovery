@@ -25,10 +25,9 @@ Viewing Vault Details
 
    .. _cbr_03_0002__fig10889142793018:
 
-   .. figure:: /_static/images/en-us_image_0251464982.png
-      :alt: **Figure 1** Vault list
+   **Figure 1** Vault list
 
-      **Figure 1** Vault list
+   |image3|
 
    .. table:: **Table 1** Basic information parameters
 
@@ -56,10 +55,9 @@ Viewing Vault Details
 
    .. _cbr_03_0002__fig16320163410256:
 
-   .. figure:: /_static/images/en-us_image_0251465011.png
-      :alt: **Figure 2** Querying a vault
+   **Figure 2** Querying a vault
 
-      **Figure 2** Querying a vault
+   |image4|
 
    -  Select a value from the status drop-down list to query vaults by status. :ref:`Table 2 <cbr_03_0002__table18768121721316>` describes the vault statuses.
 
@@ -93,17 +91,19 @@ Viewing Vault Details
 
    -  Click **Search by Tag** in the upper right corner to search for vaults by tag.
 
-      -  On the displayed **Search by Tag** page, enter an existing tag key and value and click |image3|. The added tag search criteria are displayed under the text boxes. Click **Search** in the lower right corner.
-      -  You can add a maximum of 20 tags by clicking |image4|. They will be applied together for a combination search.
+      -  On the displayed **Search by Tag** page, enter an existing tag key and value and click |image5|. The added tag search criteria are displayed under the text boxes. Click **Search** in the lower right corner.
+      -  You can add a maximum of 20 tags by clicking |image6|. They will be applied together for a combination search.
       -  You can click **Reset** in the lower right corner to reset the search criteria.
 
 #. Click the name of a specific vault to view vault details.
 
    .. note::
 
-      The values of used capacity and backup space are rounded off to integers. CBR will display 0 GB for any backup space less than 1 GB. For example, there may be 200 MB backup space used, but it will be displayed as 0 GB on the console.
+      -  The values of used capacity and backup space are rounded off to integers. CBR will display 0 GB for any backup space less than 1 GB. For example, there may be 200 MB backup space used, but it will be displayed as 0 GB on the console.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
-.. |image3| image:: /_static/images/en-us_image_0160751578.png
-.. |image4| image:: /_static/images/en-us_image_0160751578.png
+.. |image3| image:: /_static/images/en-us_image_0000001995695954.png
+.. |image4| image:: /_static/images/en-us_image_0000002032295753.png
+.. |image5| image:: /_static/images/en-us_image_0160751578.png
+.. |image6| image:: /_static/images/en-us_image_0160751578.png

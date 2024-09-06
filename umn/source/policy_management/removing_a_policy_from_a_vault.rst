@@ -5,7 +5,10 @@
 Removing a Policy from a Vault
 ==============================
 
-If you no longer need automatic backup for a vault, remove the policy from the vault.
+Scenarios
+---------
+
+If you need to cancel auto backup of a vault, remove the policy from the vault, or disable the policy. This section describes how to remove a policy from a vault.
 
 Prerequisites
 -------------
@@ -33,7 +36,7 @@ Procedure
 
    .. note::
 
-      -  If a policy is removed when a backup task is being executed for a resource in the vault, the backup task will continue and backups will be generated.
+      -  You can remove a policy from a vault when the vault resources are being backed up. In this case, backup tasks will continue, and backups will be generated.
       -  After a policy is removed, backups retained by **Time period** will expire based on the retention rule, but backups retained by **Backup quantity** will not. You need manually delete unwanted backups.
 
 #. Click **Yes**.
@@ -42,4 +45,4 @@ Procedure
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
-.. |image3| image:: /_static/images/en-us_image_0184119988.png
+.. |image3| image:: /_static/images/en-us_image_0000001953505157.png

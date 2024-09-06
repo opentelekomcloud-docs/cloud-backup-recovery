@@ -46,11 +46,7 @@ Cloud Server Backup
       #. It is in the **Available** state.
 
    -  Only backups can be replicated. Backup replicas cannot be replicated again but can be used to create images.
-   -  A backup can be replicated to multiple regions but can have only one replica in each destination region. The replication rule varies with the replication method:
-
-      -  Manual replication: A backup can be replicated to the destination region as long as it has no replica in that region. A backup can be replicated again if its replica in the destination region has been deleted.
-      -  Policy-based replication: A backup can only be automatically replicated to a destination region once. It cannot be automatically replicated to that region again, even if its replica has been deleted.
-
+   -  A backup can be replicated to multiple regions but can have only one replica in each destination region. Manual replication: A backup can be manually replicated to the destination region as long as it has no replica in that region. A backup can be manually replicated again if its replica in the destination region has been deleted.
    -  Only replication-supported regions can be selected as destination regions.
 
 SFS Turbo Backup

@@ -7,8 +7,8 @@ Creating a User and Granting CBR Permissions
 
 This section describes how to use IAM to implement fine-grained permissions control for your CBR resources. With IAM, you can:
 
--  Create IAM users for employees based on your enterprise's organizational structure. Each IAM user will have their own security credentials for accessing CBR resources.
--  Grant only the permissions required for users to perform a specific task.
+-  Create IAM users for personnel based on your enterprise's organizational structure. Each IAM user has their own identity credentials for accessing CBR resources.
+-  Grant users only the permissions required to perform a given task based on their job responsibilities.
 -  Entrust a cloud account or cloud service to perform efficient O&M on your CBR resources.
 
 If your cloud account does not require individual IAM users, skip this section. If your account cannot meet your requirements, create IAM users by referring to `Identity and Access Management User Guide <https://docs.otc.t-systems.com/en-us/usermanual/iam/iam_01_0026.html>`__.

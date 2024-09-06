@@ -68,9 +68,9 @@ You can grant permissions by using roles and policies.
    +-------------------------------------+----------------+--------------------------------+--------------------+
    | Updating policies                   | Supported      | Not supported                  | Not supported      |
    +-------------------------------------+----------------+--------------------------------+--------------------+
-   | Applying policies to a vault        | Supported      | Supported                      | Not supported      |
+   | Applying policies to vaults         | Supported      | Supported                      | Not supported      |
    +-------------------------------------+----------------+--------------------------------+--------------------+
-   | Removing policies from a vault      | Supported      | Supported                      | Not supported      |
+   | Removing policies from vaults       | Supported      | Supported                      | Not supported      |
    +-------------------------------------+----------------+--------------------------------+--------------------+
    | Deleting policies                   | Supported      | Not supported                  | Not supported      |
    +-------------------------------------+----------------+--------------------------------+--------------------+
@@ -82,7 +82,7 @@ You can grant permissions by using roles and policies.
    +-------------------------------------+----------------+--------------------------------+--------------------+
    | Deleting backups                    | Supported      | Supported                      | Not supported      |
    +-------------------------------------+----------------+--------------------------------+--------------------+
-   | Restoring data using backups        | Supported      | Supported                      | Not supported      |
+   | Restoring data from backups         | Supported      | Supported                      | Not supported      |
    +-------------------------------------+----------------+--------------------------------+--------------------+
    | Associating vaults                  | Supported      | Supported                      | Not supported      |
    +-------------------------------------+----------------+--------------------------------+--------------------+

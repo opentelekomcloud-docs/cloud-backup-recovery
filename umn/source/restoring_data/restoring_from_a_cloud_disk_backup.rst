@@ -7,6 +7,8 @@ Restoring from a Cloud Disk Backup
 
 You can use a disk backup to restore the disk to its state when the backup was created.
 
+Before restoring the disk data, stop the server to which the disk is attached and detach the disk from the server. After the disk data is restored, attach the disk to the server and start the server.
+
 Prerequisites
 -------------
 

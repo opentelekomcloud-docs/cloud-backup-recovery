@@ -5,7 +5,10 @@
 Replicating a Backup Across Regions
 ===================================
 
-CBR enables you to replicate backups of server backup vaults from one region to another.
+Scenarios
+---------
+
+Cross-region replication of server backup vaults allows you to **replicate backups from one region to another under the same account**.
 
 Replicas of server backups can be used to create images and provision servers.
 
@@ -16,11 +19,7 @@ You can replicate backups in either of the following methods on the CBR console:
 -  Select a backup from the backup list and manually perform a replication.
 -  Select a backup vault and manually replicate it. Alternatively, you can configure a replication policy to periodically replicate backups that have not been replicated or failed to be replicated to the destination region.
 
-This section uses the first method to describe how to replicate a backup. For details about the second method, see :ref:`Replicating a Vault <cbr_03_0009>`.
-
-.. note::
-
-   The replication constraints apply to both replication methods.
+This section uses the first method to describe how to replicate a backup. For details about the second method, see :ref:`Replicating a Vault Across Regions <cbr_03_0009>`.
 
 Constraints
 -----------
@@ -32,10 +31,12 @@ Constraints
    #. It is in the **Available** state.
 
 -  Only backups or backup vaults can be replicated. Replicated backups and vaults cannot be replicated again but their replicas can be used to create images.
+
 -  A backup can be replicated to multiple regions but can have only one replica in each destination region. The replication rule varies with the replication method:
 
-   -  Manual replication: A backup can be manually replicated to the destination region as long as it has no replica in that region. A backup can be manually replicated again if its replica in the destination region has been deleted.
-   -  Policy-based replication: A backup can only be automatically replicated to a destination region once. It cannot be automatically replicated to that region again, even if its replica has been deleted.
+   Manual replication: A backup can be manually replicated to the destination region as long as it has no replica in that region. A backup can be manually replicated again if its replica in the destination region has been deleted.
+
+   For manual and policy-based vault replication, a vault can only be replicated to a destination region once. It cannot be replicated to that region again, even if its backups have been deleted.
 
 -  Only replication-supported regions can be selected as destination regions.
 
