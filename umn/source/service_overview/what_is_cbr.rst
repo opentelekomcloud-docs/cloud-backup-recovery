@@ -17,7 +17,9 @@ CBR involves backups, vaults, and policies.
 
 **Backup**
 
-A backup is a copy of a particular chunk of data and is usually stored elsewhere so that it may be used to restore the original data in the event of data loss. There are the following types of backups:
+A backup is a copy of a particular chunk of data and is usually stored elsewhere so that it may be used to restore the original data in the event of data loss.
+
+There are the following types of backups:
 
 -  Cloud disk backup: provides snapshot-based backups for EVS disks.
 -  Cloud server backup: uses the consistency snapshot technology to protect data for ECSs.
@@ -26,8 +28,6 @@ A backup is a copy of a particular chunk of data and is usually stored elsewhere
 **Vault**
 
 CBR stores backups in vaults. Before creating a backup, you need to create at least one vault and associate the resources you want to back up with the vaults. Then the resources can be backed up to the associated vaults.
-
-Vaults can be either backup vaults or replication vaults. Backup vaults store resource backups, and replication vaults store backup replicas.
 
 Different types of resources must be backed up to different types of vaults. For example, cloud servers must be backed up to server backup vaults, not disk backup vaults or any other types of vaults.
 
@@ -49,22 +49,22 @@ Differences Among the Backup Types
 
 .. table:: **Table 1** Differences among the backup types
 
-   +-----------------+------------------------------------------------+----------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+
-   | Item            | Cloud Server Backup                            | Cloud Disk Backup                                                                            | SFS Turbo Backup                                                                                                  |
-   +=================+================================================+==============================================================================================+===================================================================================================================+
-   | What to back up | All disks (system and data disks) on a server  | One or more specific disks (system or data disks)                                            | SFS Turbo file systems                                                                                            |
-   +-----------------+------------------------------------------------+----------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+
-   | When to use     | You want to back up entire cloud servers.      | You want to back up only data disks.                                                         | You want to back up entire SFS Turbo file systems.                                                                |
-   +-----------------+------------------------------------------------+----------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+
-   | Advantages      | All disks on a server are backed up at a time. | Only data of specific disks is backed up, which costs less than backing up an entire server. | File system data and their backups are stored separately, and the backups can be used to create new file systems. |
-   +-----------------+------------------------------------------------+----------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+
+   +-----------------+----------------------------------------------------------------+----------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+
+   | Item            | Cloud Server Backup                                            | Cloud Disk Backup                                                                            | SFS Turbo Backup                                                                                                  |
+   +=================+================================================================+==============================================================================================+===================================================================================================================+
+   | What to back up | All disks (system and data disks) on a server or part of disks | One or more specific disks (system or data disks)                                            | SFS Turbo file systems                                                                                            |
+   +-----------------+----------------------------------------------------------------+----------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+
+   | When to use     | You want to back up entire cloud servers.                      | You want to back up only data disks.                                                         | You want to back up entire SFS Turbo file systems.                                                                |
+   +-----------------+----------------------------------------------------------------+----------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+
+   | Advantages      | All disks on a server are backed up at a time.                 | Only data of specific disks is backed up, which costs less than backing up an entire server. | File system data and their backups are stored separately, and the backups can be used to create new file systems. |
+   +-----------------+----------------------------------------------------------------+----------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+
 
 Backup Mechanism
 ----------------
 
 CBR in-cloud backup offers block-level backup. The first backup is a full backup and backs up all used data blocks. For example, if a disk size is 100 GB and 40 GB has been used, only the 40 GB of data is backed up. An incremental backup backs up only the data changed since the last backup to save the storage space and backup time.
 
-A backup will not be deleted if it is depended on by other backups, ensuring that other backups can still be used for restoration. Both a full backup and an incremental backup can be used to restore data to a given backup point in time.
+When a backup is deleted, data blocks will not be deleted if they are depended on by other backups, ensuring that other backups can still be used for restoration. Both a full backup and an incremental backup can be used to restore data to a given backup point in time.
 
 When creating a backup of a disk, CBR also creates a snapshot for it. CBR keeps only the latest snapshot. Every time it creates a new snapshot during backup, it deletes the old snapshot.
 
@@ -96,6 +96,8 @@ CBR supports one-off backup and periodic backup. A one-off backup task is manual
    +------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
 
 You can also use the two backup options together if needed. For example, you can associate resources with a vault and apply a backup policy to the vault to execute periodic backup for all the resources in the vault. Additionally, you can perform a one-off backup for the most important resources to enhance data security. :ref:`Figure 2 <cbr_01_0002__fig190314191275>` shows the use of the two backup options.
+
+Theoretically, you can create as many backups for a resource as needed. This number is not limited.
 
 .. _cbr_01_0002__fig190314191275:
 

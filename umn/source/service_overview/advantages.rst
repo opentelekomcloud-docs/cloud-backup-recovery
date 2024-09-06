@@ -29,5 +29,6 @@ CBR is easier to use than conventional backup systems. You can complete backup i
 Secure
 ------
 
--  If the disks are encrypted, their backups are also encrypted to ensure data security.
--  You can also replicate backups across regions to implement remote disaster recovery.
+If the disks are encrypted, their backups are also encrypted to ensure data security.
+
+You can also replicate backups across regions to implement remote disaster recovery.

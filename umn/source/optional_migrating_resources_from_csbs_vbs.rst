@@ -23,7 +23,7 @@ During migration, CBR will automatically create vaults based on the types of you
    | Before Migration                                                     | After Migration                                                                                                                                                                                                                 |
    +======================================================================+=================================================================================================================================================================================================================================+
    | Servers or disks are associated with a backup policy.                | If backups have been generated, CBR will create a vault with the same name (up to 64 characters) as the policy name (regardless of whether the policy is enabled) and apply the policy to the vault after the vault is created. |
-   +----------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   |                                                                      |                                                                                                                                                                                                                                 |
    |                                                                      | If no backup is generated, CBR will create a vault only when the policy is enabled. The policy applying rule and vault naming rule are the same as above.                                                                       |
    +----------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Servers or disks are associated with a backup or replication policy. | If no backup is generated and the policy is disabled, only the policy will be migrated.                                                                                                                                         |
@@ -50,8 +50,8 @@ For example, a user has a 100 GB ECS and a 50 GB ECS. The used storage capacity 
 Constraints
 -----------
 
--  The vaults you have cannot be used for migration. The system will automatically migrate resources to the vaults created by the system.
--  Backup resources of one account need to be migrated only once.
+-  The vaults you have cannot be used for migration. Resources will automatically migrated to system-created vaults.
+-  Backup resources of one account only need to be migrated once.
 -  After resources are migrated, disk backups and server backups will be automatically stored in CBR vaults. No further operations are required.
 
 Procedure
@@ -82,7 +82,7 @@ FAQ
 
 #. How Do I Delete Backups from VBS Console?
 
-   After you have migrated data from CSBS and VBS to CBR, backups displayed in VBS Console cannot be deleted alone. Find these backups in CBR and delete them. Then, the backups will also be deleted from VBS Console.
+   After you have migrated data from CSBS and VBS to CBR, backups displayed in the VBS console cannot be deleted alone. Find these backups in CBR and delete them. Then, the backups will also be deleted from the VBS console.
 
 #. What Are the Differences Between CBR, CSBS, and VBS?
 

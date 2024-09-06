@@ -25,16 +25,16 @@ Procedure
 
    .. _cbr_03_0035__fig94661335195813:
 
-   .. figure:: /_static/images/en-us_image_0224256775.png
-      :alt: **Figure 1** Viewing tasks
+   **Figure 1** Viewing tasks
 
-      **Figure 1** Viewing tasks
+   |image2|
 
 #. Filter tasks by task type, task status, task ID, resource ID, resource name, vault ID, vault name, and time.
 
-#. Click |image2| in front of the task to view the task details.
+#. Click |image3| in front of the task to view the task details.
 
    If a task fails, you can view the failure cause in the task details.
 
 .. |image1| image:: /_static/images/en-us_image_0000001208311037.png
-.. |image2| image:: /_static/images/en-us_image_0181768586.png
+.. |image2| image:: /_static/images/en-us_image_0000001995856846.png
+.. |image3| image:: /_static/images/en-us_image_0181768586.png

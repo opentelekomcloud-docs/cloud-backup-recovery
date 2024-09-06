@@ -31,7 +31,7 @@ Procedure
 
       To avoid data inconsistency after restoration, you are advised to back up the entire server.
 
-      If you want to back up only some of the disks to reduce costs, ensure that the data on the backed up disks does not depend on the disks that are not backed up. Or, data inconsistency may occur.
+      If you want to back up only some of the disks to reduce costs, ensure that data on the backed up disks does not depend on the disks that are not backed up. Or, data inconsistency may occur.
 
       For example, the data of an Oracle database is scattered across different disks. If only some of the disks are backed up, restoration restores only the data of the disks that have been backed up, with data on the rest of the disks unchanged. As a result, the data may be inconsistent and the Oracle database may fail to start.
 
@@ -52,10 +52,9 @@ Procedure
 
    .. _cbr_02_0003__fig179361847142520:
 
-   .. figure:: /_static/images/en-us_image_0251429559.png
-      :alt: **Figure 2** Setting the vault capacity
+   **Figure 2** Setting the vault capacity
 
-      **Figure 2** Setting the vault capacity
+   |image4|
 
 #. Configure auto backup. See :ref:`Figure 3 <cbr_02_0003__fig4582143195315>`.
 
@@ -84,7 +83,7 @@ Procedure
 
    **Figure 4** Adding a tag
 
-   |image4|
+   |image5|
 
    :ref:`Table 1 <cbr_02_0003__table191162312815>` describes the parameters of a tag.
 
@@ -126,5 +125,6 @@ Procedure
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
-.. |image3| image:: /_static/images/en-us_image_0252971476.png
-.. |image4| image:: /_static/images/en-us_image_0251430145.png
+.. |image3| image:: /_static/images/en-us_image_0000001926206410.png
+.. |image4| image:: /_static/images/en-us_image_0000001926048954.png
+.. |image5| image:: /_static/images/en-us_image_0251430145.png

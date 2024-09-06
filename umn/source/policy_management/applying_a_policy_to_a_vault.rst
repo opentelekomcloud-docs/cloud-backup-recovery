@@ -7,6 +7,11 @@ Applying a Policy to a Vault
 
 You can apply a backup policy to a vault to execute backup tasks at specified times or intervals.
 
+Constraints
+-----------
+
+You can create multiple policies, but a can apply only one backup policy to a vault.
+
 Procedure
 ---------
 
@@ -30,4 +35,4 @@ Procedure
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
-.. |image3| image:: /_static/images/en-us_image_0184119856.png
+.. |image3| image:: /_static/images/en-us_image_0000001926384488.png

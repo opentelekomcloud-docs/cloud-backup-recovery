@@ -92,5 +92,5 @@ Procedure
 
 .. |image1| image:: /_static/images/en-us_image_0000001587692708.png
 .. |image2| image:: /_static/images/en-us_image_0000001599596653.jpg
-.. |image3| image:: /_static/images/en-us_image_0000001088492789.png
+.. |image3| image:: /_static/images/en-us_image_0000001992180742.png
 .. |image4| image:: /_static/images/en-us_image_0251430145.png
