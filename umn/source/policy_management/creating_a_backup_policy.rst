@@ -9,6 +9,8 @@ A backup policy allows CBR to automatically back up vaults at specified times or
 
 To implement periodic backups, you need a backup policy first. You can use the default backup policy or create one as needed.
 
+Peak hours of the backup service are from 22:00 to 08:00, during which there may be delays. So you are advised to evaluate your service types and schedule backups in discrete time periods.
+
 Constraints
 -----------
 

@@ -87,7 +87,7 @@ Procedure
 
    .. note::
 
-      If you delete data from the disk during the backup, the deleted data may fail to be backed up. Therefore, to ensure data integrity, delete the target data after the backup is complete, and then perform the backup.
+      -  If you delete data from the disk during the backup, the deleted data may fail to be backed up. Therefore, to ensure data integrity, delete the target data after the backup is complete, and then perform the backup.
 
    After the backup is complete, you can use the backup to restore disk data. For details, see :ref:`Restoring from a Cloud Disk Backup <cbr_03_0033>`.
 

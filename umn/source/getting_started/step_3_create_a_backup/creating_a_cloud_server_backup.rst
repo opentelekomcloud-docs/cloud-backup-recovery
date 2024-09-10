@@ -86,7 +86,7 @@ Procedure
 
    .. note::
 
-      A server can be restarted if the backup progress exceeds 10%. However, to ensure data integrity, restart it after the backup is complete.
+      -  A server can be restarted if the backup progress exceeds 10%. However, to ensure data integrity, restart it after the backup is complete.
 
    After the backup is complete, you can use the backup to restore server data or create an image. For details, see :ref:`Restoring from a Cloud Server Backup <cbr_03_0032>` and :ref:`Creating an Image from a Cloud Server Backup <cbr_03_0016>`.
 
