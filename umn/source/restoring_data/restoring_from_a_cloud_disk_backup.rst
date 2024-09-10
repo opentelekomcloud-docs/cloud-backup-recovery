@@ -48,7 +48,7 @@ Procedure
 
    When the status of the backup changes to **Available**, the restoration is successful. The resource is restored to the state when that backup was created.
 
-#. After the restoration is complete, re-attach the disk to the server. For details, see section "Attaching an Existing Non-Shared Disk" in the *Elastic Volume Service User Guide*.
+#. After the restoration is complete, re-attach the disk to the server. For details, see section "Attaching a Non-Shared Disk" in the *Elastic Volume Service User Guide*.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg

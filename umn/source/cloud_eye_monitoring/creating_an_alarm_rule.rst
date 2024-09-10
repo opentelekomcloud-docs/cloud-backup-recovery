@@ -16,7 +16,7 @@ Creating an Alarm Rule Using Cloud Eye
 #. In the upper left corner of the page, click |image1| and select a region.
 #. Under **Management & Deployment**, select **Cloud Eye**. In the navigation pane on the left, choose **Alarm Management** > **Alarm Rules**.
 #. On the displayed page, click **Create Alarm Rule** in the upper right corner.
-#. On the displayed **Create Alarm Rule** page, configure the parameters.
+#. On the displayed **Create alarm rule** page, configure the parameters.
 
    a. Set **Name** and **Description**.
 

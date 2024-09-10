@@ -75,7 +75,7 @@ Procedure
 
    .. note::
 
-      If you delete data from the file system during the backup, the deleted data may fail to be backed up. Therefore, to ensure data integrity, delete the target data after the backup is complete, and then perform the backup.
+      -  If you delete data from the file system during the backup, the deleted data may fail to be backed up. Therefore, to ensure data integrity, delete the target data after the backup is complete, and then perform the backup.
 
    After the backup is complete, you can create a new SFS Turbo file system using the backup. For details, see :ref:`Creating a File System from an SFS Turbo Backup <cbr_03_0107>`.
 
