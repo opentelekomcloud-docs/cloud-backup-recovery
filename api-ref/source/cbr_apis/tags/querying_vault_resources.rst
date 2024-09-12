@@ -345,17 +345,17 @@ Response Parameters
 
 .. table:: **Table 12** BindRulesTags
 
-   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------+
-   | Parameter             | Type                  | Description                                                                                             |
-   +=======================+=======================+=========================================================================================================+
-   | key                   | String                | The key cannot contain non-printable ASCII characters (0-31) and the following characters: ``=*<>\,|/`` |
-   |                       |                       |                                                                                                         |
-   |                       |                       | The key can contain only letters, digits, underscores (_), and hyphens (-).                             |
-   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------+
-   | value                 | String                | The value cannot contain non-printable ASCII characters (0-31) and the following characters: =*<>,|/    |
-   |                       |                       |                                                                                                         |
-   |                       |                       | The value can contain only letters, digits, underscores (_), and hyphens (-).                           |
-   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                                                            |
+   +=======================+=======================+========================================================================================================+
+   | key                   | String                | The key cannot contain non-printable ASCII characters (0-31) and the following characters:``=*<>\,|/`` |
+   |                       |                       |                                                                                                        |
+   |                       |                       | The key can contain only letters, digits, underscores (_), and hyphens (-).                            |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------+
+   | value                 | String                | The value cannot contain non-printable ASCII characters (0-31) and the following characters: =*<>,|/   |
+   |                       |                       |                                                                                                        |
+   |                       |                       | The value can contain only letters, digits, underscores (_), and hyphens (-).                          |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------+
 
 .. _showvaultresourceinstances__response_tag:
 
