@@ -194,17 +194,17 @@ Request Parameters
 
 .. table:: **Table 10** BindRulesTags
 
-   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------+
-   | Parameter       | Mandatory       | Type            | Description                                                                                             |
-   +=================+=================+=================+=========================================================================================================+
-   | key             | Yes             | String          | The key cannot contain non-printable ASCII characters (0-31) and the following characters: ``=*<>\,|/`` |
-   |                 |                 |                 |                                                                                                         |
-   |                 |                 |                 | The key can contain only letters, digits, underscores (_), and hyphens (-).                             |
-   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------+
-   | value           | No              | String          | The value cannot contain non-printable ASCII characters (0-31) and the following characters: =*<>,|/    |
-   |                 |                 |                 |                                                                                                         |
-   |                 |                 |                 | The value can contain only letters, digits, underscores (_), and hyphens (-).                           |
-   +-----------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------+
+   +-----------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------+
+   | Parameter       | Mandatory       | Type            | Description                                                                                            |
+   +=================+=================+=================+========================================================================================================+
+   | key             | Yes             | String          | The key cannot contain non-printable ASCII characters (0-31) and the following characters:``=*<>\,|/`` |
+   |                 |                 |                 |                                                                                                        |
+   |                 |                 |                 | The key can contain only letters, digits, underscores (_), and hyphens (-).                            |
+   +-----------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------+
+   | value           | No              | String          | The value cannot contain non-printable ASCII characters (0-31) and the following characters: =*<>,|/   |
+   |                 |                 |                 |                                                                                                        |
+   |                 |                 |                 | The value can contain only letters, digits, underscores (_), and hyphens (-).                          |
+   +-----------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------+
 
 Response Parameters
 -------------------
@@ -411,17 +411,17 @@ Response Parameters
 
 .. table:: **Table 18** BindRulesTags
 
-   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------+
-   | Parameter             | Type                  | Description                                                                                             |
-   +=======================+=======================+=========================================================================================================+
-   | key                   | String                | The key cannot contain non-printable ASCII characters (0-31) and the following characters: ``=*<>\,|/`` |
-   |                       |                       |                                                                                                         |
-   |                       |                       | The key can contain only letters, digits, underscores (_), and hyphens (-).                             |
-   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------+
-   | value                 | String                | The value cannot contain non-printable ASCII characters (0-31) and the following characters: =*<>,|/    |
-   |                       |                       |                                                                                                         |
-   |                       |                       | The value can contain only letters, digits, underscores (_), and hyphens (-).                           |
-   +-----------------------+-----------------------+---------------------------------------------------------------------------------------------------------+
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------+
+   | Parameter             | Type                  | Description                                                                                            |
+   +=======================+=======================+========================================================================================================+
+   | key                   | String                | The key cannot contain non-printable ASCII characters (0-31) and the following characters:``=*<>\,|/`` |
+   |                       |                       |                                                                                                        |
+   |                       |                       | The key can contain only letters, digits, underscores (_), and hyphens (-).                            |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------+
+   | value                 | String                | The value cannot contain non-printable ASCII characters (0-31) and the following characters: =*<>,|/   |
+   |                       |                       |                                                                                                        |
+   |                       |                       | The value can contain only letters, digits, underscores (_), and hyphens (-).                          |
+   +-----------------------+-----------------------+--------------------------------------------------------------------------------------------------------+
 
 **Status code: 400**
 
