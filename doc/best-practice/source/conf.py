@@ -110,7 +110,7 @@ html_copy_source = False
 latex_documents = [
     ('index',
      'cbr-best-practice.tex',
-     u'Cloud Backup and Recovery - Best Practice',
+    u'Cloud Backup and Recovery - Best Practice',
      u'OpenTelekomCloud', 'manual'),
 ]
 

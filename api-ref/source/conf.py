@@ -110,7 +110,7 @@ html_copy_source = False
 latex_documents = [
     ('index',
      'cbr-api-ref.tex',
-     u'Cloud Backup and Recovery - API Reference',
+    u'Cloud Backup and Recovery - API Reference',
      u'OpenTelekomCloud', 'manual'),
 ]
 
