@@ -5,6 +5,9 @@
 Viewing a Backup
 ================
 
+Scenario
+--------
+
 In the backup list, you can set search criteria to filter backups and view their details. The results contain backup tasks that are running or have completed.
 
 Prerequisites
@@ -63,7 +66,7 @@ Procedure
 
    -  You can search for backups by clicking **Advanced Search** above the backup list.
 
-      You can search by specifying a backup name, backup ID, backup type, backup status, vault ID, server name, server ID, server type, protection type, or the creation date. See :ref:`Figure 2 <cbr_03_0013__fig1067432214711>`.
+      You can search by specifying a backup name, backup ID, backup status, vault ID, server name, server type, server ID, or the creation date. See :ref:`Figure 2 <cbr_03_0013__fig1067432214711>`.
 
       .. _cbr_03_0013__fig1067432214711:
 
@@ -75,5 +78,5 @@ Procedure
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
-.. |image3| image:: /_static/images/en-us_image_0000001992338654.png
-.. |image4| image:: /_static/images/en-us_image_0000001995858070.png
+.. |image3| image:: /_static/images/en-us_image_0000002118823934.png
+.. |image4| image:: /_static/images/en-us_image_0000002118824430.png
