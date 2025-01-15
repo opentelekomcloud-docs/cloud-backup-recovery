@@ -113,7 +113,7 @@ html_copy_source = False
 latex_documents = [
     ('index',
      'cbr-umn.tex',
-    u'Cloud Backup and Recovery - User Guide',
+     u'Cloud Backup and Recovery - User Guide',
      u'OpenTelekomCloud', 'manual'),
 ]
 

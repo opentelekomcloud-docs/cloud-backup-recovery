@@ -9,4 +9,4 @@ Yes. After restoration, the capacity of the expanded disk goes back to the origi
 
 If you want to use the capacity added to the disk, you need to attach the restored disk to a server, log in to the server, and then manually modify the file system configuration.
 
-For details, see `Disk Capacity Expansion in the Elastic Volume Service User Guide <https://docs.otc.t-systems.com/elastic-volume-service/umn/disk_capacity_expansion/index.html>`__.
+For details, see `section "Disk Capacity Expansion" in the Elastic Volume Service User Guide <https://docs.otc.t-systems.com/elastic-volume-service/umn/disk_capacity_expansion/index.html>`__.

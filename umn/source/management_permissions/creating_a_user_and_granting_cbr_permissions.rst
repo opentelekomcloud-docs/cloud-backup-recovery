@@ -18,7 +18,7 @@ Figure :ref:`Figure 1 <cbr_03_0048__fig194521431175317>` illustrates the procedu
 Prerequisites
 -------------
 
-Learn about the permissions (see :ref:`Permissions <cbr_01_0011>`) supported by CBR and choose policies or roles according to your requirements. For the system policies of other services, see section "Permissions".
+Learn about the permissions (see :ref:`Permissions Management <cbr_01_0011>`) supported by CBR and choose policies or roles according to your requirements. For the system policies of other services, see section "Permissions".
 
 Process Flow
 ------------

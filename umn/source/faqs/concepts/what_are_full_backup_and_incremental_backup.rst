@@ -12,7 +12,7 @@ A full backup backs up all data at a certain time point.
 
 An incremental backup backs up the changed data since the last full or incremental backup.
 
-CBR uses the permanent incremental backup technology. A full backup is performed for a resource in the initial backup and incremental backups in all subsequent backups. If a full backup expires and is deleted, its next incremental backup will be regarded as the resource's full backup.
+CBR uses the permanent incremental backup technology. A full backup is performed for a resource in the initial backup and incremental backups in subsequent backups. If a full backup expires and is deleted, its next incremental backup will be regarded as the resource's full backup.
 
 Suppose that server **X** has backups **A**, **B**, and **C** in time sequence. Backup A is a full backup, and backups B and C are incremental backups. Only changed data blocks are backed up in incremental backups and unchanged data blocks are indexed using pointers, so each incremental backup can be regarded as a virtual full backup.
 
@@ -37,4 +37,4 @@ Differences
 
 .. note::
 
-   In extreme cases, the size of a backup is the same as the disk size. The used capacity in a full backup and the changed capacity in an incremental backup are calculated based on the data block change in a disk rather than the file change in the operating system. The size of a full backup cannot be evaluated based on the file capacity in the operating system, and the size of an incremental backup cannot be evaluated based on the file size change.
+   -  In extreme cases, the size of a backup is the same as the disk size. The used capacity in a full backup and the changed capacity in an incremental backup are calculated based on the data block change in a disk rather than the file change in the operating system. The size of a full backup cannot be evaluated based on the file capacity in the operating system, and the size of an incremental backup cannot be evaluated based on the file size change.

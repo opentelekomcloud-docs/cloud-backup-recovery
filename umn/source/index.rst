@@ -7,7 +7,7 @@ Cloud Backup and Recovery - User Guide
 
    service_overview/index
    getting_started/index
-   permissions_management/index
+   management_permissions/index
    vault_management/index
    backup_management/index
    policy_management/index
