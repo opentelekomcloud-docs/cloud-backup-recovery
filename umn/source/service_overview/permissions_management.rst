@@ -2,8 +2,8 @@
 
 .. _cbr_01_0011:
 
-Permissions
-===========
+Permissions Management
+======================
 
 If you need to assign different permissions to personnel in your enterprise to access your CBR resources, Identity and Access Management (IAM) is a good choice for fine-grained permissions management. IAM provides identity authentication, permissions management, and access control, helping you to securely access your cloud resources.
 

@@ -13,7 +13,7 @@ CBR offers crash-consistent backup for multiple disks on a server. The backups p
 Efficient
 ---------
 
-Incremental forever backups shorten the time required for backup by 95%. With Instant Restore, CBR offers an RPO of as low as 1 hour and an RTO of only several minutes.
+Incremental backups shorten the time required for backup by 95%. With Instant Restore, CBR offers an RPO of as low as 1 hour and an RTO of only several minutes.
 
 .. note::
 
