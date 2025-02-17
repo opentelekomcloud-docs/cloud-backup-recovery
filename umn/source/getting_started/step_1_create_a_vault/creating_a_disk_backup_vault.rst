@@ -18,13 +18,23 @@ Procedure
 
 #. In the upper right corner of the page, click **Create Disk Backup Vault**.
 
+#. Determine whether to enable backup locking.
+
+   If backup locking is enabled, backups in the vault will not be deleted maliciously or by mistake. This improves data reliability.
+
+   |image3|
+
+   .. important::
+
+      Backup locking cannot be disabled after it is enabled.
+
 #. (Optional) In the disk list, select the disks you want to back up. After disks are selected, they are added to the list of selected disks. See :ref:`Figure 1 <cbr_02_0004__fig204531717131710>`.
 
    .. _cbr_02_0004__fig204531717131710:
 
    **Figure 1** Selecting disks
 
-   |image3|
+   |image4|
 
    .. note::
 
@@ -37,7 +47,7 @@ Procedure
 
    **Figure 2** Setting the vault capacity
 
-   |image4|
+   |image5|
 
 #. Configure auto backup. See :ref:`Figure 3 <cbr_02_0004__fig4582143195315>`.
 
@@ -46,10 +56,9 @@ Procedure
 
    .. _cbr_02_0004__fig4582143195315:
 
-   .. figure:: /_static/images/en-us_image_0251455944.png
-      :alt: **Figure 3** Configuring auto backup
+   **Figure 3** Configuring auto backup
 
-      **Figure 3** Configuring auto backup
+   |image6|
 
 #. (Optional) Configure automatic resource association.
 
@@ -62,13 +71,13 @@ Procedure
 
 #. (Optional) Add tags to the vault.
 
-   Tags are key-value pairs, which are used to identify, classify, and search for vaults. You can add a maximum of 20 tags for a vault, and vault tags are only used for vault search and management. See :ref:`Figure 4 <cbr_02_0004__cbr_02_0003_fig138791734631>`.
+   Tags are key-value pairs, which are used to identify, classify, and search for vaults. Vault tags are used to filter and manage vaults only. A vault can have a maximum of 20 tags. See :ref:`Figure 4 <cbr_02_0004__cbr_02_0003_fig138791734631>`.
 
    .. _cbr_02_0004__cbr_02_0003_fig138791734631:
 
    **Figure 4** Adding a tag
 
-   |image5|
+   |image7|
 
    :ref:`Table 1 <cbr_02_0004__cbr_02_0003_table191162312815>` describes the parameters of a tag.
 
@@ -117,6 +126,8 @@ Procedure
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
-.. |image3| image:: /_static/images/en-us_image_0000001926225120.png
-.. |image4| image:: /_static/images/en-us_image_0000001953185673.png
-.. |image5| image:: /_static/images/en-us_image_0251430145.png
+.. |image3| image:: /_static/images/en-us_image_0000002124587690.png
+.. |image4| image:: /_static/images/en-us_image_0000002173405673.png
+.. |image5| image:: /_static/images/en-us_image_0000002138006136.png
+.. |image6| image:: /_static/images/en-us_image_0000002173280461.png
+.. |image7| image:: /_static/images/en-us_image_0000002173284725.png

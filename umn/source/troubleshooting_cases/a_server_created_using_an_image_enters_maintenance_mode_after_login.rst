@@ -25,7 +25,7 @@ The following uses CentOS as an example.
 #. On the maintenance mode page that is displayed, access the system as prompted.
 
 
-   .. figure:: /_static/images/en-us_image_0000001463274188.png
+   .. figure:: /_static/images/en-us_image_0000002043775410.png
       :alt: **Figure 1** Maintenance mode of the system
 
       **Figure 1** Maintenance mode of the system

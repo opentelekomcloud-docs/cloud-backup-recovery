@@ -2,8 +2,8 @@
 
 .. _cbr_03_0002:
 
-Querying a Vault
-================
+Viewing a Vault
+===============
 
 You can set search criteria for querying desired vaults in the vault list.
 
@@ -40,6 +40,11 @@ Viewing Vault Details
       +---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Status                                | Vault status. :ref:`Table 2 <cbr_03_0002__table18768121721316>` describes the vault statuses.                                                                                                                                                                                   |
       +---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Backup Locking                        | Whether backup locking is enabled for the vault.                                                                                                                                                                                                                                |
+      |                                       |                                                                                                                                                                                                                                                                                 |
+      |                                       | -  Enabled: If backup locking is enabled, it cannot be disabled.                                                                                                                                                                                                                |
+      |                                       | -  Disabled: Backup locking is disabled for the vault.                                                                                                                                                                                                                          |
+      +---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Specifications                        | Vault specifications                                                                                                                                                                                                                                                            |
       |                                       |                                                                                                                                                                                                                                                                                 |
       |                                       | -  A server backup vault stores backups of non-database servers.                                                                                                                                                                                                                |
@@ -47,6 +52,12 @@ Viewing Vault Details
       | Vault Capacity (GB)                   | Capacity used by the backups in the vault. It shows the space used by backups and the total vault capacity.                                                                                                                                                                     |
       |                                       |                                                                                                                                                                                                                                                                                 |
       |                                       | For example: If **20/100** is displayed, 20 GB has been used out of the 100 GB vault capacity.                                                                                                                                                                                  |
+      +---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Policy Status                         | Policy status or no policy applied                                                                                                                                                                                                                                              |
+      |                                       |                                                                                                                                                                                                                                                                                 |
+      |                                       | -  **No policy applied**: The vault has not been applied with any backup policy yet.                                                                                                                                                                                            |
+      |                                       | -  **Enabled**: The vault has been applied with a backup policy, and the policy is enabled.                                                                                                                                                                                     |
+      |                                       | -  **Disabled**: The vault has been applied with a backup policy, but the policy is disabled.                                                                                                                                                                                   |
       +---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
       | Associated Servers/File Systems/Disks | Number of servers, file systems, and disks associated with the vault. You can click the number to view details of associated resources. The associated capacity shown on the details page is the total capacity of all the resources that have been associated with this vault. |
       +---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -103,7 +114,7 @@ Viewing Vault Details
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
-.. |image3| image:: /_static/images/en-us_image_0000001995695954.png
-.. |image4| image:: /_static/images/en-us_image_0000002032295753.png
+.. |image3| image:: /_static/images/en-us_image_0000002154002153.png
+.. |image4| image:: /_static/images/en-us_image_0000002154180233.png
 .. |image5| image:: /_static/images/en-us_image_0160751578.png
 .. |image6| image:: /_static/images/en-us_image_0160751578.png

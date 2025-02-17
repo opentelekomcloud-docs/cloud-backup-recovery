@@ -12,8 +12,8 @@ Prerequisites
 
 At least one task exists.
 
-Procedure
----------
+Procedure for Viewing the Task Execution Status
+-----------------------------------------------
 
 #. Log in to the CBR console.
 
@@ -36,5 +36,5 @@ Procedure
    If a task fails, you can view the failure cause in the task details.
 
 .. |image1| image:: /_static/images/en-us_image_0000001208311037.png
-.. |image2| image:: /_static/images/en-us_image_0000001995856846.png
+.. |image2| image:: /_static/images/en-us_image_0000002154011457.png
 .. |image3| image:: /_static/images/en-us_image_0181768586.png

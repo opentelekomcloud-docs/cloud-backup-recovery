@@ -32,8 +32,8 @@ Procedure
 
    |image3|
 
-#. Click **Yes**.
+#. Click **OK**.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg
-.. |image3| image:: /_static/images/en-us_image_0000001953568037.png
+.. |image3| image:: /_static/images/en-us_image_0000002120105234.png

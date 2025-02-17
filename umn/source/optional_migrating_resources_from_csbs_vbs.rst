@@ -52,6 +52,7 @@ Constraints
 
 -  The vaults you have cannot be used for migration. Resources will automatically migrated to system-created vaults.
 -  Backup resources of one account only need to be migrated once.
+-  During the migration, do not delete the CBR backup vault that is automatically created. Use it after the migration is complete.
 -  After resources are migrated, disk backups and server backups will be automatically stored in CBR vaults. No further operations are required.
 
 Procedure
