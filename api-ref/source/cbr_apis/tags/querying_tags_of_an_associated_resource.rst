@@ -8,7 +8,9 @@ Querying Tags of an Associated Resource
 Function
 --------
 
-This API is used to query tags of a specified resource. TMS uses this API to query all tags of a specified resource.
+This API is used to query tags of a specified resource.
+
+TMS uses this API to query all tags of a specified resource.
 
 URI
 ---
@@ -36,11 +38,13 @@ Response Parameters
 
 .. table:: **Table 2** Response body parameters
 
-   +-----------+----------------------------------------------------------+-----------------------------------------------+
-   | Parameter | Type                                                     | Description                                   |
-   +===========+==========================================================+===============================================+
-   | tags      | Array of :ref:`Tag <showvaulttag__response_tag>` objects | Tag list Keys in the tag list must be unique. |
-   +-----------+----------------------------------------------------------+-----------------------------------------------+
+   +-----------------------+----------------------------------------------------------+--------------------------------------+
+   | Parameter             | Type                                                     | Description                          |
+   +=======================+==========================================================+======================================+
+   | tags                  | Array of :ref:`Tag <showvaulttag__response_tag>` objects | Tag list                             |
+   |                       |                                                          |                                      |
+   |                       |                                                          | Keys in the tag list must be unique. |
+   +-----------------------+----------------------------------------------------------+--------------------------------------+
 
 .. _showvaulttag__response_tag:
 

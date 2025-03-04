@@ -8,7 +8,9 @@ Adding a Tag to an Associated Resource
 Function
 --------
 
-This API is used to add a tag to an associated resource. A resource can have a maximum of 20 tags. This API is idempotent. If a to-be-added tag has the same key as an existing tag, the tag will be added and will overwrite the existing tag.
+This API is used to add a tag to an associated resource. A resource can have a maximum of 20 tags.
+
+This API is idempotent. If a to-be-added tag has the same key as an existing tag, the tag will be added and will overwrite the existing tag.
 
 URI
 ---
