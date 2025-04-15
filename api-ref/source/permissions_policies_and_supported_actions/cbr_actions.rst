@@ -2,8 +2,8 @@
 
 .. _cbr_04_0018:
 
-Category of CBR Actions
-=======================
+CBR Actions
+===========
 
 Task
 ----
