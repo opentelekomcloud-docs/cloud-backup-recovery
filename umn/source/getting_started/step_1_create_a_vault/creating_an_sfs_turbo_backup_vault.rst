@@ -22,13 +22,23 @@ Procedure
 
    -  **Backup**: An SFS Turbo backup vault stores SFS Turbo backups.
 
+#. Determine whether to enable backup locking.
+
+   If backup locking is enabled, backups in the vault will not be deleted maliciously or by mistake. This improves data reliability.
+
+   |image3|
+
+   .. important::
+
+      Backup locking cannot be disabled after it is enabled.
+
 #. (Optional) In the file system list, select the file systems to be backed up. After file systems are selected, they are added to the list of selected file systems. See :ref:`Figure 1 <cbr_02_0010__fig204531717131710>`.
 
    .. _cbr_02_0010__fig204531717131710:
 
    **Figure 1** Selecting file systems
 
-   |image3|
+   |image4|
 
    .. note::
 
@@ -50,7 +60,7 @@ Procedure
 
    **Figure 2** Adding a tag
 
-   |image4|
+   |image5|
 
    :ref:`Table 1 <cbr_02_0010__cbr_02_0003_table191162312815>` describes the parameters of a tag.
 
@@ -92,5 +102,6 @@ Procedure
 
 .. |image1| image:: /_static/images/en-us_image_0000001587692708.png
 .. |image2| image:: /_static/images/en-us_image_0000001599596653.jpg
-.. |image3| image:: /_static/images/en-us_image_0000001992180742.png
-.. |image4| image:: /_static/images/en-us_image_0251430145.png
+.. |image3| image:: /_static/images/en-us_image_0000002159985785.png
+.. |image4| image:: /_static/images/en-us_image_0000001992180742.png
+.. |image5| image:: /_static/images/en-us_image_0251430145.png

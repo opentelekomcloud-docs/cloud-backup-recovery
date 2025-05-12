@@ -5,6 +5,7 @@
 Policy Management
 =================
 
+-  :ref:`Viewing the Policy of a Vault <cbr_03_0156>`
 -  :ref:`Creating a Backup Policy <cbr_03_0025>`
 -  :ref:`Creating a Replication Policy <cbr_03_0026>`
 -  :ref:`Modifying a Policy <cbr_03_0027>`
@@ -16,6 +17,7 @@ Policy Management
    :maxdepth: 1
    :hidden: 
 
+   viewing_the_policy_of_a_vault
    creating_a_backup_policy
    creating_a_replication_policy
    modifying_a_policy

@@ -8,7 +8,7 @@ Replicating a Vault Across Regions
 Scenarios
 ---------
 
-CBR allows you to **replicate server backup vaults entirely to replication vaults in other regions of the same account**. Replicas of server backups in the destination region can be used to create images and provision servers. to quickly deploy services across regions.
+CBR allows you to **replicate all backups** in a server backup vault **to replication vaults in other regions of the same account**. Replicas of server backups in the destination region can be used to create images and provision servers. to quickly deploy services across regions.
 
 There are two methods available for replicating a vault.
 
@@ -19,7 +19,7 @@ Constraints
 -----------
 
 -  Disk backup vaults cannot be replicated to other regions.
--  Backup data can be replicated to vaults in different regions, and backup replicas occupy the replication vault space.
+-  Backup data can be replicated to vaults in different regions. Any traffic costs associated with this operation will be attributed to the source region. Backup replicas occupy the replication vault space.
 -  A server backup vault can be replicated only when it contains at least one backup that meets all the following conditions:
 
    #. The backup is an ECS backup.
@@ -70,7 +70,7 @@ Procedure
 
 #. Click **OK**.
 
-#. After the replication is complete, you can switch to the destination region to view generated replicas. For details, see :ref:`Querying a Vault <cbr_03_0002>`. You can then use replicas to create images.
+#. After the replication is complete, you can switch to the destination region to view generated replicas. For details, see :ref:`Viewing a Vault <cbr_03_0002>`. You can then use replicas to create images.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png
 .. |image2| image:: /_static/images/en-us_image_0000001599534545.jpg

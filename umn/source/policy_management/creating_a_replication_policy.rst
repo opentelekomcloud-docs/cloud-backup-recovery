@@ -23,7 +23,7 @@ Procedure
    b. Click |image1| in the upper left corner and select a region.
    c. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**.
 
-#. Choose **Policies** in the left navigation pane and click the **Replication Policies** tab. In the upper right corner, click **Create Policy**. See :ref:`Figure 1 <cbr_03_0026__fig1610315463012>`.
+#. Choose **Policies** in the left navigation pane and click the **Replication Policies** tab. In the upper right corner, click **Create Policy**. Select **Replication Policy** for **Type**. See :ref:`Figure 1 <cbr_03_0026__fig1610315463012>`.
 
    .. _cbr_03_0026__fig1610315463012:
 

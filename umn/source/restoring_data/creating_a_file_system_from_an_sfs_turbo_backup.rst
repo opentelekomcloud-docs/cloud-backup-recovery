@@ -31,7 +31,7 @@ Procedure
 
    .. note::
 
-      -  You can learn about the parameter descriptions in table "Parameter description" under "Creating an SFS Turbo File System" in "Create a File System" of the *Scalable File Service User Guide*.
+      -  You can learn about the parameter descriptions in table "Parameter description" under "Creating an SFS Turbo File System" in "Create a File System" of the *Scalable File Service Turbo User Guide*.
 
 #. Click **Create Now**.
 
