@@ -8,7 +8,9 @@ Querying Tags of a Vault Project
 Function
 --------
 
-This API is used to query a tenant's tag set in a specific region and of a specific instance type. TMS uses this API to list tags created by a tenant to facilitate tag creation and resource filtering on the console.
+This API is used to query a tenant's tag set in a specific region and of a specific instance type.
+
+TMS uses this API to list tags created by a tenant to facilitate tag creation and resource filtering on the console.
 
 URI
 ---
