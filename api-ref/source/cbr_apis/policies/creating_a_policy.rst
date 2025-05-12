@@ -171,6 +171,7 @@ Response Parameters
    |                       |                                                                                            | Enumeration values:                                         |
    |                       |                                                                                            |                                                             |
    |                       |                                                                                            | -  **backup**                                               |
+   |                       |                                                                                            |                                                             |
    |                       |                                                                                            | -  **replication**                                          |
    +-----------------------+--------------------------------------------------------------------------------------------+-------------------------------------------------------------+
    | trigger               | :ref:`PolicyTriggerResp <createpolicy__response_policytriggerresp>` object                 | Time scheduling rule for the policy                         |
