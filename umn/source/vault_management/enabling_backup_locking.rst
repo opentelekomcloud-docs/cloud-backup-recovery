@@ -2,7 +2,7 @@
 
 .. _cbr_01_0035:
 
-Enabling Backup Locking (eu-nl)
+Enabling Backup Locking
 =======================
 
 Scenarios
