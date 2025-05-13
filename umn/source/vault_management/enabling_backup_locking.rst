@@ -2,13 +2,13 @@
 
 .. _cbr_01_0035:
 
-Enabling Backup Locking
+Enabling Backup Locking (eu-nl)
 =======================
 
 Scenarios
 ---------
 
-To prevent the backup data from being deleted by mistake or maliciously, you can enable backup locking for vaults to improve data security.
+To prevent the backup data from being deleted by mistake or maliciously, you can enable backup locking for vaults to improve data security(eu-nl).
 
 Once enabled, all backups in the vault enter the WORM (write once, read many) status. No one can delete the backups that are in their retention periods.
 
