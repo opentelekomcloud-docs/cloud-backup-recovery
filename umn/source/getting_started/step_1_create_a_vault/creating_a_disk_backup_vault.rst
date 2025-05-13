@@ -18,7 +18,7 @@ Procedure
 
 #. In the upper right corner of the page, click **Create Disk Backup Vault**.
 
-#. Determine whether to enable backup locking.
+#. Determine whether to enable backup locking(eu-nl).
 
    If backup locking is enabled, backups in the vault will not be deleted maliciously or by mistake. This improves data reliability.
 
