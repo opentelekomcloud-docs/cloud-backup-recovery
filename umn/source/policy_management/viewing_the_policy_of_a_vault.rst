@@ -17,7 +17,7 @@ After a policy is created, you can view the policy in the policy list or on the 
 
    |image3|
 
-#. After creating a policy and applying it to a vault, you can view the policy on the vault details page. Select a backup type on the left navigation pane. On the page displayed, locate the desired vault, click the vault name.
+#. After creating a policy and applying it to a vault, you can view the policy on the vault details page. On any backup page, locate the desired vault and click its name to go to the details page.
 
 #. View the policy applied to the vault.
 

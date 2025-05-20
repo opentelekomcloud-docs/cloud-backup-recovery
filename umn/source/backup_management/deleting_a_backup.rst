@@ -13,7 +13,7 @@ CBR supports manual deletion of backups and automatic deletion of expired backup
 
    -  Backups are not stored on a server. Deleting backups has no impact on the server performance.
    -  If a backup has been created and the next backup task is in progress, CBR will not allow you to delete the most recent backup created. You can delete the backup only after the backup task is complete.
-   -  CBR automatically creates snapshots during backup and retains the latest snapshot for each disk.
+   -  CBR automatically creates snapshots during backup and retains the latest snapshot for each disk. If a disk already has a backup, after another backup, the old snapshot will be deleted and the latest one will be retained.
 
 Prerequisites
 -------------
