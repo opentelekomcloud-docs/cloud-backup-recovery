@@ -13,6 +13,7 @@ Constraints
 -----------
 
 -  You can only apply replication policies to server backup vaults.
+-  A maximum of 32 replication policies can be created in each account.
 
 Procedure
 ---------

@@ -5,7 +5,7 @@
 Is There a Quota for CBR Vaults?
 ================================
 
-There are no quota limits.
+There are no quota limits for other vaults.
 
 You can create as many vaults as needed.
 

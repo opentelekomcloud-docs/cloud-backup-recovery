@@ -93,7 +93,7 @@ The following procedure illustrates how to disable an existing tracker on the CT
 
 #. In the upper left corner of the page, click |image1| and select a region.
 
-#. Click **Service List** and choose **Management & Deployment** > **Cloud Trace Service**.
+#. Click **Service List** and choose Management & Deployment > **Cloud Trace Service**.
 
 #. Choose **Tracker List** in the left navigation pane. See :ref:`Figure 1 <cbr_03_0036__fig659914371513>`.
 

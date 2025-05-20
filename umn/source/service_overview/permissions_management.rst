@@ -11,7 +11,7 @@ With IAM, you can create IAM users and assign permissions to control their acces
 
 If your cloud account does not require individual IAM users for permissions management, you can skip this section.
 
-IAM is a free service. You only pay for the resources in your account. For more information about IAM, see `IAM Service Overview <https://docs.otc.t-systems.com/en-us/usermanual/iam/iam_01_0026.html>`__.
+IAM is a free service. You only pay for the resources in your account. For more information about IAM, see `What Is IAM? <https://docs.otc.t-systems.com/en-us/usermanual/iam/iam_01_0026.html>`__.
 
 CBR Permissions
 ---------------
