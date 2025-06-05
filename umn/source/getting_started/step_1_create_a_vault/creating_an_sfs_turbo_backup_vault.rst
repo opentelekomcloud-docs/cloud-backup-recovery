@@ -22,7 +22,7 @@ Procedure
 
    -  **Backup**: An SFS Turbo backup vault stores SFS Turbo backups.
 
-#. Determine whether to enable backup locking(eu-nl).
+#. Determine whether to enable backup locking (eu-nl).
 
    If backup locking is enabled, backups in the vault will not be deleted maliciously or by mistake. This improves data reliability.
 
@@ -45,20 +45,28 @@ Procedure
       -  The selected file systems must have not been associated with any vault and must be in the **Available** state.
       -  You can also associate file systems with the vault you are creating later if you skip this step.
 
-#. Specify a vault capacity ranging from 10 GB to 10,485,760 GB. Properly plan the vault capacity, which must be at least the same as the size of the file systems you want to back up.
+#. Specify the vault capacity. This capacity is the total size of the file systems that you want to associate with this vault. Plan the vault capacity and ensure that it is at least the same as the size of the file systems you want to back up. If a backup policy is applied to the vault, plan more capacity as required. The capacity ranges from 10 GB to 10485760 GB. If automatic capacity expansion is not enabled, the vault capacity will not be automatically expanded, even if the capacity of file systems is expanded during use.
+
+   You can expand the vault capacity if it becomes insufficient. See :ref:`Figure 2 <cbr_02_0004__fig179361847142520>`.
+
+
+   .. figure:: /_static/images/en-us_image_0000002302754542.png
+      :alt: **Figure 2** Setting the vault capacity
+
+      **Figure 2** Setting the vault capacity
 
 #. Configure auto backup.
 
-   -  If you select **Configure**, you must then select an existing backup policy or create a new policy. After the vault is created, CBR will apply the policy to this vault, and all file systems associated with this vault will be automatically backed up based on this policy.
+   -  If you select **Configure**, you must then select an existing backup policy or create a policy. After the vault is created, CBR will apply the policy to this vault, and all file systems associated with this vault will be automatically backed up based on this policy.
    -  If you select **Skip**, file systems associated with this vault will not be automatically backed up until you apply a backup policy to the vault.
 
 #. (Optional) Add tags to the vault.
 
-   Tags are key-value pairs, which are used to identify, classify, and search for vaults. You can add a maximum of 20 tags for a vault, and vault tags are only used for vault search and management. See :ref:`Figure 2 <cbr_02_0010__cbr_02_0003_fig138791734631>`.
+   Tags are key-value pairs, which are used to identify, classify, and search for vaults. You can add a maximum of 20 tags for a vault, and vault tags are only used for vault search and management. See :ref:`Figure 3 <cbr_02_0010__cbr_02_0003_fig138791734631>`.
 
    .. _cbr_02_0010__cbr_02_0003_fig138791734631:
 
-   **Figure 2** Adding a tag
+   **Figure 3** Adding a tag
 
    |image5|
 
