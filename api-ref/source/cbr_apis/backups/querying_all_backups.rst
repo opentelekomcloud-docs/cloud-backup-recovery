@@ -10,6 +10,8 @@ Function
 
 This API is used to query all backups.
 
+If you want to create a backup, `create a Restore Point <https://docs.otc.t-systems.com/api/cbr/CreateCheckpoint.html>`__.
+
 URI
 ---
 
