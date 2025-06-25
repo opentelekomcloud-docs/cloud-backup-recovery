@@ -272,7 +272,7 @@ Response Parameters
    +-------------------------+---------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
    | sys_lock_source_service | String                                                                    | Used to identify the SMB service. You can set the parameter to SMB or leave it blank. |
    +-------------------------+---------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
-   | locked                  | Boolean                                                                   | Whether the vault is locked(eu-nl). A locked vault cannot be unlocked.                |
+   | locked                  | Boolean                                                                   | Whether the vault is locked. A locked vault cannot be unlocked.                       |
    +-------------------------+---------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
 
 .. _createvault__response_billing:
