@@ -22,7 +22,7 @@ Procedure
 
    -  **Backup**: An SFS Turbo backup vault stores SFS Turbo backups.
 
-#. Determine whether to enable backup locking (eu-nl).
+#. Determine whether to enable backup locking.
 
    If backup locking is enabled, backups in the vault will not be deleted maliciously or by mistake. This improves data reliability.
 

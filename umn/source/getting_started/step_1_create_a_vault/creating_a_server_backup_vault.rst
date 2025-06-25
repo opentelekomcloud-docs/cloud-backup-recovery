@@ -25,7 +25,7 @@ Procedure
 
    For example, if you want to back up a server, select **Backup** for the vault protection type. If you want to replicate backups of a server from one region to another, select **Replication** for the vault in this other region.
 
-#. Determine whether to enable backup locking (eu-nl).
+#. Determine whether to enable backup locking.
 
    If enabled, backups in the vault will not be deleted maliciously or by mistake, improving data reliability.
 
