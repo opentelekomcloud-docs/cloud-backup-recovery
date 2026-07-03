@@ -43,6 +43,10 @@ Request Parameters
 Response Parameters
 -------------------
 
+**Status code: 204**
+
+No Content
+
 None
 
 Example Requests

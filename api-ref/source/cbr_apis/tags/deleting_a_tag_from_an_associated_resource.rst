@@ -37,6 +37,10 @@ None
 Response Parameters
 -------------------
 
+**Status code: 204**
+
+No Content
+
 **Status code: 400**
 
 .. table:: **Table 2** Response body parameters

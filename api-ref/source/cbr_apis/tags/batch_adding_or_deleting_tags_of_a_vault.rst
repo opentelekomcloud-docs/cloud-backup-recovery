@@ -60,7 +60,7 @@ Request Parameters
    |                 |                 |                                                                          |                                                                                   |
    |                 |                 |                                                                          | -  **create**                                                                     |
    |                 |                 |                                                                          |                                                                                   |
-   |                 |                 |                                                                          | -  **delete**                                                                     |
+   |                 |                 |                                                                          | -   **delete**                                                                    |
    +-----------------+-----------------+--------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
 
 .. _batchcreateanddeletevaulttags__request_tag:
@@ -99,6 +99,10 @@ Request Parameters
 
 Response Parameters
 -------------------
+
+**Status code: 204**
+
+No Content
 
 **Status code: 400**
 

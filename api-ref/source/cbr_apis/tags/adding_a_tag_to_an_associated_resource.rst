@@ -74,6 +74,10 @@ Request Parameters
 Response Parameters
 -------------------
 
+**Status code: 204**
+
+No Content
+
 **Status code: 400**
 
 .. table:: **Table 4** Response body parameters
