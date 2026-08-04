@@ -10,7 +10,7 @@ You can create custom policies to supplement the system-defined policies of CBR.
 You can create custom policies in either of the following ways:
 
 -  Visual editor: Select cloud services, actions, resources, and request conditions. This does not require knowledge of policy syntax.
--  JSON: Edit JSON policies from scratch or based on an existing policy.
+-  JSON: Create a JSON policy or edit an existing one.
 
 For details about how to create custom policies, see `Creating a Custom Policy <https://docs.otc.t-systems.com/usermanual/iam/iam_01_0016.html>`__.
 
@@ -39,7 +39,7 @@ Example Custom Policies
             ]
       }
 
--  Example 2: Denying users to delete vaults and backups
+-  Example 2: Preventing users from deleting vaults and backups
 
    A policy with only "Deny" permissions must be used in conjunction with other policies to take effect. If the permissions assigned to a user contain both "Allow" and "Deny", the "Deny" permissions take precedence over the "Allow" permissions.
 

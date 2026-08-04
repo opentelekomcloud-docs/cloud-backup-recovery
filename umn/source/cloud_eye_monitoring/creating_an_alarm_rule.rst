@@ -12,9 +12,9 @@ You can create alarm rules for CBR.
 Creating an Alarm Rule Using Cloud Eye
 --------------------------------------
 
-#. Log in to the management console.
-#. In the upper left corner of the page, click |image1| and select a region.
-#. Under **Management & Deployment**, select **Cloud Eye**. In the navigation pane on the left, choose **Alarm Management** > **Alarm Rules**.
+#. Log in to the Cloud Eye console.
+#. In the upper left corner, click |image1| and select a region.
+#. Under **Management & Deployment**, select **Cloud Eye**. In the navigation pane, choose **Alarm Management** > **Alarm Rules**.
 #. On the displayed page, click **Create Alarm Rule** in the upper right corner.
 #. On the displayed **Create alarm rule** page, configure the parameters.
 
@@ -22,13 +22,13 @@ Creating an Alarm Rule Using Cloud Eye
 
       Parameters for configuring the rule name and description
 
-      +-------------+-----------------------------------------------------------------------------------+---------------+
-      | Parameter   | Description                                                                       | Example Value |
-      +=============+===================================================================================+===============+
-      | Name        | Name of the alarm rule. The system generates a random name, which you can modify. | alarm-cgnw    |
-      +-------------+-----------------------------------------------------------------------------------+---------------+
-      | Description | Alarm rule description. This parameter is optional.                               | ``-``         |
-      +-------------+-----------------------------------------------------------------------------------+---------------+
+      +-------------+---------------------------------------------------------------------------------------+---------------+
+      | Parameter   | Description                                                                           | Example Value |
+      +=============+=======================================================================================+===============+
+      | Name        | Name of the alarm rule. Cloud Eye will generate a random name, but you can modify it. | alarm-cgnw    |
+      +-------------+---------------------------------------------------------------------------------------+---------------+
+      | Description | Alarm rule description. This parameter is optional.                                   | ``-``         |
+      +-------------+---------------------------------------------------------------------------------------+---------------+
 
    b. Configure alarm content parameters.
 
@@ -71,26 +71,26 @@ Creating an Alarm Rule Using Cloud Eye
 
       .. table:: **Table 2** Parameters for configuring alarm notifications
 
-         +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-         | Parameter             | Description                                                                                                                                                                                                                          | Example Value         |
-         +=======================+======================================================================================================================================================================================================================================+=======================+
-         | Alarm Notification    | Whether to notify users when alarms are triggered. Notifications can be sent by email or text message, or through HTTP/HTTPS request to servers.                                                                                     | ``-``                 |
-         |                       |                                                                                                                                                                                                                                      |                       |
-         |                       | You can enable (recommended) or disable **Alarm Notification**.                                                                                                                                                                      |                       |
-         +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-         | Notification Window   | Cloud Eye sends notifications only within the notification window specified in the alarm rule.                                                                                                                                       | ``-``                 |
-         |                       |                                                                                                                                                                                                                                      |                       |
-         |                       | If **Notification Window** is set to **00:00-8:00**, Cloud Eye sends alarm notifications only within 00:00-8:00.                                                                                                                     |                       |
-         +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-         | Notification Object   | The name of the topic the alarm notification is to be sent to.                                                                                                                                                                       | ``-``                 |
-         |                       |                                                                                                                                                                                                                                      |                       |
-         |                       | If you enable alarm notification, you need to select a topic. If no desirable topics are available, create one and subscribe to it first. For details about how to create a topic, see the *Simple Message Notification User Guide*. |                       |
-         +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
-         | Trigger Condition     | The condition for triggering the alarm notification. You can select **Generated alarm**, **Cleared alarm**, or both.                                                                                                                 | ``-``                 |
-         +-----------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+         +-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+         | Parameter             | Description                                                                                                                                                                                                   | Example Value         |
+         +=======================+===============================================================================================================================================================================================================+=======================+
+         | Alarm Notification    | Specifies whether users are notified when alarms are triggered. Notifications can be delivered by email, text message, or HTTP/HTTPS requests.                                                                | ``-``                 |
+         |                       |                                                                                                                                                                                                               |                       |
+         |                       | You can enable (recommended) or disable **Alarm Notification**.                                                                                                                                               |                       |
+         +-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+         | Notification Window   | Cloud Eye sends notifications only within the notification window specified in the alarm rule.                                                                                                                | ``-``                 |
+         |                       |                                                                                                                                                                                                               |                       |
+         |                       | If **Notification Window** is set to **00:00-8:00**, Cloud Eye sends alarm notifications only within 00:00-8:00.                                                                                              |                       |
+         +-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+         | Notification Object   | The name of the topic the alarm notification is to be sent to.                                                                                                                                                | ``-``                 |
+         |                       |                                                                                                                                                                                                               |                       |
+         |                       | If you enable alarm notification, you need to select a topic. If no desirable topics are available, create one and subscribe to it first. For more details, see the *Simple Message Notification User Guide*. |                       |
+         +-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
+         | Trigger Condition     | The condition for triggering the alarm notification. You can select **Generated alarm**, **Cleared alarm**, or both.                                                                                          | ``-``                 |
+         +-----------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+
 
    d. Click **Create**.
 
-After the alarm rule is created, if the metric data reaches the specified threshold or a CBR event happens, Cloud Eye immediately informs you that an exception has occurred. For details, see the *Cloud Eye User Guide*.
+After the alarm rule is created, if the metric data reaches the specified threshold or there is a CBR event, Cloud Eye immediately informs you that an exception has occurred. For details, see the *Cloud Eye User Guide*.
 
 .. |image1| image:: /_static/images/en-us_image_0297214500.png

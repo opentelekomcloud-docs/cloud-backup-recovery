@@ -13,7 +13,7 @@ This section describes how to use IAM to implement fine-grained permissions cont
 
 If your cloud account does not require individual IAM users, skip this section. If your account cannot meet your requirements, create IAM users by referring to `Identity and Access Management User Guide <https://docs.otc.t-systems.com/en-us/usermanual/iam/iam_01_0026.html>`__.
 
-Figure :ref:`Figure 1 <cbr_03_0048__fig194521431175317>` illustrates the procedure for granting permissions.
+:ref:`Figure 1 <cbr_03_0048__fig194521431175317>` illustrates the procedure for granting permissions.
 
 Prerequisites
 -------------

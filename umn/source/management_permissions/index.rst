@@ -2,7 +2,7 @@
 
 .. _cbr_03_0047:
 
-Management permissions
+Management Permissions
 ======================
 
 -  :ref:`Creating a User and Granting CBR Permissions <cbr_03_0048>`

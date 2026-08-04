@@ -2,18 +2,18 @@
 
 .. _cbr_05_0003:
 
-A Server Created Using an Image Enters Maintenance Mode After Login
-===================================================================
+A Server Created from an Image Enters Maintenance Mode After Login
+==================================================================
 
 Symptom
 -------
 
-A server is created using the image of a cloud server backup. However, upon login to the server, the server enters maintenance mode and cannot be used.
+A server is created using the image of a cloud server backup. However, upon login to the server, the server enters the maintenance mode and cannot be used.
 
 Possible Cause
 --------------
 
-After the server creation, the configuration parameters contained in the **/etc/fstab** file in the system disk of the new server are that of the backup source server, causing the UUID information to be inconsistent with the new data disks. As a result, the ECS encounters an error when uploading **/etc/fstab** during the bootup and enters maintenance mode.
+After the server is created, the **/etc/fstab** file on the system disk of the new server retains configuration parameters from the source server. As a result, the UUIDs referenced in the file do not match the new data disks, causing the ECS instance to encounter an error when loading **/etc/fstab** and enter maintenance mode.
 
 Solution
 --------
@@ -38,7 +38,7 @@ The following uses CentOS as an example.
 
       **Figure 2** Data disk UUIDs
 
-#. Run the **vi /etc/fstab** command to open the file, press **i** to enter the editing mode, and delete the attachment information of all data disks. Then, press **Esc** to exit the editing mode and run **:wq!** to save the change and exit.
+#. Run the **vi /etc/fstab** command to open the file, press **i** to enter the editing mode, and delete the attachment information of all data disks. Then, press **Esc** to exit the editing mode and run **:wq!** to save the changes and exit.
 
 
    .. figure:: /_static/images/en-us_image_0000001462955128.png
@@ -70,7 +70,7 @@ The following uses CentOS as an example.
 
       **Figure 6** Obtaining UUIDs of data disks
 
-#. Run the **vi /etc/fstab** command to open the file, press **i** to enter the editing mode, and add the attachment information of all data disks. Then, press **Esc** to exit the editing mode and run **:wq!** to save the change and exit.
+#. Run the **vi /etc/fstab** command to open the file, press **i** to enter the editing mode, and add the attachment information of all data disks. Then, press **Esc** to exit the editing mode and run **:wq!** to save the changes and exit.
 
 
    .. figure:: /_static/images/en-us_image_0000001513435141.png
