@@ -17,17 +17,17 @@ CBR involves backups, vaults, and policies.
 
 **Backup**
 
-A backup is a copy of a particular chunk of data and is usually stored elsewhere so that it may be used to restore the original data in the event of data loss.
+A backup is a copy of a particular chunk of data and is usually stored elsewhere so that it can be used to restore the original data in the event of data loss.
 
-There are the following types of backups:
+The following types of backups are available:
 
--  Cloud disk backup: provides snapshot-based backups for EVS disks.
 -  Cloud server backup: uses the consistency snapshot technology to protect data for ECSs.
--  SFS Turbo backup: backs up data of SFS Turbo file systems.
+-  Cloud disk backup: provides snapshot-based data protection for EVS disks.
+-  SFS Turbo backup: protects data for SFS Turbo file systems.
 
 **Vault**
 
-CBR stores backups in vaults. Before creating a backup, you need to create at least one vault and associate the resources you want to back up with the vaults. Then the resources can be backed up to the associated vaults.
+CBR stores backups in vaults. Before creating a backup, you need to create at least one vault and associate it with the resources you want to back up. Then the resources can be backed up to the associated vaults.
 
 Different types of resources must be backed up to different types of vaults. For example, cloud servers must be backed up to server backup vaults, not disk backup vaults or any other types of vaults.
 
@@ -35,8 +35,8 @@ Different types of resources must be backed up to different types of vaults. For
 
 There are backup policies and replication policies.
 
--  A backup policy defines when you want to take a backup and for how long you would retain each backup.
--  A replication policy defines when you want to replicate from backup vaults and for how long you would retain each replica. Backup replicas are stored in replication vaults.
+-  A backup policy defines the timing, frequency, and retention of backups. Once applied to a vault, CBR will automatically back up data as specified.
+-  A replication policy determines the schedule and frequency for replicating data from one vault to another, as well as the retention period for each replica. Once applied, CBR automatically performs replication as specified. Backup replicas are stored in replication vaults.
 
 
 .. figure:: /_static/images/en-us_image_0277693887.png
@@ -49,24 +49,24 @@ Differences Among the Backup Types
 
 .. table:: **Table 1** Differences among the backup types
 
-   +-----------------+----------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+
-   | Item            | Cloud Server Backup                                                              | Cloud Disk Backup                                                                            | SFS Turbo Backup                                                                                                  |
-   +=================+==================================================================================+==============================================================================================+===================================================================================================================+
-   | What to back up | All disks (system and data disks) on a server or part of disks                   | One or more specific disks (system or data disks)                                            | SFS Turbo file systems                                                                                            |
-   +-----------------+----------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+
-   | When to use     | You want to back up entire cloud servers.                                        | You want to back up only data disks.                                                         | You want to back up entire SFS Turbo file systems.                                                                |
-   +-----------------+----------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+
-   | Advantages      | All disks on a server are backed up at the same time to ensure data consistency. | Only data of specific disks is backed up, which costs less than backing up an entire server. | File system data and their backups are stored separately, and the backups can be used to create new file systems. |
-   +-----------------+----------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+
+   +-----------------+----------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+   | Item            | Cloud Server Backup                                                              | Cloud Disk Backup                                                                            | SFS Turbo Backup                                                                                               |
+   +=================+==================================================================================+==============================================================================================+================================================================================================================+
+   | What to back up | All disks (the system disk and data disks) on a server or certain disks          | One or more specific disks (the system disk or data disks)                                   | SFS Turbo file systems                                                                                         |
+   +-----------------+----------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+   | When to use     | You want to back up entire cloud servers.                                        | You want to back up only data disks, as the system disk contains no user data.               | You want to back up only SFS Turbo file systems.                                                               |
+   +-----------------+----------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+   | Advantages      | All disks on a server are backed up at the same time to ensure data consistency. | Only data of specific disks is backed up, which costs less than backing up an entire server. | File system data and their backups are stored separately, and the backups can be used to restore file systems. |
+   +-----------------+----------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
 
 Backup Mechanism
 ----------------
 
-CBR in-cloud backup offers block-level backup. The first backup is a full backup and backs up all used data blocks. For example, if a disk size is 100 GB and 40 GB has been used, only the 40 GB of data is backed up. An incremental backup backs up only the data changed since the last backup to save the storage space and backup time.
+CBR in-cloud backup offers block-level backup. The first backup is a full backup of all used data space. For example, if a disk size is 100 GB and 40 GB has been used, only the 40 GB is backed up. Subsequent backups are incremental backups. An incremental backup backs up only the data that has changed since the last backup, reducing backup time and saving storage space.
 
-When a backup is deleted, data blocks that are referenced by other backups will not be deleted, ensuring that other backups can still be used for restoration. Both a full backup and an incremental backup can be used to restore data to a given backup point in time.
+When a backup is deleted, data blocks that are referenced by other backups will not be deleted, ensuring that these backups can still be used for restoration. Both a full backup and an incremental backup can be used to restore data to a given backup point in time.
 
-When creating a backup of a disk, CBR also creates a snapshot for it. CBR keeps only the latest snapshot. Every time it creates a new snapshot during backup, it deletes the old snapshot.
+When creating a backup for a disk, CBR also creates a snapshot for it. CBR keeps only the latest snapshot. Every time it creates a new snapshot, it deletes the old snapshot.
 
 CBR stores backups in OBS to ensure data security.
 
@@ -81,23 +81,23 @@ CBR supports one-off backup and periodic backup. A one-off backup task is manual
 
 .. table:: **Table 2** One-off backup and periodic backup
 
-   +------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
-   | Item                   | One-Off Backup                                                                                                                                             | Periodic Backup                                                                                                               |
-   +========================+============================================================================================================================================================+===============================================================================================================================+
-   | Backup policy          | Not required                                                                                                                                               | Required                                                                                                                      |
-   +------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
-   | Number of backup tasks | One manual backup task                                                                                                                                     | Periodic tasks triggered by a preset backup policy                                                                            |
-   +------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
-   | Backup name            | User-defined backup name, which is **manualbk\_**\ *xxxx* by default                                                                                       | System-assigned backup name, which is **autobk\_**\ *xxxx* by default                                                         |
-   +------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
-   | Backup mode            | The first backup is a full backup and the subsequent backups are incremental.                                                                              | The first backup is a full backup and the subsequent backups are incremental.                                                 |
-   +------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
-   | Application scenario   | Executed before patching or upgrading the OS or upgrading an application. A one-off backup can be used for restoration if the patching or upgrading fails. | Executed for routine maintenance. The latest backup can be used for restoration if an unexpected failure or data loss occurs. |
-   +------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+   +------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Item                   | One-Off Backup                                                                                                                                                     | Periodic Backup                                                                                                                                                  |
+   +========================+====================================================================================================================================================================+==================================================================================================================================================================+
+   | Backup policy          | Not required                                                                                                                                                       | Required                                                                                                                                                         |
+   +------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Number of backup tasks | One manual backup task                                                                                                                                             | Periodic tasks triggered by a preset backup policy                                                                                                               |
+   +------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Backup name            | User-defined backup name, which is **manualbk\_**\ *xxxx* by default                                                                                               | System-assigned backup name, which is **autobk\_**\ *xxxx* by default                                                                                            |
+   +------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Backup mode            | The first backup is a full backup and subsequent backups are incremental.                                                                                          | The first backup is a full backup and subsequent backups are incremental.                                                                                        |
+   +------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Application scenario   | A one-off backup is usually performed before an OS or application is patched or upgraded. The backup can be used for restoration if the patching or upgrade fails. | Periodic backups are performed as part of routine maintenance. The latest backup can be used to restore data in the event of an unexpected failure or data loss. |
+   +------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-You can also use the two backup options together if needed. For example, you can associate resources with a vault and apply a backup policy to the vault to execute periodic backup for all the resources in the vault. Additionally, you can perform a one-off backup for the most important resources to enhance data security. :ref:`Figure 2 <cbr_01_0002__fig190314191275>` shows the use of the two backup options.
+You can also use the two backup options together if needed. For example, you can associate resources with a vault and apply a backup policy to the vault to execute periodic backup for all the resources in the vault. Additionally, you can irregularly perform a one-off backup for the most important resources. CBR can store backups in OBS to ensure backup data security. :ref:`Figure 2 <cbr_01_0002__fig190314191275>` shows the use of the two backup options.
 
-Theoretically, you can create as many backups for a resource as needed. This number is not limited.
+Theoretically, you can create as many backups for a resource as needed. There is no limit to the number of backups you can create for a resource.
 
 .. _cbr_01_0002__fig190314191275:
 
@@ -109,7 +109,7 @@ Theoretically, you can create as many backups for a resource as needed. This num
 Access to CBR
 -------------
 
-You can access the CBR service through the console or by calling HTTPS-based APIs.
+You can access the CBR service through the console or by calling HTTPS APIs.
 
 -  Console
 

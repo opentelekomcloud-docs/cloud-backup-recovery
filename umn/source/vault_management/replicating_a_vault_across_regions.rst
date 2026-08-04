@@ -8,9 +8,9 @@ Replicating a Vault Across Regions
 Scenarios
 ---------
 
-CBR allows you to **replicate all backups** in a server backup vault **to replication vaults in other regions of the same account**. Replicas of server backups in the destination region can be used to create images and provision servers. to quickly deploy services across regions.
+Cloud server backup vaults allow you to **replicate all backups in vaults to replication vaults of the same account in another region**. Server backup replicas can be used to create images and provision servers in the destination region. to quickly deploy services across regions.
 
-There are two methods available for replicating a vault.
+A vault can be replicated in either of the following ways:
 
 -  Manual replication: Select a backup vault and manually replicate it.
 -  Policy-based replication: Configure a replication policy to periodically replicate backups that have not been replicated or failed to be replicated to the destination region.
@@ -19,31 +19,29 @@ Constraints
 -----------
 
 -  Disk backup vaults cannot be replicated to other regions.
--  Backup data can be replicated to vaults in different regions. Any traffic costs associated with this operation will be attributed to the source region. Backup replicas occupy the replication vault space.
--  A server backup vault can be replicated only when it contains at least one backup that meets all the following conditions:
+-  Vaults can be replicated to different regions. Replication traffic charges are incurred in the source region. Backup replicas consume storage capacity in replication vaults.
+-  A server backup vault can be replicated only if at least one of its backups meets all of the following conditions:
 
-   #. The backup is an ECS backup.
+   #. The backup is generated from an ECS.
    #. The backup contains system disk data.
    #. The backup is in the **Available** state.
 
--  Only backup vaults of the same type can be replicated. Replicated vaults cannot be replicated again but their replicas can be used to create images.
--  A backup vault can be replicated to different destination regions. For manual and policy-based vault replication, a vault can only be replicated to a destination region once. It cannot be replicated to that region again, even if its backups have been deleted.
--  Only replication-supported regions can be selected as destination regions.
+-  Replication is supported only for backup vaults of the same type created in the source region. Replicated vaults cannot be re-replicated. Backups replicated from other regions can only be used to create images.
+-  A backup vault can be replicated to different regions. Replication can be performed manually or through policies, but each target region supports only one replication. Once a backup has been replicated to a region, it cannot be replicated there again, even if the target backup is deleted.
+-  Replication is supported only between the following regions:
 
 Procedure
 ---------
 
 #. Log in to the CBR console.
 
-   a. Log in to the management console.
-   b. Click |image1| in the upper left corner and select a region.
-   c. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**. Select a backup type from the left navigation pane.
+   a. In the upper left corner, click |image1| and select a region.
+   b. Click |image2| and choose **Storage** > **Cloud Backup and Recovery**.
 
 #. On the **Vaults** tab, find the target backup vault.
 
-#. Choose **More** > **Create Replica** in the **Operation** column of the vault. See :ref:`Figure 1 <cbr_03_0009__fig6867058144918>`.
+#. Choose **More** > **Create Replica** in the **Operation** column of the vault.
 
-   .. _cbr_03_0009__fig6867058144918:
 
    **Figure 1** Creating a replica
 
@@ -55,18 +53,18 @@ Procedure
 
    .. table:: **Table 1** Parameter description
 
-      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-      | Parameter                         | Description                                                                                                                               |
-      +===================================+===========================================================================================================================================+
-      | Destination Region                | Region to which the vault is replicated                                                                                                   |
-      |                                   |                                                                                                                                           |
-      |                                   | Only the regions that support replication will be displayed.                                                                              |
-      |                                   |                                                                                                                                           |
-      |                                   | -  If the selected region contains only one project, you can directly select the region name.                                             |
-      |                                   | -  If the selected region has multiple projects, the default project of the region is selected. You can select another project if needed. |
-      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
-      | Destination Vault                 | A replication vault in the destination region                                                                                             |
-      +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
+      +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Parameter                         | Description                                                                                                                                            |
+      +===================================+========================================================================================================================================================+
+      | Destination Region                | Region where the vault will be replicated to.                                                                                                          |
+      |                                   |                                                                                                                                                        |
+      |                                   | Only the regions that support replication will be displayed.                                                                                           |
+      |                                   |                                                                                                                                                        |
+      |                                   | -  If the selected region contains only one project, you can directly select the region name.                                                          |
+      |                                   | -  If the selected region has multiple projects, the default project of the region is preselected, but you can still select another project if needed. |
+      +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+      | Destination Vault                 | A replication vault in the destination region.                                                                                                         |
+      +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 #. Click **OK**.
 

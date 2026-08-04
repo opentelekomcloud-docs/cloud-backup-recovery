@@ -11,9 +11,9 @@ Cloud Backup and Recovery - User Guide
    vault_management/index
    backup_management/index
    policy_management/index
-   restoring_data/index
-   optional_migrating_resources_from_csbs_vbs
-   managing_tasks
+   data_restoration/index
+   optional_resource_migration_from_csbs_vbs
+   task_management
    cloud_eye_monitoring/index
    recording_cbr_operations_using_cts
    quotas

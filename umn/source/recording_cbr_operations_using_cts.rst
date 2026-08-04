@@ -26,9 +26,9 @@ Key Operations Recorded by CTS
    +---------------------------------------+---------------+--------------------------+
    | Deleting a policy                     | policy        | deletePolicy             |
    +---------------------------------------+---------------+--------------------------+
-   | Setting a vault policy                | vault         | associatePolicy          |
+   | Associating a policy with a vault     | vault         | associatePolicy          |
    +---------------------------------------+---------------+--------------------------+
-   | Removing a policy from a vault        | vault         | dissociatePolicy         |
+   | Disassociating a policy from a vault  | vault         | dissociatePolicy         |
    +---------------------------------------+---------------+--------------------------+
    | Creating a vault                      | vault         | createVault              |
    +---------------------------------------+---------------+--------------------------+
@@ -66,15 +66,15 @@ Key Operations Recorded by CTS
    +---------------------------------------+---------------+--------------------------+
    | Batch creating or deleting vault tags | vault         | bulkCreateDeleteVaultTag |
    +---------------------------------------+---------------+--------------------------+
-   | Creating a vault tag                  | vault         | createVaultTag           |
+   | Creating a tag for a vault            | vault         | createVaultTag           |
    +---------------------------------------+---------------+--------------------------+
-   | Deleting a vault tag                  | vault         | deleteVaultTag           |
+   | Deleting tags of a vault              | vault         | deleteVaultTag           |
    +---------------------------------------+---------------+--------------------------+
-   | Creating a share member               | backup        | createBackupMember       |
+   | Creating a backup recipient           | backup        | createBackupMember       |
    +---------------------------------------+---------------+--------------------------+
-   | Updating a share member               | backup        | updateBackupMember       |
+   | Updating a backup recipient           | backup        | updateBackupMember       |
    +---------------------------------------+---------------+--------------------------+
-   | Deleting a share member               | backup        | deleteBackupMember       |
+   | Deleting a backup recipient           | backup        | deleteBackupMember       |
    +---------------------------------------+---------------+--------------------------+
    | Updating a backup                     | backup        | updateBackup             |
    +---------------------------------------+---------------+--------------------------+
@@ -87,17 +87,16 @@ For how to view audit logs, see section "Querying Real-Time Traces" in the *Clou
 Disabling or Enabling a Tracker
 -------------------------------
 
-The following procedure illustrates how to disable an existing tracker on the CTS console. After the tracker is disabled, the system will stop recording operations, but you can still view existing operation records.
+The following procedure illustrates how to disable an existing tracker on the CTS console. After the tracker is disabled, CTS will stop recording operations, but you can still view existing operation records.
 
-#. Log in to the management console.
+#. Log in to the CTS console.
 
-#. In the upper left corner of the page, click |image1| and select a region.
+#. In the upper left corner, click |image1| and select a region.
 
-#. Click **Service List** and choose Management & Deployment > **Cloud Trace Service**.
+#. Click **Service List** and choose **Management & Deployment** > **Cloud Trace Service**.
 
-#. Choose **Tracker List** in the left navigation pane. See :ref:`Figure 1 <cbr_03_0036__fig659914371513>`.
+#. Choose **Tracker List** in the navigation pane.
 
-   .. _cbr_03_0036__fig659914371513:
 
    .. figure:: /_static/images/en-us_image_0224256701.png
       :alt: **Figure 1** Viewing trackers
@@ -106,8 +105,8 @@ The following procedure illustrates how to disable an existing tracker on the CT
 
 #. In the tracker list, click **Disable** in the **Operation** column.
 
-#. Click **Yes**.
+#. Click **OK**.
 
-#. After the tracker is disabled, the available operation changes from **Disable** to **Enable**. To enable the tracker again, click **Enable** and then click **Yes**. The system will start recording operations again.
+#. After the tracker is disabled, the available operation changes from **Disable** to **Enable**. To enable the tracker again, click **Enable** and then click **OK**. CTS will start recording operations again.
 
 .. |image1| image:: /_static/images/en-us_image_0159365094.png

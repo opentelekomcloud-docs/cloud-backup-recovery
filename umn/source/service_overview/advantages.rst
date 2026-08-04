@@ -17,18 +17,18 @@ Incremental backups shorten the time required for backup by 95%. With Instant Re
 
 .. note::
 
-   Recovery Point Objective (RPO) specifies the maximum acceptable period in which data might be lost.
+   Recovery Point Objective (RPO) defines how much data your business can afford to lose in the event of a disruption.
 
-   Recovery Time Objective (RTO) specifies the maximum acceptable amount of time for restoring the entire system after a disaster occurs.
+   Recovery Time Objective (RTO) defines how quickly you need to restore systems and resume operations after a disruption.
 
 Easy to Use
 -----------
 
-CBR is easier to use than conventional backup systems. You can complete backup in just three steps, and no professional backup skills are required.
+CBR is easier to use than conventional backup systems. You can complete a backup in just three steps, and no professional backup skills are required.
 
 Secure
 ------
 
 If the disks are encrypted, their backups are also encrypted to ensure data security.
 
-You can also replicate backups across regions to implement remote disaster recovery.
+You can replicate backups across regions and restore them in remote regions for remote backup and disaster recovery.
