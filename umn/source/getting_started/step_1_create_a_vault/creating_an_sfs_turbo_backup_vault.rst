@@ -59,6 +59,10 @@ Procedure
    -  If you select **Configure**, you must then select an existing backup policy or create a policy. After the vault is created, CBR will apply the policy to this vault, and all file systems associated with this vault will be automatically backed up based on this policy.
    -  If you select **Skip**, file systems associated with this vault will not be automatically backed up until you apply a backup policy to the vault.
 
+#. If you have subscribed to the EPS service, add the vault to an existing enterprise project.
+
+   EPS provides a unified method to manage cloud resources by project, allowing you to manage resources, users, and user groups in your projects. The default enterprise project is **default**.
+
 #. (Optional) Add tags to the vault.
 
    Tags are key-value pairs, which are used to identify, classify, and search for vaults. You can add a maximum of 20 tags for a vault, and vault tags are only used to filter and manage vaults. See :ref:`Figure 3 <cbr_02_0010__cbr_02_0003_fig138791734631>`.

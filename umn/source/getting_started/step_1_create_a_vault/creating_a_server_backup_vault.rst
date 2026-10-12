@@ -77,6 +77,10 @@ Procedure
 
       **Figure 3** Configuring auto backup
 
+#. If you have subscribed to the Enterprise Project Management Service (EPS), add the vault to an existing enterprise project.
+
+   EPS provides a unified method to manage cloud resources by project, allowing you to manage resources, users, and user groups in your projects. The default enterprise project is **default**.
+
 #. (Optional) Configure automatic resource association.
 
    -  If you select **Configure**, in the next backup period, CBR will automatically scan for unprotected resources, associate them with the vault, and then perform backups.
