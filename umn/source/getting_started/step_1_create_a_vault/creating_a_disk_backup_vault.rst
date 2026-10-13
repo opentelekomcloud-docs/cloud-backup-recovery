@@ -70,6 +70,10 @@ Procedure
 
    If no tag is available, you can create tags on the corresponding resource page. You can search for vaults by specifying a maximum of 5 tags at a time. If you select more than one tag, the vaults with any of the specified tags will be returned.
 
+#. If you have subscribed to the EPS service, add the vault to an existing enterprise project.
+
+   EPS provides a unified method to manage cloud resources by project, allowing you to manage resources, users, and user groups in your projects. The default enterprise project is **default**.
+
 #. (Optional) Add tags to the vault.
 
    Tags are key-value pairs, which are used to identify, classify, and search for vaults. Vault tags are only used to filter and manage vaults. A vault can have a maximum of 20 tags.
