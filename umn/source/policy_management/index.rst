@@ -24,5 +24,5 @@ Policy Management
    modifying_a_policy
    deleting_a_policy
    applying_a_policy_to_a_vault
-    removing_a_policy_from_a_vault
-    changing_the_retention_rule_for_existing_backups
+   removing_a_policy_from_a_vault
+   changing_the_retention_rule_for_existing_backups
